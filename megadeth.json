@@ -1,0 +1,582 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Megadeth",
+      "@type": "music:Band",
+      "rdfs:label": "Megadeth",
+      "music:activeYears": "1983–present",
+      "music:formedYear": 1983,
+      "music:hasMember": [
+        {
+          "@id": "music:DaveMustaine"
+        },
+        {
+          "@id": "music:JamesLoMenzo"
+        },
+        {
+          "@id": "music:DirkVerbeuren"
+        },
+        {
+          "@id": "music:TeemuMantysaari"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:DavidEllefson"
+        },
+        {
+          "@id": "music:ChrisPoland"
+        },
+        {
+          "@id": "music:JeffYoung"
+        },
+        {
+          "@id": "music:MartyFriedman"
+        },
+        {
+          "@id": "music:NickMenza"
+        },
+        {
+          "@id": "music:JimmyDeGrasso"
+        },
+        {
+          "@id": "music:AlPitrelli"
+        },
+        {
+          "@id": "music:GlenDrover"
+        },
+        {
+          "@id": "music:JamesMacDonough"
+        },
+        {
+          "@id": "music:ShawnDrover"
+        },
+        {
+          "@id": "music:ChrisBroderick"
+        },
+        {
+          "@id": "music:KikoLoureiro"
+        },
+        {
+          "@id": "music:ChrisAdler"
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveMustaine",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Mustaine",
+      "music:hasGender": "male",
+      "music:hasRole": "guitars, lead vocals",
+      "music:activeYears": "1983–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Metallica"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JamesLoMenzo",
+      "@type": "music:Musician",
+      "rdfs:label": "James LoMenzo",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1984–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DirkVerbeuren",
+      "@type": "music:Musician",
+      "rdfs:label": "Dirk Verbeuren",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1995–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        },
+        {
+          "@id": "music:Soilwork"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:TeemuMantysaari",
+      "@type": "music:Musician",
+      "rdfs:label": "Teemu Mäntysaari",
+      "music:hasGender": "male",
+      "music:hasRole": "guitars, backing vocals",
+      "music:activeYears": "2004–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        },
+        {
+          "@id": "music:Wintersun"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DavidEllefson",
+      "@type": "music:Musician",
+      "rdfs:label": "David Ellefson",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1983–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisPoland",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Poland",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Ohm"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:JeffYoung",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Young",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:MartyFriedman",
+      "@type": "music:Musician",
+      "rdfs:label": "Marty Friedman",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:NickMenza",
+      "@type": "music:Musician",
+      "rdfs:label": "Nick Menza",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing vocals",
+      "music:activeYears": "1980s–2016",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JimmyDeGrasso",
+      "@type": "music:Musician",
+      "rdfs:label": "Jimmy DeGrasso",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:AlPitrelli",
+      "@type": "music:Musician",
+      "rdfs:label": "Al Pitrelli",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GlenDrover",
+      "@type": "music:Musician",
+      "rdfs:label": "Glen Drover",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Eidolon"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JamesMacDonough",
+      "@type": "music:Musician",
+      "rdfs:label": "James MacDonough",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:IcedEarth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ShawnDrover",
+      "@type": "music:Musician",
+      "rdfs:label": "Shawn Drover",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisBroderick",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Broderick",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:KikoLoureiro",
+      "@type": "music:Musician",
+      "rdfs:label": "Kiko Loureiro",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Angra"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisAdler",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Adler",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:LambOfGod"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:Metallica",
+      "@type": "music:Band",
+      "rdfs:label": "Metallica",
+      "music:formedYear": 1981,
+      "music:activeYears": "1981–present"
+    },
+    {
+      "@id": "music:Soilwork",
+      "@type": "music:Band",
+      "rdfs:label": "Soilwork",
+      "music:formedYear": 1995,
+      "music:activeYears": "1995–present",
+      "music:hasMember": [
+        {
+          "@id": "music:DirkVerbeuren"
+        }
+      ]
+    },
+    {
+      "@id": "music:Wintersun",
+      "@type": "music:Band",
+      "rdfs:label": "Wintersun",
+      "music:formedYear": 2003,
+      "music:activeYears": "2003–present",
+      "music:hasMember": [
+        {
+          "@id": "music:TeemuMantysaari"
+        }
+      ]
+    },
+    {
+      "@id": "music:Ohm",
+      "@type": "music:Band",
+      "rdfs:label": "OHM",
+      "music:formedYear": 2000,
+      "music:activeYears": "2000–present",
+      "music:hasMember": [
+        {
+          "@id": "music:ChrisPoland"
+        }
+      ]
+    },
+    {
+      "@id": "music:Eidolon",
+      "@type": "music:Band",
+      "rdfs:label": "Eidolon",
+      "music:formedYear": 1993,
+      "music:activeYears": "1993–present",
+      "music:hasMember": [
+        {
+          "@id": "music:GlenDrover"
+        }
+      ]
+    },
+    {
+      "@id": "music:IcedEarth",
+      "@type": "music:Band",
+      "rdfs:label": "Iced Earth",
+      "music:formedYear": 1985,
+      "music:activeYears": "1985–present",
+      "music:hadMember": [
+        {
+          "@id": "music:JamesMacDonough"
+        }
+      ]
+    },
+    {
+      "@id": "music:Angra",
+      "@type": "music:Band",
+      "rdfs:label": "Angra",
+      "music:formedYear": 1991,
+      "music:activeYears": "1991–present",
+      "music:hasMember": [
+        {
+          "@id": "music:KikoLoureiro"
+        }
+      ]
+    },
+    {
+      "@id": "music:LambOfGod",
+      "@type": "music:Band",
+      "rdfs:label": "Lamb of God",
+      "music:formedYear": 1994,
+      "music:activeYears": "1994–present",
+      "music:hadMember": [
+        {
+          "@id": "music:ChrisAdler"
+        }
+      ]
+    },
+{
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

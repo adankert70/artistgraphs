@@ -1,0 +1,596 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:JudasPriest",
+      "@type": "music:Band",
+      "rdfs:label": "Judas Priest",
+      "music:activeYears": "1969–present",
+      "music:formedYear": 1969,
+      "music:hasMember": [
+        {"@id": "music:RobHalford"},
+        {"@id": "music:GlennTipton"},
+        {"@id": "music:RichieVaulks"},
+        {"@id": "music:IanHill"},
+        {"@id": "music:ScottTravis"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:KKDowning"},
+        {"@id": "music:DaveHolland"},
+        {"@id": "music:LessBinks"},
+        {"@id": "music:TimOwens"},
+        {"@id": "music:AlAtkins"}
+      ]
+    },
+    {
+      "@id": "music:RobHalford",
+      "@type": "music:Musician",
+      "rdfs:label": "Rob Halford",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1973–1992, 2003–present",
+      "music:isMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Halford"},
+        {"@id": "music:Fight"},
+        {"@id": "music:TwoMetal"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:GlennTipton",
+      "@type": "music:Musician",
+      "rdfs:label": "Glenn Tipton",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1974–present",
+      "music:isMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:RichieVaulks",
+      "@type": "music:Musician",
+      "rdfs:label": "Richie Faulkner",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, lead guitar",
+      "music:activeYears": "2011–present",
+      "music:isMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Lauren Harris"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:IanHill",
+      "@type": "music:Musician",
+      "rdfs:label": "Ian Hill",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1969–present",
+      "music:isMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:ScottTravis",
+      "@type": "music:Musician",
+      "rdfs:label": "Scott Travis",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1989–present",
+      "music:isMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Racer X"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:KKDowning",
+      "@type": "music:Musician",
+      "rdfs:label": "K.K. Downing",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, lead guitar, songwriter",
+      "music:activeYears": "1969–2011",
+      "music:wasMemberOf": [
+        {"@id": "music:JudasPriest"},
+        {"@id": "music:KKsPreist"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:TimOwens",
+      "@type": "music:Musician",
+      "rdfs:label": "Tim 'Ripper' Owens",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals",
+      "music:activeYears": "1996–2003",
+      "music:wasMemberOf": [
+        {"@id": "music:JudasPriest"},
+        {"@id": "music:Iced Earth"},
+        {"@id": "music:Yngwie Malmsteen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:DaveHolland",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Holland",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1979–1989",
+      "music:wasMemberOf": [
+        {"@id": "music:JudasPriest"},
+        {"@id": "music:Trapeze"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:LessBinks",
+      "@type": "music:Musician",
+      "rdfs:label": "Les Binks",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1977–1979",
+      "music:wasMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:AlAtkins",
+      "@type": "music:Musician",
+      "rdfs:label": "Al Atkins",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals",
+      "music:activeYears": "1969–1973",
+      "music:wasMemberOf": [
+        {"@id": "music:JudasPriest"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Halford",
+      "@type": "music:Band",
+      "rdfs:label": "Halford",
+      "music:activeYears": "1999–2006, 2019–present",
+      "music:formedYear": 1999,
+      "music:hadMember": [
+        {"@id": "music:RobHalford"}
+      ]
+    },
+    {
+      "@id": "music:Fight",
+      "@type": "music:Band",
+      "rdfs:label": "Fight",
+      "music:activeYears": "1992–1997",
+      "music:formedYear": 1992,
+      "music:hadMember": [
+        {"@id": "music:RobHalford"}
+      ]
+    },
+    {
+      "@id": "music:TwoMetal",
+      "@type": "music:Band",
+      "rdfs:label": "2wo",
+      "music:activeYears": "1996–1998",
+      "music:formedYear": 1996,
+      "music:hadMember": [
+        {"@id": "music:RobHalford"}
+      ]
+    },
+    {
+      "@id": "music:KKsPreist",
+      "@type": "music:Band",
+      "rdfs:label": "KK's Priest",
+      "music:activeYears": "2020–present",
+      "music:formedYear": 2020,
+      "music:hasMember": [
+        {"@id": "music:KKDowning"}
+      ]
+    },
+    {
+      "@id": "music:LaurenHarris",
+      "@type": "music:Band",
+      "rdfs:label": "Lauren Harris",
+      "music:activeYears": "2005–2011",
+      "music:formedYear": 2005,
+      "music:hadMember": [
+        {"@id": "music:RichieVaulks"}
+      ]
+    },
+    {
+      "@id": "music:RacerX",
+      "@type": "music:Band",
+      "rdfs:label": "Racer X",
+      "music:activeYears": "1985–2009",
+      "music:formedYear": 1985,
+      "music:hadMember": [
+        {"@id": "music:ScottTravis"},
+        {"@id": "music:PaulGilbert"}
+      ]
+    },
+    {
+      "@id": "music:PaulGilbert",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Gilbert",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1985–present",
+      "music:wasMemberOf": [
+        {"@id": "music:RacerX"},
+        {"@id": "music:MrBig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:MrBig",
+      "@type": "music:Band",
+      "rdfs:label": "Mr. Big",
+      "music:activeYears": "1988–2002, 2009–present",
+      "music:formedYear": 1988,
+      "music:hadMember": [
+        {"@id": "music:PaulGilbert"},
+        {"@id": "music:EricMartin"},
+        {"@id": "music:BillySheehan"},
+        {"@id": "music:PatTorpey"}
+      ]
+    },
+    {
+      "@id": "music:EricMartin",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1979–present",
+      "music:wasMemberOf": [
+        {"@id": "music:MrBig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:BillySheehan",
+      "@type": "music:Musician",
+      "rdfs:label": "Billy Sheehan",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, songwriter",
+      "music:activeYears": "1978–present",
+      "music:wasMemberOf": [
+        {"@id": "music:MrBig"},
+        {"@id": "music:DavidLeeRoth"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:PatTorpey",
+      "@type": "music:Musician",
+      "rdfs:label": "Pat Torpey",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1988–2018",
+      "music:wasMemberOf": [
+        {"@id": "music:MrBig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:DavidLeeRoth",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "David Lee Roth",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1974–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:VanHalen",
+      "@type": "music:Band",
+      "rdfs:label": "Van Halen",
+      "music:activeYears": "1972–2020",
+      "music:formedYear": 1972,
+      "music:hadMember": [
+        {"@id": "music:DavidLeeRoth"},
+        {"@id": "music:EddieVanHalen"},
+        {"@id": "music:AlexVanHalen"},
+        {"@id": "music:MichaelAnthony"}
+      ]
+    },
+    {
+      "@id": "music:EddieVanHalen",
+      "@type": "music:Musician",
+      "rdfs:label": "Eddie Van Halen",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1972–2020",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:AlexVanHalen",
+      "@type": "music:Musician",
+      "rdfs:label": "Alex Van Halen",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1972–2020",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:MichaelAnthony",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael Anthony",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, vocals",
+      "music:activeYears": "1974–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Chickenfoot"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Chickenfoot",
+      "@type": "music:Band",
+      "rdfs:label": "Chickenfoot",
+      "music:activeYears": "2008–2016",
+      "music:formedYear": 2008,
+      "music:hasMember": [
+        {"@id": "music:MichaelAnthony"},
+        {"@id": "music:SammyHagar"},
+        {"@id": "music:JoeSatriani"},
+        {"@id": "music:ChadSmith"}
+      ]
+    },
+    {
+      "@id": "music:SammyHagar",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Sammy Hagar",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1973–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"},
+        {"@id": "music:Montrose"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Chickenfoot"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:JoeSatriani",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Joe Satriani",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1988–present",
+      "music:isMemberOf": [
+        {"@id": "music:Chickenfoot"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:ChadSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Chad Smith",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1988–present",
+      "music:isMemberOf": [
+        {"@id": "music:RedHotChiliPeppers"},
+        {"@id": "music:Chickenfoot"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:RedHotChiliPeppers",
+      "@type": "music:Band",
+      "rdfs:label": "Red Hot Chili Peppers",
+      "music:activeYears": "1982–present",
+      "music:formedYear": 1982,
+      "music:hasMember": [
+        {"@id": "music:ChadSmith"},
+        {"@id": "music:AnthonyKiedis"},
+        {"@id": "music:Flea"},
+        {"@id": "music:JohnFrusciante"}
+      ]
+    },
+    {
+      "@id": "music:AnthonyKiedis",
+      "@type": "music:Musician",
+      "rdfs:label": "Anthony Kiedis",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1982–present",
+      "music:isMemberOf": [
+        {"@id": "music:RedHotChiliPeppers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Flea",
+      "@type": "music:Musician",
+      "rdfs:label": "Flea",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, songwriter",
+      "music:activeYears": "1982–present",
+      "music:isMemberOf": [
+        {"@id": "music:RedHotChiliPeppers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:JohnFrusciante",
+      "@type": "music:Musician",
+      "rdfs:label": "John Frusciante",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1988–present",
+      "music:isMemberOf": [
+        {"@id": "music:RedHotChiliPeppers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Trapeze",
+      "@type": "music:Band",
+      "rdfs:label": "Trapeze",
+      "music:activeYears": "1969–1982",
+      "music:formedYear": 1969,
+      "music:hadMember": [
+        {"@id": "music:DaveHolland"}
+      ]
+    },
+    {
+      "@id": "music:IcedEarth",
+      "@type": "music:Band",
+      "rdfs:label": "Iced Earth",
+      "music:activeYears": "1984–present",
+      "music:formedYear": 1984,
+      "music:hadMember": [
+        {"@id": "music:TimOwens"}
+      ]
+    },
+    {
+      "@id": "music:YngwieMalmsteen",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Yngwie Malmsteen",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1978–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Montrose",
+      "@type": "music:Band",
+      "rdfs:label": "Montrose",
+      "music:activeYears": "1973–1977, 1987",
+      "music:formedYear": 1973,
+      "music:hadMember": [
+        {"@id": "music:SammyHagar"}
+      ]
+    },
+    {
+      "@id": "music:RoyZRamirez",
+      "@type": "music:Producer",
+      "rdfs:label": "Roy Z",
+      "music:hasGender": "male",
+      "music:activeYears": "1990s–present",
+      "music:produced": [
+        {"@id": "music:JudasPriest"},
+        {"@id": "music:Halford"}
+      ]
+    },
+    {
+      "@id": "music:TomAllom",
+      "@type": "music:Producer",
+      "rdfs:label": "Tom Allom",
+      "music:hasGender": "male",
+      "music:activeYears": "1970s–present",
+      "music:produced": [
+        {"@id": "music:JudasPriest"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    }
+  ]
+}

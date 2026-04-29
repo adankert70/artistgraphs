@@ -1,0 +1,280 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "music": "http://example.org/music/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:RickNowels" }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:LesterMendez" }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:EmilioEstefan" }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:LuisFernandoOchoa" }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": { "@id": "music:JohnHill" }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:NeffU" }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:TheMatrix" }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:Beyonce" }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:WyclefJean" }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:AlejandroSanz" }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:Maluma" }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:Bizarrap" }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "music:Relationship",
+      "music:relationshipType": "backing vocals",
+      "music:relationshipTarget": { "@id": "music:KathleenVandenberg" }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:TimMitchell" }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:TedSablay" }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:AlbertSterlingMenendez" }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:JodyBonGiovi" }
+    },
+
+    {
+      "@id": "music:Shakira",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Shakira",
+      "music:activeYears": "1990–present",
+      "music:hasGender": "female",
+      "music:hasRole": "Singer-songwriter, producer, performer",
+      "music:playsInstrument": [
+        { "@id": "music:Vocals" },
+        { "@id": "music:Guitar" },
+        { "@id": "music:Piano" },
+        { "@id": "music:Drums" }
+      ],
+      "music:hasRelationship": [
+        { "@id": "_:g0" },
+        { "@id": "_:g1" },
+        { "@id": "_:g2" },
+        { "@id": "_:g3" },
+        { "@id": "_:g4" },
+        { "@id": "_:g5" },
+        { "@id": "_:g6" },
+        { "@id": "_:g7" },
+        { "@id": "_:g8" },
+        { "@id": "_:g9" },
+        { "@id": "_:g10" },
+        { "@id": "_:g11" },
+        { "@id": "_:g12" },
+        { "@id": "_:g13" },
+        { "@id": "_:g14" },
+        { "@id": "_:g15" },
+        { "@id": "_:g16" }
+      ]
+    },
+
+    {
+      "@id": "music:RickNowels",
+      "@type": "music:Producer",
+      "rdfs:label": "Rick Nowels",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "1985–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:LesterMendez",
+      "@type": "music:Producer",
+      "rdfs:label": "Lester Mendez",
+      "music:hasRole": "Producer, Songwriter, Keyboardist",
+      "music:activeYears": "1990–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:EmilioEstefan",
+      "@type": "music:Producer",
+      "rdfs:label": "Emilio Estefan",
+      "music:hasRole": "Producer, Music executive",
+      "music:activeYears": "1970–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:LuisFernandoOchoa",
+      "@type": "music:Producer",
+      "rdfs:label": "Luis Fernando Ochoa",
+      "music:hasRole": "Producer, Songwriter, Guitarist",
+      "music:activeYears": "1990–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:JohnHill",
+      "@type": "music:Producer",
+      "rdfs:label": "John Hill",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "2000–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:NeffU",
+      "@type": "music:Producer",
+      "rdfs:label": "Neff-U (Theron Feemster)",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "2002–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:TheMatrix",
+      "@type": "music:Producer",
+      "rdfs:label": "The Matrix",
+      "music:hasRole": "Production team, Songwriters",
+      "music:activeYears": "1999–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:Beyonce",
+      "@type": "music:Musician",
+      "rdfs:label": "Beyoncé",
+      "music:hasRole": "Singer-songwriter, Performer",
+      "music:activeYears": "1997–present"
+    },
+    {
+      "@id": "music:WyclefJean",
+      "@type": "music:Musician",
+      "rdfs:label": "Wyclef Jean",
+      "music:hasRole": "Rapper, Producer, Featured artist",
+      "music:activeYears": "1994–present"
+    },
+    {
+      "@id": "music:AlejandroSanz",
+      "@type": "music:Musician",
+      "rdfs:label": "Alejandro Sanz",
+      "music:hasRole": "Singer-songwriter",
+      "music:activeYears": "1988–present"
+    },
+    {
+      "@id": "music:Maluma",
+      "@type": "music:Musician",
+      "rdfs:label": "Maluma",
+      "music:hasRole": "Singer-songwriter, Featured artist",
+      "music:activeYears": "2010–present"
+    },
+    {
+      "@id": "music:Bizarrap",
+      "@type": "music:Producer",
+      "rdfs:label": "Bizarrap",
+      "music:hasRole": "Producer, DJ, Songwriter",
+      "music:activeYears": "2017–present",
+      "music:produced": [{ "@id": "music:Shakira" }]
+    },
+    {
+      "@id": "music:KathleenVandenberg",
+      "@type": "music:Musician",
+      "rdfs:label": "Kathleen Vandenberg",
+      "music:hasRole": "Backing vocalist",
+      "music:activeYears": "2000–present",
+      "music:playsInstrument": { "@id": "music:Vocals" }
+    },
+    {
+      "@id": "music:TimMitchell",
+      "@type": "music:Musician",
+      "rdfs:label": "Tim Mitchell",
+      "music:hasRole": "Guitarist, Musical Director",
+      "music:activeYears": "1990–present",
+      "music:playsInstrument": { "@id": "music:Guitar" }
+    },
+    {
+      "@id": "music:TedSablay",
+      "@type": "music:Musician",
+      "rdfs:label": "Ted Sablay",
+      "music:hasRole": "Guitarist (touring)",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": { "@id": "music:Guitar" }
+    },
+    {
+      "@id": "music:AlbertSterlingMenendez",
+      "@type": "music:Musician",
+      "rdfs:label": "Albert Sterling Menendez",
+      "music:hasRole": "Keyboardist (touring)",
+      "music:activeYears": "1990–present",
+      "music:playsInstrument": { "@id": "music:Keyboards" }
+    },
+    {
+      "@id": "music:JodyBonGiovi",
+      "@type": "music:Musician",
+      "rdfs:label": "Jody Bon Giovi",
+      "music:hasRole": "Drummer (touring)",
+      "music:activeYears": "2000–present",
+      "music:playsInstrument": { "@id": "music:Drums" }
+    }
+  ]
+}
+

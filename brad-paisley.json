@@ -1,0 +1,355 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:BradPaisley",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Brad Paisley",
+      "music:hasGender": "male",
+      "music:hasRole": "singer, songwriter, guitarist",
+      "music:activeYears": "1998–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "leads",
+          "music:relationshipTarget": {"@id": "music:TheDramaKings"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KeithUrban"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:CarrieUnderwood"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:DollyParton"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:AlisonKrauss"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:LLCoolJ"}
+        }
+      ]
+    },
+    {
+      "@id": "music:TheDramaKings",
+      "@type": "music:Band",
+      "rdfs:label": "The Drama Kings",
+      "music:activeYears": "1999–present",
+      "music:formedYear": 1999,
+      "music:hasMember": [
+        {"@id": "music:GaryHooker"},
+        {"@id": "music:RandleCurrie"},
+        {"@id": "music:KendalMarcy"},
+        {"@id": "music:JustinWilliamson"},
+        {"@id": "music:KennyLewis"},
+        {"@id": "music:BenSesar"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:GaryHooker"},
+        {"@id": "music:RandleCurrie"},
+        {"@id": "music:KendalMarcy"},
+        {"@id": "music:JustinWilliamson"},
+        {"@id": "music:KennyLewis"},
+        {"@id": "music:BenSesar"},
+        {"@id": "music:JimmyHeffernan"},
+        {"@id": "music:KenLush"},
+        {"@id": "music:EarlClark"},
+        {"@id": "music:MikeJohnson"},
+        {"@id": "music:JodyHarris"}
+      ]
+    },
+    {
+      "@id": "music:GaryHooker",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Hooker",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:RandleCurrie",
+      "@type": "music:Musician",
+      "rdfs:label": "Randle Currie",
+      "music:hasGender": "male",
+      "music:hasRole": "steel guitar",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:SteelGuitar"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:KendalMarcy",
+      "@type": "music:Musician",
+      "rdfs:label": "Kendal Marcy",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, banjo, mandolin",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Banjo"},
+        {"@id": "music:Mandolin"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:JustinWilliamson",
+      "@type": "music:Musician",
+      "rdfs:label": "Justin Williamson",
+      "music:hasGender": "male",
+      "music:hasRole": "fiddle, mandolin",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:Fiddle"},
+        {"@id": "music:Mandolin"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:KennyLewis",
+      "@type": "music:Musician",
+      "rdfs:label": "Kenny Lewis",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, vocals",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:BenSesar",
+      "@type": "music:Musician",
+      "rdfs:label": "Ben Sesar",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:JimmyHeffernan",
+      "@type": "music:Musician",
+      "rdfs:label": "Jimmy Heffernan",
+      "music:hasGender": "male",
+      "music:hasRole": "steel guitar",
+      "music:playsInstrument": [
+        {"@id": "music:SteelGuitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:KenLush",
+      "@type": "music:Musician",
+      "rdfs:label": "Ken Lush",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:EarlClark",
+      "@type": "music:Musician",
+      "rdfs:label": "Earl Clark",
+      "music:hasGender": "male",
+      "music:hasRole": "steel guitar",
+      "music:playsInstrument": [
+        {"@id": "music:SteelGuitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:MikeJohnson",
+      "@type": "music:Musician",
+      "rdfs:label": "Mike Johnson",
+      "music:hasGender": "male",
+      "music:hasRole": "steel guitar",
+      "music:playsInstrument": [
+        {"@id": "music:SteelGuitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:JodyHarris",
+      "@type": "music:Musician",
+      "rdfs:label": "Jody Harris",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, mandolin, banjo",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Mandolin"},
+        {"@id": "music:Banjo"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheDramaKings"}
+      ]
+    },
+    {
+      "@id": "music:KeithUrban",
+      "@type": "music:Musician",
+      "rdfs:label": "Keith Urban",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1990–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:CarrieUnderwood",
+      "@type": "music:Musician",
+      "rdfs:label": "Carrie Underwood",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:DollyParton",
+      "@type": "music:Musician",
+      "rdfs:label": "Dolly Parton",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "1964–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:AlisonKrauss",
+      "@type": "music:Musician",
+      "rdfs:label": "Alison Krauss",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, fiddle, songwriter",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Fiddle"}
+      ]
+    },
+    {
+      "@id": "music:LLCoolJ",
+      "@type": "music:Musician",
+      "rdfs:label": "LL Cool J",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1984–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:FrankRogers",
+      "@type": "music:Producer",
+      "rdfs:label": "Frank Rogers",
+      "music:hasGender": "male",
+      "music:activeYears": "1995–present",
+      "music:produced": [
+        {"@id": "music:BradPaisley"}
+      ]
+    },
+    {
+      "@id": "music:LukeWooten",
+      "@type": "music:Producer",
+      "rdfs:label": "Luke Wooten",
+      "music:hasGender": "male",
+      "music:activeYears": "2000s–present",
+      "music:produced": [
+        {"@id": "music:BradPaisley"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Fiddle",
+      "@type": "music:Instrument",
+      "rdfs:label": "Fiddle"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Banjo",
+      "@type": "music:Instrument",
+      "rdfs:label": "Banjo"
+    },
+    {
+      "@id": "music:Mandolin",
+      "@type": "music:Instrument",
+      "rdfs:label": "Mandolin"
+    },
+    {
+      "@id": "music:SteelGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Steel Guitar"
+    }
+  ]
+}

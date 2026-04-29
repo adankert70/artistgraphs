@@ -1,0 +1,502 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:10cc",
+      "@type": "music:Band",
+      "rdfs:label": "10cc",
+      "music:activeYears": "1972–1983, 1991–1995, 1999–present",
+      "music:formedYear": 1972,
+      "music:hasMember": [
+        {
+          "@id": "music:GrahamGouldman"
+        },
+        {
+          "@id": "music:RickFenn"
+        },
+        {
+          "@id": "music:PaulBurgess"
+        },
+        {
+          "@id": "music:KeithHayman"
+        },
+        {
+          "@id": "music:IainHornal"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:EricStewart"
+        },
+        {
+          "@id": "music:LolCreme"
+        },
+        {
+          "@id": "music:KevinGodley"
+        },
+        {
+          "@id": "music:StuartTosh"
+        },
+        {
+          "@id": "music:TonyOMalley"
+        },
+        {
+          "@id": "music:DuncanMackay"
+        },
+        {
+          "@id": "music:VicEmerson"
+        },
+        {
+          "@id": "music:JamieLane"
+        },
+        {
+          "@id": "music:MickWilson"
+        },
+        {
+          "@id": "music:MikeStevens"
+        }
+      ]
+    },
+    {
+      "@id": "music:GrahamGouldman",
+      "@type": "music:Musician",
+      "rdfs:label": "Graham Gouldman",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, rhythm and lead guitar, percussion, lead and backing vocals, occasional keyboards",
+      "music:activeYears": "1960s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:RickFenn",
+      "@type": "music:Musician",
+      "rdfs:label": "Rick Fenn",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, bass, keyboards, backing and lead vocals, occasional saxophone",
+      "music:activeYears": "1970s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:PaulBurgess",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Burgess",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, vibraphone, keyboards, backing vocals",
+      "music:activeYears": "1970s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:KeithHayman",
+      "@type": "music:Musician",
+      "rdfs:label": "Keith Hayman",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, bass, rhythm guitar, backing vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:IainHornal",
+      "@type": "music:Musician",
+      "rdfs:label": "Iain Hornal",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and backing vocals, rhythm guitar, bass guitar, percussion, keyboards, mandolin",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:10cc"
+        },
+        {
+          "@id": "music:JeffLynnesELO"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:EricStewart",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Stewart",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitars, bass, keyboards, percussion, lead and backing vocals",
+      "music:activeYears": "1960s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:LolCreme",
+      "@type": "music:Musician",
+      "rdfs:label": "Lol Creme",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, rhythm and lead guitars, percussion, lead and backing vocals",
+      "music:activeYears": "1960s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:GodleyAndCreme"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:KevinGodley",
+      "@type": "music:Musician",
+      "rdfs:label": "Kevin Godley",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, lead and backing vocals",
+      "music:activeYears": "1960s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:GodleyAndCreme"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:StuartTosh",
+      "@type": "music:Musician",
+      "rdfs:label": "Stuart Tosh",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, trombone, backing and lead vocals",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TonyOMalley",
+      "@type": "music:Musician",
+      "rdfs:label": "Tony O'Malley",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, backing and lead vocals, percussion",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DuncanMackay",
+      "@type": "music:Musician",
+      "rdfs:label": "Duncan Mackay",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, harpsichord, percussion, backing vocals, violin",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:VicEmerson",
+      "@type": "music:Musician",
+      "rdfs:label": "Vic Emerson",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards",
+      "music:activeYears": "1970s–2018",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:JamieLane",
+      "@type": "music:Musician",
+      "rdfs:label": "Jamie Lane",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:MickWilson",
+      "@type": "music:Musician",
+      "rdfs:label": "Mick Wilson",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and backing vocals, rhythm guitar, percussion",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:MikeStevens",
+      "@type": "music:Musician",
+      "rdfs:label": "Mike Stevens",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, saxophone, bass, rhythm guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:10cc"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:TakeThat"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GodleyAndCreme",
+      "@type": "music:Band",
+      "rdfs:label": "Godley & Creme",
+      "music:formedYear": 1977,
+      "music:activeYears": "1977–1988"
+    },
+    {
+      "@id": "music:JeffLynnesELO",
+      "@type": "music:Band",
+      "rdfs:label": "Jeff Lynne's ELO",
+      "music:formedYear": 2014,
+      "music:activeYears": "2014–2023"
+    },
+    {
+      "@id": "music:TakeThat",
+      "@type": "music:Band",
+      "rdfs:label": "Take That",
+      "music:formedYear": 1990,
+      "music:activeYears": "1990–present"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

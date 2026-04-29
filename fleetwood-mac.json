@@ -1,0 +1,347 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:FleetwoodMac",
+      "@type": "music:Band",
+      "rdfs:label": "Fleetwood Mac",
+      "music:activeYears": "1967–present",
+      "music:formedYear": 1967,
+      "music:hadMember": [
+        {"@id": "music:MickFleetwood"},
+        {"@id": "music:JohnMcVie"},
+        {"@id": "music:ChristineMcVie"},
+        {"@id": "music:LindseyBuckingham"},
+        {"@id": "music:StevieNicks"},
+        {"@id": "music:PeterGreen"},
+        {"@id": "music:DannyKirwan"},
+        {"@id": "music:BobWelch"},
+        {"@id": "music:MikeVernon"}
+      ]
+    },
+    {
+      "@id": "music:MickFleetwood",
+      "@type": "music:Musician",
+      "rdfs:label": "Mick Fleetwood",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion",
+      "music:activeYears": "1963–present",
+      "music:isMemberOf": [
+        {"@id": "music:FleetwoodMac"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"}
+      ]
+    },
+    {
+      "@id": "music:JohnMcVie",
+      "@type": "music:Musician",
+      "rdfs:label": "John McVie",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1963–present",
+      "music:isMemberOf": [
+        {"@id": "music:FleetwoodMac"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:JohnMayallsBluesbreakers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:ChristineMcVie",
+      "@type": "music:Musician",
+      "rdfs:label": "Christine McVie",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, keyboards, songwriter",
+      "music:activeYears": "1968–present",
+      "music:isMemberOf": [
+        {"@id": "music:FleetwoodMac"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ChickenShack"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Keyboards"}
+      ]
+    },
+    {
+      "@id": "music:LindseyBuckingham",
+      "@type": "music:Musician",
+      "rdfs:label": "Lindsey Buckingham",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter, producer",
+      "music:activeYears": "1966–present",
+      "music:wasMemberOf": [
+        {"@id": "music:FleetwoodMac"},
+        {"@id": "music:BuckinghamNicks"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:StevieNicks",
+      "@type": "music:Musician",
+      "rdfs:label": "Stevie Nicks",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1966–present",
+      "music:wasMemberOf": [
+        {"@id": "music:FleetwoodMac"},
+        {"@id": "music:BuckinghamNicks"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Tambourine"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:TomPetty"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:DonHenley"}
+        }
+      ]
+    },
+    {
+      "@id": "music:PeterGreen",
+      "@type": "music:Musician",
+      "rdfs:label": "Peter Green",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1965–2020",
+      "music:wasMemberOf": [
+        {"@id": "music:FleetwoodMac"},
+        {"@id": "music:JohnMayallsBluesbreakers"},
+        {"@id": "music:PeterGreensSplinterGroup"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:DannyKirwan",
+      "@type": "music:Musician",
+      "rdfs:label": "Danny Kirwan",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1967–2018",
+      "music:wasMemberOf": [
+        {"@id": "music:FleetwoodMac"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:BobWelch",
+      "@type": "music:Musician",
+      "rdfs:label": "Bob Welch",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1966–2012",
+      "music:wasMemberOf": [
+        {"@id": "music:FleetwoodMac"},
+        {"@id": "music:Paris"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:MikeVernon",
+      "@type": "music:Producer",
+      "rdfs:label": "Mike Vernon",
+      "music:hasGender": "male",
+      "music:activeYears": "1964–present",
+      "music:produced": [
+        {"@id": "music:FleetwoodMac"}
+      ]
+    },
+    {
+      "@id": "music:BuckinghamNicks",
+      "@type": "music:Band",
+      "rdfs:label": "Buckingham Nicks",
+      "music:activeYears": "1971–1975",
+      "music:formedYear": 1971,
+      "music:hadMember": [
+        {"@id": "music:LindseyBuckingham"},
+        {"@id": "music:StevieNicks"}
+      ]
+    },
+    {
+      "@id": "music:JohnMayallsBluesbreakers",
+      "@type": "music:Band",
+      "rdfs:label": "John Mayall's Bluesbreakers",
+      "music:activeYears": "1963–present",
+      "music:formedYear": 1963,
+      "music:hadMember": [
+        {"@id": "music:JohnMcVie"},
+        {"@id": "music:PeterGreen"},
+        {"@id": "music:EricClapton"}
+      ]
+    },
+    {
+      "@id": "music:ChickenShack",
+      "@type": "music:Band",
+      "rdfs:label": "Chicken Shack",
+      "music:activeYears": "1965–1991",
+      "music:formedYear": 1965,
+      "music:hadMember": [
+        {"@id": "music:ChristineMcVie"}
+      ]
+    },
+    {
+      "@id": "music:Paris",
+      "@type": "music:Band",
+      "rdfs:label": "Paris",
+      "music:activeYears": "1975–1977",
+      "music:formedYear": 1975,
+      "music:hadMember": [
+        {"@id": "music:BobWelch"}
+      ]
+    },
+    {
+      "@id": "music:PeterGreensSplinterGroup",
+      "@type": "music:Band",
+      "rdfs:label": "Peter Green's Splinter Group",
+      "music:activeYears": "1997–2004",
+      "music:formedYear": 1997,
+      "music:hadMember": [
+        {"@id": "music:PeterGreen"}
+      ]
+    },
+    {
+      "@id": "music:TomPetty",
+      "@type": "music:Musician",
+      "rdfs:label": "Tom Petty",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1970–2017",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:DonHenley",
+      "@type": "music:Musician",
+      "rdfs:label": "Don Henley",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, drums, songwriter",
+      "music:activeYears": "1970–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Eagles"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:EricClapton",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Clapton",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1962–present",
+      "music:wasMemberOf": [
+        {"@id": "music:JohnMayallsBluesbreakers"},
+        {"@id": "music:Cream"},
+        {"@id": "music:BlindFaith"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Eagles",
+      "@type": "music:Band",
+      "rdfs:label": "Eagles",
+      "music:activeYears": "1971–present",
+      "music:formedYear": 1971,
+      "music:hadMember": [
+        {"@id": "music:DonHenley"}
+      ]
+    },
+    {
+      "@id": "music:Cream",
+      "@type": "music:Band",
+      "rdfs:label": "Cream",
+      "music:activeYears": "1966–1968",
+      "music:formedYear": 1966,
+      "music:hadMember": [
+        {"@id": "music:EricClapton"}
+      ]
+    },
+    {
+      "@id": "music:BlindFaith",
+      "@type": "music:Band",
+      "rdfs:label": "Blind Faith",
+      "music:activeYears": "1969",
+      "music:formedYear": 1969,
+      "music:hadMember": [
+        {"@id": "music:EricClapton"}
+      ]
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

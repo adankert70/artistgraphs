@@ -1,0 +1,225 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:VanHalen",
+      "@type": "music:Band",
+      "rdfs:label": "Van Halen",
+      "music:activeYears": "1972–present",
+      "music:formedYear": 1972,
+      "music:hadMember": [
+        {"@id": "music:EddieVanHalen"},
+        {"@id": "music:AlexVanHalen"},
+        {"@id": "music:DavidLeeRoth"},
+        {"@id": "music:MichaelAnthony"},
+        {"@id": "music:SammyHagar"},
+        {"@id": "music:GaryCherone"},
+        {"@id": "music:WolfgangVanHalen"},
+        {"@id": "music:MarkStone"},
+        {"@id": "music:TedTempleman"}
+      ]
+    },
+    {
+      "@id": "music:EddieVanHalen",
+      "@type": "music:Musician",
+      "rdfs:label": "Eddie Van Halen",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, keyboards, backing vocals, songwriter",
+      "music:activeYears": "1972–2020",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"},
+        {"@id": "music:Mammoth"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:AlexVanHalen",
+      "@type": "music:Musician",
+      "rdfs:label": "Alex Van Halen",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion",
+      "music:activeYears": "1972–present",
+      "music:isMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Mammoth"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"}
+      ]
+    },
+    {
+      "@id": "music:DavidLeeRoth",
+      "@type": "music:Musician",
+      "rdfs:label": "David Lee Roth",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1974–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:MichaelAnthony",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael Anthony",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, backing vocals",
+      "music:activeYears": "1974–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:SammyHagar",
+      "@type": "music:Musician",
+      "rdfs:label": "Sammy Hagar",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar",
+      "music:activeYears": "1973–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"},
+        {"@id": "music:Montrose"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:GaryCherone",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Cherone",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1985–present",
+      "music:wasMemberOf": [
+        {"@id": "music:VanHalen"},
+        {"@id": "music:Extreme"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:WolfgangVanHalen",
+      "@type": "music:Musician",
+      "rdfs:label": "Wolfgang Van Halen",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, backing vocals",
+      "music:activeYears": "2007–present",
+      "music:isMemberOf": [
+        {"@id": "music:VanHalen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:MarkStone",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark Stone",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1972–1974",
+      "music:wasMemberOf": [
+        {"@id": "music:Mammoth"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:TedTempleman",
+      "@type": "music:Producer",
+      "rdfs:label": "Ted Templeman",
+      "music:hasGender": "male",
+      "music:activeYears": "1960s–present",
+      "music:produced": [
+        {"@id": "music:VanHalen"}
+      ]
+    },
+    {
+      "@id": "music:Mammoth",
+      "@type": "music:Band",
+      "rdfs:label": "Mammoth",
+      "music:activeYears": "1972–1974",
+      "music:formedYear": 1972,
+      "music:hadMember": [
+        {"@id": "music:EddieVanHalen"},
+        {"@id": "music:AlexVanHalen"},
+        {"@id": "music:MarkStone"}
+      ]
+    },
+    {
+      "@id": "music:Montrose",
+      "@type": "music:Band",
+      "rdfs:label": "Montrose",
+      "music:activeYears": "1973–1977",
+      "music:formedYear": 1973,
+      "music:hadMember": [
+        {"@id": "music:SammyHagar"}
+      ]
+    },
+    {
+      "@id": "music:Extreme",
+      "@type": "music:Band",
+      "rdfs:label": "Extreme",
+      "music:activeYears": "1985–present",
+      "music:formedYear": 1985,
+      "music:hadMember": [
+        {"@id": "music:GaryCherone"}
+      ]
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    }
+  ]
+}

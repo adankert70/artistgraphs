@@ -1,0 +1,387 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TheBeatles",
+      "@type": "music:Band",
+      "rdfs:label": "The Beatles",
+      "music:activeYears": "1960–1970",
+      "music:formedYear": 1960,
+      "music:hasMember": [
+        {"@id": "music:JohnLennon"},
+        {"@id": "music:PaulMcCartney"},
+        {"@id": "music:GeorgeHarrison"},
+        {"@id": "music:RingoStarr"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:StuartSutcliffe"},
+        {"@id": "music:PeteBest"}
+      ],
+      "music:producedBy": [
+        {"@id": "music:GeorgeMartin"},
+        {"@id": "music:PhilSpector"}
+      ]
+    },
+    {
+      "@id": "music:JohnLennon",
+      "@type": "music:Musician",
+      "rdfs:label": "John Lennon",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, vocals, songwriter",
+      "music:activeYears": "1957–1980",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"},
+        {"@id": "music:TheQuarrymen"},
+        {"@id": "music:PlasticOnoBand"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:PaulMcCartney"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:YokoOno"}
+        }
+      ]
+    },
+    {
+      "@id": "music:PaulMcCartney",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul McCartney",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, vocals, songwriter",
+      "music:activeYears": "1957–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Wings"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JohnLennon"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:LindaMcCartney"}
+        }
+      ]
+    },
+    {
+      "@id": "music:GeorgeHarrison",
+      "@type": "music:Musician",
+      "rdfs:label": "George Harrison",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, vocals, songwriter",
+      "music:activeYears": "1958–2001",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"},
+        {"@id": "music:TravelingWilburys"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Sitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "influenced",
+          "music:relationshipTarget": {"@id": "music:RaviShankar"}
+        }
+      ]
+    },
+    {
+      "@id": "music:RingoStarr",
+      "@type": "music:Musician",
+      "rdfs:label": "Ringo Starr",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, vocals",
+      "music:activeYears": "1957–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"},
+        {"@id": "music:RoryStormAndTheHurricanes"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:StuartSutcliffe",
+      "@type": "music:Musician",
+      "rdfs:label": "Stuart Sutcliffe",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1959–1961",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ]
+    },
+    {
+      "@id": "music:PeteBest",
+      "@type": "music:Musician",
+      "rdfs:label": "Pete Best",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1959–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheBeatles"},
+        {"@id": "music:PeteBestBand"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:GeorgeMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "George Martin",
+      "music:hasGender": "male",
+      "music:activeYears": "1950–2006",
+      "music:produced": [
+        {"@id": "music:TheBeatles"}
+      ]
+    },
+    {
+      "@id": "music:PhilSpector",
+      "@type": "music:Producer",
+      "rdfs:label": "Phil Spector",
+      "music:hasGender": "male",
+      "music:activeYears": "1958–2009",
+      "music:produced": [
+        {"@id": "music:TheBeatles"}
+      ]
+    },
+    {
+      "@id": "music:YokoOno",
+      "@type": "music:Musician",
+      "rdfs:label": "Yoko Ono",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, conceptual artist",
+      "music:activeYears": "1961–present",
+      "music:wasMemberOf": [
+        {"@id": "music:PlasticOnoBand"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:LindaMcCartney",
+      "@type": "music:Musician",
+      "rdfs:label": "Linda McCartney",
+      "music:hasGender": "female",
+      "music:hasRole": "keyboards, vocals",
+      "music:activeYears": "1971–1998",
+      "music:wasMemberOf": [
+        {"@id": "music:Wings"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:RaviShankar",
+      "@type": "music:Musician",
+      "rdfs:label": "Ravi Shankar",
+      "music:hasGender": "male",
+      "music:hasRole": "sitar, composer",
+      "music:activeYears": "1930–2012",
+      "music:playsInstrument": [
+        {"@id": "music:Sitar"}
+      ]
+    },
+    {
+      "@id": "music:TheQuarrymen",
+      "@type": "music:Band",
+      "rdfs:label": "The Quarrymen",
+      "music:activeYears": "1957–1960",
+      "music:hadMember": [
+        {"@id": "music:JohnLennon"},
+        {"@id": "music:PaulMcCartney"},
+        {"@id": "music:GeorgeHarrison"}
+      ]
+    },
+    {
+      "@id": "music:PlasticOnoBand",
+      "@type": "music:Band",
+      "rdfs:label": "Plastic Ono Band",
+      "music:activeYears": "1969–present",
+      "music:hadMember": [
+        {"@id": "music:JohnLennon"},
+        {"@id": "music:YokoOno"}
+      ]
+    },
+    {
+      "@id": "music:Wings",
+      "@type": "music:Band",
+      "rdfs:label": "Wings",
+      "music:activeYears": "1971–1981",
+      "music:hadMember": [
+        {"@id": "music:PaulMcCartney"},
+        {"@id": "music:LindaMcCartney"}
+      ]
+    },
+    {
+      "@id": "music:TravelingWilburys",
+      "@type": "music:Band",
+      "rdfs:label": "Traveling Wilburys",
+      "music:activeYears": "1988–1990",
+      "music:hadMember": [
+        {"@id": "music:GeorgeHarrison"},
+        {"@id": "music:BobDylan"},
+        {"@id": "music:TomPetty"},
+        {"@id": "music:JeffLynne"},
+        {"@id": "music:RoyOrbison"}
+      ]
+    },
+    {
+      "@id": "music:RoryStormAndTheHurricanes",
+      "@type": "music:Band",
+      "rdfs:label": "Rory Storm and the Hurricanes",
+      "music:activeYears": "1957–1972",
+      "music:hadMember": [
+        {"@id": "music:RingoStarr"}
+      ]
+    },
+    {
+      "@id": "music:PeteBestBand",
+      "@type": "music:Band",
+      "rdfs:label": "Pete Best Band",
+      "music:activeYears": "1988–present",
+      "music:hadMember": [
+        {"@id": "music:PeteBest"}
+      ]
+    },
+    {
+      "@id": "music:BobDylan",
+      "@type": "music:Musician",
+      "rdfs:label": "Bob Dylan",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1959–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TravelingWilburys"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Harmonica"}
+      ]
+    },
+    {
+      "@id": "music:TomPetty",
+      "@type": "music:Musician",
+      "rdfs:label": "Tom Petty",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1970–2017",
+      "music:wasMemberOf": [
+        {"@id": "music:TravelingWilburys"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:JeffLynne",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Lynne",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, producer",
+      "music:activeYears": "1963–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TravelingWilburys"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Keyboards"}
+      ]
+    },
+    {
+      "@id": "music:RoyOrbison",
+      "@type": "music:Musician",
+      "rdfs:label": "Roy Orbison",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1954–1988",
+      "music:wasMemberOf": [
+        {"@id": "music:TravelingWilburys"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Sitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Sitar"
+    },
+    {
+      "@id": "music:Harmonica",
+      "@type": "music:Instrument",
+      "rdfs:label": "Harmonica"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Blackpink",
+      "@type": "music:Band",
+      "rdfs:label": "Blackpink",
+      "music:activeYears": "2016–present",
+      "music:formedYear": 2016,
+      "music:hasMember": [
+        {
+          "@id": "music:Jisoo"
+        },
+        {
+          "@id": "music:Jennie"
+        },
+        {
+          "@id": "music:Rose"
+        },
+        {
+          "@id": "music:Lisa"
+        }
+      ]
+    },
+    {
+      "@id": "music:Jisoo",
+      "@type": "music:Musician",
+      "rdfs:label": "Jisoo",
+      "music:hasGender": "female",
+      "music:hasRole": "lead vocalist, visual",
+      "music:activeYears": "2016–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Blackpink"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Jennie",
+      "@type": "music:Musician",
+      "rdfs:label": "Jennie",
+      "music:hasGender": "female",
+      "music:hasRole": "main rapper, lead vocalist",
+      "music:activeYears": "2016–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Blackpink"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Rose",
+      "@type": "music:Musician",
+      "rdfs:label": "Rosé",
+      "music:hasGender": "female",
+      "music:hasRole": "main vocalist, lead dancer",
+      "music:activeYears": "2016–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Blackpink"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Lisa",
+      "@type": "music:Musician",
+      "rdfs:label": "Lisa",
+      "music:hasGender": "female",
+      "music:hasRole": "main dancer, lead rapper, maknae",
+      "music:activeYears": "2016–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Blackpink"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    }
+  ]
+}
+

@@ -1,0 +1,219 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Metallica",
+      "@type": "music:Band",
+      "rdfs:label": "Metallica",
+      "music:activeYears": "1981–present",
+      "music:formedYear": 1981,
+      "music:hadMember": [
+        {"@id": "music:JamesHetfield"},
+        {"@id": "music:LarsUlrich"},
+        {"@id": "music:KirkHammett"},
+        {"@id": "music:RobertTrujillo"},
+        {"@id": "music:RonMcGovney"},
+        {"@id": "music:DaveMustaine"},
+        {"@id": "music:CliffBurton"},
+        {"@id": "music:JasonNewsted"}
+      ],
+      "music:hasMember": [
+        {"@id": "music:JamesHetfield"},
+        {"@id": "music:LarsUlrich"},
+        {"@id": "music:KirkHammett"},
+        {"@id": "music:RobertTrujillo"}
+      ]
+    },
+    {
+      "@id": "music:JamesHetfield",
+      "@type": "music:Musician",
+      "rdfs:label": "James Hetfield",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar, songwriter",
+      "music:activeYears": "1981–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ]
+    },
+    {
+      "@id": "music:LarsUlrich",
+      "@type": "music:Musician",
+      "rdfs:label": "Lars Ulrich",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, songwriter",
+      "music:activeYears": "1981–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ]
+    },
+    {
+      "@id": "music:KirkHammett",
+      "@type": "music:Musician",
+      "rdfs:label": "Kirk Hammett",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1983–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ]
+    },
+    {
+      "@id": "music:RobertTrujillo",
+      "@type": "music:Musician",
+      "rdfs:label": "Robert Trujillo",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "2003–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:SuicidalTendencies"},
+        {"@id": "music:InfectiousGrooves"}
+      ]
+    },
+    {
+      "@id": "music:RonMcGovney",
+      "@type": "music:Musician",
+      "rdfs:label": "Ron McGovney",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1981–1982",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Metallica"}
+      ]
+    },
+    {
+      "@id": "music:DaveMustaine",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Mustaine",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1981–1983",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Megadeth"}
+      ]
+    },
+    {
+      "@id": "music:CliffBurton",
+      "@type": "music:Musician",
+      "rdfs:label": "Cliff Burton",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1982–1986",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Metallica"}
+      ]
+    },
+    {
+      "@id": "music:JasonNewsted",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Newsted",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1986–2001",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Metallica"},
+        {"@id": "music:Echobrain"},
+        {"@id": "music:Voivod"}
+      ]
+    },
+    {
+      "@id": "music:Megadeth",
+      "@type": "music:Band",
+      "rdfs:label": "Megadeth",
+      "music:hadMember": [
+        {"@id": "music:DaveMustaine"}
+      ]
+    },
+    {
+      "@id": "music:SuicidalTendencies",
+      "@type": "music:Band",
+      "rdfs:label": "Suicidal Tendencies",
+      "music:hadMember": [
+        {"@id": "music:RobertTrujillo"}
+      ]
+    },
+    {
+      "@id": "music:InfectiousGrooves",
+      "@type": "music:Band",
+      "rdfs:label": "Infectious Grooves",
+      "music:hadMember": [
+        {"@id": "music:RobertTrujillo"}
+      ]
+    },
+    {
+      "@id": "music:Echobrain",
+      "@type": "music:Band",
+      "rdfs:label": "Echobrain",
+      "music:hadMember": [
+        {"@id": "music:JasonNewsted"}
+      ]
+    },
+    {
+      "@id": "music:Voivod",
+      "@type": "music:Band",
+      "rdfs:label": "Voivod",
+      "music:hadMember": [
+        {"@id": "music:JasonNewsted"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    }
+  ]
+}

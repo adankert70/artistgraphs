@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Soundgarden",
+      "@type": "music:Band",
+      "rdfs:label": "Soundgarden",
+      "music:activeYears": "1984–1997, 2010–2017",
+      "music:formedYear": 1984,
+      "music:hadMember": [
+        {"@id": "music:ChrisCornell"},
+        {"@id": "music:KimThayil"},
+        {"@id": "music:MattCameron"},
+        {"@id": "music:BenShepherd"},
+        {"@id": "music:HiroYamamoto"},
+        {"@id": "music:ScottSundquist"},
+        {"@id": "music:JasonEverman"}
+      ]
+    },
+    {
+      "@id": "music:ChrisCornell",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Cornell",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, rhythm guitar, songwriter",
+      "music:activeYears": "1984–2017",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:TheShemps"},
+        {"@id": "music:TempleOfTheDog"},
+        {"@id": "music:Audioslave"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:KimThayil",
+      "@type": "music:Musician",
+      "rdfs:label": "Kim Thayil",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, songwriter",
+      "music:activeYears": "1984–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:TheShemps"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:MattCameron",
+      "@type": "music:Musician",
+      "rdfs:label": "Matt Cameron",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "1986–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:SkinYard"},
+        {"@id": "music:WellwaterConspiracy"},
+        {"@id": "music:PearlJam"},
+        {"@id": "music:Hater"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:BenShepherd",
+      "@type": "music:Musician",
+      "rdfs:label": "Ben Shepherd",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, backing vocals",
+      "music:activeYears": "1990–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:WellwaterConspiracy"},
+        {"@id": "music:Hater"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:HiroYamamoto",
+      "@type": "music:Musician",
+      "rdfs:label": "Hiro Yamamoto",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1984–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:TheShemps"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:ScottSundquist",
+      "@type": "music:Musician",
+      "rdfs:label": "Scott Sundquist",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1985–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:JasonEverman",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Everman",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1989–present",
+      "music:wasMemberOf": [
+        {"@id": "music:Soundgarden"},
+        {"@id": "music:Nirvana"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:TheShemps",
+      "@type": "music:Band",
+      "rdfs:label": "The Shemps",
+      "music:activeYears": "early 1980s",
+      "music:formedYear": 1982,
+      "music:hadMember": [
+        {"@id": "music:ChrisCornell"},
+        {"@id": "music:HiroYamamoto"},
+        {"@id": "music:KimThayil"}
+      ]
+    },
+    {
+      "@id": "music:TempleOfTheDog",
+      "@type": "music:Band",
+      "rdfs:label": "Temple of the Dog",
+      "music:activeYears": "1990–1992, 2003, 2009, 2011, 2014, 2016, 2019",
+      "music:formedYear": 1990,
+      "music:hadMember": [
+        {"@id": "music:ChrisCornell"}
+      ]
+    },
+    {
+      "@id": "music:Audioslave",
+      "@type": "music:Band",
+      "rdfs:label": "Audioslave",
+      "music:activeYears": "2001–2007",
+      "music:formedYear": 2001,
+      "music:hadMember": [
+        {"@id": "music:ChrisCornell"}
+      ]
+    },
+    {
+      "@id": "music:SkinYard",
+      "@type": "music:Band",
+      "rdfs:label": "Skin Yard",
+      "music:activeYears": "1985–1992",
+      "music:formedYear": 1985,
+      "music:hadMember": [
+        {"@id": "music:MattCameron"}
+      ]
+    },
+    {
+      "@id": "music:WellwaterConspiracy",
+      "@type": "music:Band",
+      "rdfs:label": "Wellwater Conspiracy",
+      "music:activeYears": "1997–present",
+      "music:formedYear": 1997,
+      "music:hadMember": [
+        {"@id": "music:MattCameron"},
+        {"@id": "music:BenShepherd"},
+        {"@id": "music:KimThayil"}
+      ]
+    },
+    {
+      "@id": "music:PearlJam",
+      "@type": "music:Band",
+      "rdfs:label": "Pearl Jam",
+      "music:activeYears": "1990–present",
+      "music:formedYear": 1990,
+      "music:hadMember": [
+        {"@id": "music:MattCameron"}
+      ]
+    },
+    {
+      "@id": "music:Hater",
+      "@type": "music:Band",
+      "rdfs:label": "Hater",
+      "music:activeYears": "1993–2005",
+      "music:formedYear": 1993,
+      "music:hadMember": [
+        {"@id": "music:MattCameron"},
+        {"@id": "music:BenShepherd"}
+      ]
+    },
+    {
+      "@id": "music:Nirvana",
+      "@type": "music:Band",
+      "rdfs:label": "Nirvana",
+      "music:activeYears": "1987–1994",
+      "music:formedYear": 1987,
+      "music:hadMember": [
+        {"@id": "music:JasonEverman"}
+      ]
+    },
+    {
+      "@id": "music:MichaelBeinhorn",
+      "@type": "music:Producer",
+      "rdfs:label": "Michael Beinhorn",
+      "music:hasGender": "male",
+      "music:activeYears": "1970s–present",
+      "music:produced": [
+        {"@id": "music:Soundgarden"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    }
+  ]
+}

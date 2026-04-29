@@ -1,0 +1,261 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:DefLeppard",
+      "@type": "music:Band",
+      "rdfs:label": "Def Leppard",
+      "music:activeYears": "1977–present",
+      "music:formedYear": 1977,
+      "music:hadMember": [
+        {"@id": "music:RickSavage"},
+        {"@id": "music:JoeElliott"},
+        {"@id": "music:RickAllen"},
+        {"@id": "music:PhilCollen"},
+        {"@id": "music:VivanCampbell"},
+        {"@id": "music:PeteWillis"},
+        {"@id": "music:SteveClark"},
+        {"@id": "music:TonyKenning"},
+        {"@id": "music:FrankNoon"}
+      ],
+      "music:hasMember": [
+        {"@id": "music:RickSavage"},
+        {"@id": "music:JoeElliott"},
+        {"@id": "music:RickAllen"},
+        {"@id": "music:PhilCollen"},
+        {"@id": "music:VivanCampbell"}
+      ]
+    },
+    {
+      "@id": "music:RickSavage",
+      "@type": "music:Musician",
+      "rdfs:label": "Rick Savage",
+      "music:hasGender": "male",
+      "music:hasRole": "bassist, backing vocals, occasional guitars, keyboards",
+      "music:activeYears": "1977–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ]
+    },
+    {
+      "@id": "music:JoeElliott",
+      "@type": "music:Musician",
+      "rdfs:label": "Joe Elliott",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, occasional guitars, keyboards, piano",
+      "music:activeYears": "1977–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DownNOutz"}
+      ]
+    },
+    {
+      "@id": "music:RickAllen",
+      "@type": "music:Musician",
+      "rdfs:label": "Rick Allen",
+      "music:hasGender": "male",
+      "music:hasRole": "drummer, percussion, backing vocals",
+      "music:activeYears": "1978–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ]
+    },
+    {
+      "@id": "music:PhilCollen",
+      "@type": "music:Musician",
+      "rdfs:label": "Phil Collen",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, backing vocals",
+      "music:activeYears": "1982–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Girl"}
+      ]
+    },
+    {
+      "@id": "music:VivanCampbell",
+      "@type": "music:Musician",
+      "rdfs:label": "Vivian Campbell",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, backing vocals",
+      "music:activeYears": "1992–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Dio"},
+        {"@id": "music:Whitesnake"}
+      ]
+    },
+    {
+      "@id": "music:PeteWillis",
+      "@type": "music:Musician",
+      "rdfs:label": "Pete Willis",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist",
+      "music:activeYears": "1977–1982",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DefLeppard"},
+        {"@id": "music:AtomicMass"}
+      ]
+    },
+    {
+      "@id": "music:SteveClark",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Clark",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist",
+      "music:activeYears": "1978–1991",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ]
+    },
+    {
+      "@id": "music:TonyKenning",
+      "@type": "music:Musician",
+      "rdfs:label": "Tony Kenning",
+      "music:hasGender": "male",
+      "music:hasRole": "drummer",
+      "music:activeYears": "1976–1978",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:AtomicMass"},
+        {"@id": "music:DefLeppard"}
+      ]
+    },
+    {
+      "@id": "music:FrankNoon",
+      "@type": "music:Musician",
+      "rdfs:label": "Frank Noon",
+      "music:hasGender": "male",
+      "music:hasRole": "drummer",
+      "music:activeYears": "1978",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DefLeppard"}
+      ]
+    },
+    {
+      "@id": "music:AtomicMass",
+      "@type": "music:Band",
+      "rdfs:label": "Atomic Mass",
+      "music:activeYears": "1976–1977",
+      "music:hadMember": [
+        {"@id": "music:PeteWillis"},
+        {"@id": "music:TonyKenning"}
+      ]
+    },
+    {
+      "@id": "music:Girl",
+      "@type": "music:Band",
+      "rdfs:label": "Girl",
+      "music:hadMember": [
+        {"@id": "music:PhilCollen"}
+      ]
+    },
+    {
+      "@id": "music:Dio",
+      "@type": "music:Band",
+      "rdfs:label": "Dio",
+      "music:hadMember": [
+        {"@id": "music:VivanCampbell"}
+      ]
+    },
+    {
+      "@id": "music:Whitesnake",
+      "@type": "music:Band",
+      "rdfs:label": "Whitesnake",
+      "music:hadMember": [
+        {"@id": "music:VivanCampbell"}
+      ]
+    },
+    {
+      "@id": "music:DownNOutz",
+      "@type": "music:Band",
+      "rdfs:label": "Down 'n' Outz",
+      "music:hadMember": [
+        {"@id": "music:JoeElliott"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    }
+  ]
+}

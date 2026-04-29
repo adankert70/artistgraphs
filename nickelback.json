@@ -1,0 +1,171 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Nickelback",
+      "@type": "music:Band",
+      "rdfs:label": "Nickelback",
+      "music:activeYears": "1995–present",
+      "music:formedYear": 1995,
+      "music:hasMember": [
+        { "@id": "music:ChadKroeger" },
+        { "@id": "music:RyanPeake" },
+        { "@id": "music:MikeKroeger" },
+        { "@id": "music:DanielAdair" }
+      ],
+      "music:hadMember": [
+        { "@id": "music:BrandonKroeger" },
+        { "@id": "music:MitchGuindon" },
+        { "@id": "music:RyanVikedal" }
+      ]
+    },
+    {
+      "@id": "music:ChadKroeger",
+      "@type": "music:Musician",
+      "rdfs:label": "Chad Kroeger",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, lead and rhythm guitar",
+      "music:activeYears": "1995–present",
+      "music:isMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:Vocals" }
+      ]
+    },
+    {
+      "@id": "music:RyanPeake",
+      "@type": "music:Musician",
+      "rdfs:label": "Ryan Peake",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitar, backing and occasional lead vocals, keyboards",
+      "music:activeYears": "1995–present",
+      "music:isMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:Vocals" },
+        { "@id": "music:Keyboards" }
+      ]
+    },
+    {
+      "@id": "music:MikeKroeger",
+      "@type": "music:Musician",
+      "rdfs:label": "Mike Kroeger",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1995–present",
+      "music:isMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Bass" }
+      ]
+    },
+    {
+      "@id": "music:DanielAdair",
+      "@type": "music:Musician",
+      "rdfs:label": "Daniel Adair",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "2005–present",
+      "music:isMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:3DoorsDown" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Vocals" }
+      ]
+    },
+    {
+      "@id": "music:RyanVikedal",
+      "@type": "music:Musician",
+      "rdfs:label": "Ryan Vikedal",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion",
+      "music:activeYears": "1998–2005",
+      "music:wasMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Drums" }
+      ]
+    },
+    {
+      "@id": "music:BrandonKroeger",
+      "@type": "music:Musician",
+      "rdfs:label": "Brandon Kroeger",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1995–1997",
+      "music:wasMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Drums" }
+      ]
+    },
+    {
+      "@id": "music:MitchGuindon",
+      "@type": "music:Musician",
+      "rdfs:label": "Mitch Guindon",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1997–1998",
+      "music:wasMemberOf": [
+        { "@id": "music:Nickelback" }
+      ],
+      "music:playsInstrument": [
+        { "@id": "music:Drums" }
+      ]
+    },
+    {
+      "@id": "music:3DoorsDown",
+      "@type": "music:Band",
+      "rdfs:label": "3 Doors Down",
+      "music:formedYear": 1996,
+      "music:activeYears": "1996–present"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    }
+  ]
+}

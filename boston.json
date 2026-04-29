@@ -1,0 +1,658 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Boston",
+      "@type": "music:Band",
+      "rdfs:label": "Boston",
+      "music:activeYears": "1975–present",
+      "music:formedYear": 1975,
+      "music:hasMember": [
+        {
+          "@id": "music:TomScholz"
+        },
+        {
+          "@id": "music:GaryPihl"
+        },
+        {
+          "@id": "music:CurlySmith"
+        },
+        {
+          "@id": "music:JeffNeal"
+        },
+        {
+          "@id": "music:TommyDeCarlo"
+        },
+        {
+          "@id": "music:TracyFerrie"
+        },
+        {
+          "@id": "music:BethCohen"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:BradDelp"
+        },
+        {
+          "@id": "music:JimMasdea"
+        },
+        {
+          "@id": "music:SibHashian"
+        },
+        {
+          "@id": "music:FranSheehan"
+        },
+        {
+          "@id": "music:BarryGoudreau"
+        },
+        {
+          "@id": "music:DavidSikes"
+        },
+        {
+          "@id": "music:DougHuffman"
+        },
+        {
+          "@id": "music:FranCosmo"
+        },
+        {
+          "@id": "music:AnthonyCosmo"
+        },
+        {
+          "@id": "music:KimberleyDahme"
+        },
+        {
+          "@id": "music:AnthonyCitrinite"
+        },
+        {
+          "@id": "music:TomHambridge"
+        },
+        {
+          "@id": "music:MichaelSweet"
+        },
+        {
+          "@id": "music:DavidVictor"
+        },
+        {
+          "@id": "music:NickDVirgilio"
+        }
+      ]
+    },
+    {
+      "@id": "music:TomScholz",
+      "@type": "music:Musician",
+      "rdfs:label": "Tom Scholz",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitar, keyboards, bass, drums, backing vocals",
+      "music:activeYears": "1975–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:MothersMilk"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GaryPihl",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Pihl",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitar, keyboards, backing vocals",
+      "music:activeYears": "1985–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CurlySmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Curly Smith",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, harmonica, backing vocals",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:JoJoGunne"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JeffNeal",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Neal",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "2002–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TommyDeCarlo",
+      "@type": "music:Musician",
+      "rdfs:label": "Tommy DeCarlo",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, keyboards, percussion",
+      "music:activeYears": "2008–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:TracyFerrie",
+      "@type": "music:Musician",
+      "rdfs:label": "Tracy Ferrie",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, backing vocals",
+      "music:activeYears": "2012–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:Stryper"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BethCohen",
+      "@type": "music:Musician",
+      "rdfs:label": "Beth Cohen",
+      "music:hasGender": "female",
+      "music:hasRole": "keyboards, guitar, vocals, flute",
+      "music:activeYears": "2015–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BradDelp",
+      "@type": "music:Musician",
+      "rdfs:label": "Brad Delp",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar, keyboards, percussion",
+      "music:activeYears": "1975–2007",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:MothersMilk"
+        },
+        {
+          "@id": "music:RTZ"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:JimMasdea",
+      "@type": "music:Musician",
+      "rdfs:label": "Jim Masdea",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, keyboards, backing vocals",
+      "music:activeYears": "1975–1988",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:MothersMilk"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:SibHashian",
+      "@type": "music:Musician",
+      "rdfs:label": "Sib Hashian",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "1975–1983",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:FranSheehan",
+      "@type": "music:Musician",
+      "rdfs:label": "Fran Sheehan",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, occasional backing vocals",
+      "music:activeYears": "1975–1983",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BarryGoudreau",
+      "@type": "music:Musician",
+      "rdfs:label": "Barry Goudreau",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitars, backing vocals",
+      "music:activeYears": "1975–1981",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:MothersMilk"
+        },
+        {
+          "@id": "music:OrionTheHunter"
+        },
+        {
+          "@id": "music:RTZ"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DavidSikes",
+      "@type": "music:Musician",
+      "rdfs:label": "David Sikes",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals, keyboards",
+      "music:activeYears": "1987–1999",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:DougHuffman",
+      "@type": "music:Musician",
+      "rdfs:label": "Doug Huffman",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, keyboards, backing vocals",
+      "music:activeYears": "1987–1994",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:FranCosmo",
+      "@type": "music:Musician",
+      "rdfs:label": "Fran Cosmo",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, guitar",
+      "music:activeYears": "1993–2006",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        },
+        {
+          "@id": "music:OrionTheHunter"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:AnthonyCosmo",
+      "@type": "music:Musician",
+      "rdfs:label": "Anthony Cosmo",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals, songwriter",
+      "music:activeYears": "1997–2006",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:KimberleyDahme",
+      "@type": "music:Musician",
+      "rdfs:label": "Kimberley Dahme",
+      "music:hasGender": "female",
+      "music:hasRole": "bass, rhythm guitar, vocals",
+      "music:activeYears": "2001–2012",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:AnthonyCitrinite",
+      "@type": "music:Musician",
+      "rdfs:label": "Anthony Citrinite",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2001–2002",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:TomHambridge",
+      "@type": "music:Musician",
+      "rdfs:label": "Tom Hambridge",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2002",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:MichaelSweet",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael Sweet",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar",
+      "music:activeYears": "1983–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Stryper"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:DavidVictor",
+      "@type": "music:Musician",
+      "rdfs:label": "David Victor",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, vocals",
+      "music:activeYears": "2012–2014",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:NickDVirgilio",
+      "@type": "music:Musician",
+      "rdfs:label": "Nick D'Virgilio",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "1995–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Boston"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:SpocksBeard"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MothersMilk",
+      "@type": "music:Band",
+      "rdfs:label": "Mother's Milk",
+      "music:formedYear": 1973,
+      "music:activeYears": "1973–1974"
+    },
+    {
+      "@id": "music:OrionTheHunter",
+      "@type": "music:Band",
+      "rdfs:label": "Orion the Hunter",
+      "music:formedYear": 1981,
+      "music:activeYears": "1981–1984"
+    },
+    {
+      "@id": "music:RTZ",
+      "@type": "music:Band",
+      "rdfs:label": "RTZ",
+      "music:formedYear": 1991,
+      "music:activeYears": "1991–1995"
+    },
+    {
+      "@id": "music:JoJoGunne",
+      "@type": "music:Band",
+      "rdfs:label": "Jo Jo Gunne",
+      "music:formedYear": 1971,
+      "music:activeYears": "1971–1976"
+    },
+    {
+      "@id": "music:Stryper",
+      "@type": "music:Band",
+      "rdfs:label": "Stryper",
+      "music:formedYear": 1983,
+      "music:activeYears": "1983–present"
+    },
+    {
+      "@id": "music:SpocksBeard",
+      "@type": "music:Band",
+      "rdfs:label": "Spock's Beard",
+      "music:formedYear": 1994,
+      "music:activeYears": "1994–present"
+    }
+  ]
+}

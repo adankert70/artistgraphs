@@ -1,0 +1,350 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Slayer",
+      "@type": "music:Band",
+      "rdfs:label": "Slayer",
+      "music:activeYears": "1981–2019, 2024–present",
+      "music:formedYear": 1981,
+      "music:hasMember": [
+        {
+          "@id": "music:TomAraya"
+        },
+        {
+          "@id": "music:KerryKing"
+        },
+        {
+          "@id": "music:GaryHolt"
+        },
+        {
+          "@id": "music:PaulBostaph"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:JeffHanneman"
+        },
+        {
+          "@id": "music:DaveLombardo"
+        },
+        {
+          "@id": "music:JonDette"
+        },
+        {
+          "@id": "music:TonyScaglione"
+        },
+        {
+          "@id": "music:PatOBrien"
+        }
+      ]
+    },
+    {
+      "@id": "music:TomAraya",
+      "@type": "music:Musician",
+      "rdfs:label": "Tom Araya",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, bass",
+      "music:activeYears": "1981–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Slayer"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:KerryKing",
+      "@type": "music:Musician",
+      "rdfs:label": "Kerry King",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1981–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Slayer"
+        },
+        {
+          "@id": "music:KerryKingBand"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Megadeth"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {
+            "@id": "music:Exodus"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "music:GaryHolt",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Holt",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1979–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Slayer"
+        },
+        {
+          "@id": "music:Exodus"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:PaulBostaph",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Bostaph",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1986–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Slayer"
+        },
+        {
+          "@id": "music:Exodus"
+        },
+        {
+          "@id": "music:KerryKingBand"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:JeffHanneman",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Hanneman",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1981–2013",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Slayer"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveLombardo",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Lombardo",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1981–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Slayer"
+        },
+        {
+          "@id": "music:SuicidalTendencies"
+        },
+        {
+          "@id": "music:Testament"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:JonDette",
+      "@type": "music:Musician",
+      "rdfs:label": "Jon Dette",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1994–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Slayer"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:TonyScaglione",
+      "@type": "music:Musician",
+      "rdfs:label": "Tony Scaglione",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1981–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Slayer"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:PatOBrien",
+      "@type": "music:Musician",
+      "rdfs:label": "Pat O'Brien",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1991–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Slayer"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:Exodus",
+      "@type": "music:Band",
+      "rdfs:label": "Exodus",
+      "music:formedYear": 1979,
+      "music:activeYears": "1979–present",
+      "music:hasMember": [
+        {
+          "@id": "music:GaryHolt"
+        },
+        {
+          "@id": "music:PaulBostaph"
+        }
+      ]
+    },
+    {
+      "@id": "music:KerryKingBand",
+      "@type": "music:Band",
+      "rdfs:label": "Kerry King",
+      "music:formedYear": 2024,
+      "music:activeYears": "2024–present",
+      "music:hasMember": [
+        {
+          "@id": "music:KerryKing"
+        },
+        {
+          "@id": "music:PaulBostaph"
+        }
+      ]
+    },
+    {
+      "@id": "music:SuicidalTendencies",
+      "@type": "music:Band",
+      "rdfs:label": "Suicidal Tendencies",
+      "music:formedYear": 1980,
+      "music:activeYears": "1980–present",
+      "music:hadMember": [
+        {
+          "@id": "music:DaveLombardo"
+        }
+      ]
+    },
+    {
+      "@id": "music:Testament",
+      "@type": "music:Band",
+      "rdfs:label": "Testament",
+      "music:formedYear": 1983,
+      "music:activeYears": "1983–present",
+      "music:hadMember": [
+        {
+          "@id": "music:DaveLombardo"
+        }
+      ]
+    },
+    {
+      "@id": "music:Megadeth",
+      "@type": "music:Band",
+      "rdfs:label": "Megadeth",
+      "music:formedYear": 1983,
+      "music:activeYears": "1983–present"
+    },
+{
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

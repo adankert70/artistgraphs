@@ -1,0 +1,480 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:DemiLovato",
+      "@type": "music:Musician",
+      "rdfs:label": "Demi Lovato",
+      "music:hasGender": "female",
+      "music:hasRole": "singer-songwriter",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ],
+      "music:hasRelationship": [
+        {
+          "@id": "_:g0"
+        },
+        {
+          "@id": "_:g1"
+        },
+        {
+          "@id": "_:g2"
+        },
+        {
+          "@id": "_:g3"
+        },
+        {
+          "@id": "_:g4"
+        },
+        {
+          "@id": "_:g5"
+        },
+        {
+          "@id": "_:g6"
+        },
+        {
+          "@id": "_:g7"
+        },
+        {
+          "@id": "_:g8"
+        },
+        {
+          "@id": "_:g9"
+        },
+        {
+          "@id": "_:g10"
+        },
+        {
+          "@id": "_:g11"
+        },
+        {
+          "@id": "_:g12"
+        },
+        {
+          "@id": "_:g13"
+        },
+        {
+          "@id": "_:g14"
+        },
+        {
+          "@id": "_:g15"
+        },
+        {
+          "@id": "_:g16"
+        },
+        {
+          "@id": "_:g17"
+        },
+        {
+          "@id": "_:g18"
+        }
+      ]
+    },
+    {
+      "@id": "_:g0",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:SelenaGomez"
+      }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:JoeJonas"
+      }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:NickJonas"
+      }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:CleanBandit"
+      }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:Marshmello"
+      }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:SamSmith"
+      }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:CheatCodes"
+      }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:LuisFonsi"
+      }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:FallOutBoy"
+      }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:TheVamps"
+      }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:JaxJones"
+      }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:WeTheKings"
+      }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:ColbieCaillat"
+      }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:BradPaisley"
+      }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:Ollie"
+      }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:MaxMartin"
+      }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:IlyaSalmanzadeh"
+      }
+    },
+    {
+      "@id": "_:g17",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:OakFelder"
+      }
+    },
+    {
+      "@id": "_:g18",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:JimEStack"
+      }
+    },
+    {
+      "@id": "music:SelenaGomez",
+      "@type": "music:Musician",
+      "rdfs:label": "Selena Gomez",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, actress",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JoeJonas",
+      "@type": "music:Musician",
+      "rdfs:label": "Joe Jonas",
+      "music:hasGender": "male",
+      "music:hasRole": "singer",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:NickJonas",
+      "@type": "music:Musician",
+      "rdfs:label": "Nick Jonas",
+      "music:hasGender": "male",
+      "music:hasRole": "singer, actor",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CleanBandit",
+      "@type": "music:Band",
+      "rdfs:label": "Clean Bandit",
+      "music:formedYear": 2008,
+      "music:activeYears": "2008–present"
+    },
+    {
+      "@id": "music:Marshmello",
+      "@type": "music:Musician",
+      "rdfs:label": "Marshmello",
+      "music:hasGender": "male",
+      "music:hasRole": "DJ, producer",
+      "music:activeYears": "2015–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:SamSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Sam Smith",
+      "music:hasGender": "non-binary",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2012–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CheatCodes",
+      "@type": "music:Band",
+      "rdfs:label": "Cheat Codes",
+      "music:formedYear": 2014,
+      "music:activeYears": "2014–present"
+    },
+    {
+      "@id": "music:LuisFonsi",
+      "@type": "music:Musician",
+      "rdfs:label": "Luis Fonsi",
+      "music:hasGender": "male",
+      "music:hasRole": "singer",
+      "music:activeYears": "1998–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:FallOutBoy",
+      "@type": "music:Band",
+      "rdfs:label": "Fall Out Boy",
+      "music:formedYear": 2001,
+      "music:activeYears": "2001–present"
+    },
+    {
+      "@id": "music:TheVamps",
+      "@type": "music:Band",
+      "rdfs:label": "The Vamps",
+      "music:formedYear": 2010,
+      "music:activeYears": "2010–present"
+    },
+    {
+      "@id": "music:JaxJones",
+      "@type": "music:Musician",
+      "rdfs:label": "Jax Jones",
+      "music:hasGender": "male",
+      "music:hasRole": "DJ, producer",
+      "music:activeYears": "2014–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:WeTheKings",
+      "@type": "music:Band",
+      "rdfs:label": "We the Kings",
+      "music:formedYear": 2005,
+      "music:activeYears": "2005–present"
+    },
+    {
+      "@id": "music:ColbieCaillat",
+      "@type": "music:Musician",
+      "rdfs:label": "Colbie Caillat",
+      "music:hasGender": "female",
+      "music:hasRole": "singer-songwriter",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BradPaisley",
+      "@type": "music:Musician",
+      "rdfs:label": "Brad Paisley",
+      "music:hasGender": "male",
+      "music:hasRole": "singer, guitarist",
+      "music:activeYears": "1999–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:Ollie",
+      "@type": "music:Musician",
+      "rdfs:label": "Ollie",
+      "music:hasGender": "male",
+      "music:hasRole": "singer",
+      "music:activeYears": "2010s–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MaxMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "Max Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "1990s–present"
+    },
+    {
+      "@id": "music:IlyaSalmanzadeh",
+      "@type": "music:Producer",
+      "rdfs:label": "Ilya Salmanzadeh",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "2000s–present"
+    },
+    {
+      "@id": "music:OakFelder",
+      "@type": "music:Producer",
+      "rdfs:label": "Oak Felder",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "2000s–present"
+    },
+    {
+      "@id": "music:JimEStack",
+      "@type": "music:Producer",
+      "rdfs:label": "Jim-E Stack",
+      "music:hasGender": "male",
+      "music:hasRole": "producer",
+      "music:activeYears": "2010s–present"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

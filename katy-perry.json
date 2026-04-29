@@ -1,0 +1,306 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "music": "http://example.org/music/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:MaxMartin" }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:DrLuke" }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "music:Relationship",
+      "music:relationshipType": "songwriter",
+      "music:relationshipTarget": { "@id": "music:BonnieMcKee" }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:GregWells" }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": { "@id": "music:BennyBlanco" }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:Cirkut" }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer (duo)",
+      "music:relationshipTarget": { "@id": "music:Stargate" }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "music:Relationship",
+      "music:relationshipType": "co-writer",
+      "music:relationshipTarget": { "@id": "music:Sia" }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:SnoopDogg" }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:NickiMinaj" }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:JuicyJ" }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "music:Relationship",
+      "music:relationshipType": "backing vocals",
+      "music:relationshipTarget": { "@id": "music:AshleyWashington" }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:CaseyHooper" }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:DevonEisenbarger" }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:RicardoGoitia" }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:ChrisPayne" }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:AnthonyJones" }
+    },
+    {
+      "@id": "music:KatyPerry",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Katy Perry",
+      "music:activeYears": "2001–present",
+      "music:hasGender": "female",
+      "music:hasRole": "Singer-songwriter, performer",
+      "music:playsInstrument": [
+        { "@id": "music:Vocals" },
+        { "@id": "music:Guitar" },
+        { "@id": "music:Piano" }
+      ],
+      "music:hasRelationship": [
+        { "@id": "_:g0" },
+        { "@id": "_:g1" },
+        { "@id": "_:g2" },
+        { "@id": "_:g3" },
+        { "@id": "_:g4" },
+        { "@id": "_:g5" },
+        { "@id": "_:g6" },
+        { "@id": "_:g7" },
+        { "@id": "_:g8" },
+        { "@id": "_:g9" },
+        { "@id": "_:g10" },
+        { "@id": "_:g11" },
+        { "@id": "_:g12" },
+        { "@id": "_:g13" },
+        { "@id": "_:g14" },
+        { "@id": "_:g15" },
+        { "@id": "_:g16" }
+      ]
+    },
+
+    {
+      "@id": "music:KatyPerryLiveBand",
+      "@type": "music:Band",
+      "rdfs:label": "Katy Perry Live Band",
+      "music:hasMember": [
+        { "@id": "music:CaseyHooper" },
+        { "@id": "music:DevonEisenbarger" },
+        { "@id": "music:RicardoGoitia" },
+        { "@id": "music:ChrisPayne" },
+        { "@id": "music:AnthonyJones" }
+      ]
+    },
+
+    {
+      "@id": "music:MaxMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "Max Martin",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "1993–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:DrLuke",
+      "@type": "music:Producer",
+      "rdfs:label": "Dr. Luke",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "1997–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:BonnieMcKee",
+      "@type": "music:Musician",
+      "rdfs:label": "Bonnie McKee",
+      "music:hasRole": "Songwriter, Vocalist",
+      "music:activeYears": "2002–present"
+    },
+    {
+      "@id": "music:GregWells",
+      "@type": "music:Producer",
+      "rdfs:label": "Greg Wells",
+      "music:hasRole": "Producer, Songwriter, Multi-instrumentalist",
+      "music:activeYears": "1990–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:BennyBlanco",
+      "@type": "music:Producer",
+      "rdfs:label": "Benny Blanco",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "2007–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:Cirkut",
+      "@type": "music:Producer",
+      "rdfs:label": "Cirkut",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "2004–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:Stargate",
+      "@type": "music:Producer",
+      "rdfs:label": "Stargate",
+      "music:hasRole": "Producer duo",
+      "music:activeYears": "1997–present",
+      "music:produced": [{ "@id": "music:KatyPerry" }]
+    },
+    {
+      "@id": "music:Sia",
+      "@type": "music:Musician",
+      "rdfs:label": "Sia",
+      "music:hasRole": "Songwriter, Vocalist",
+      "music:activeYears": "1997–present"
+    },
+    {
+      "@id": "music:SnoopDogg",
+      "@type": "music:Musician",
+      "rdfs:label": "Snoop Dogg",
+      "music:hasRole": "Rapper, Featured artist",
+      "music:activeYears": "1992–present"
+    },
+    {
+      "@id": "music:NickiMinaj",
+      "@type": "music:Musician",
+      "rdfs:label": "Nicki Minaj",
+      "music:hasRole": "Rapper, Featured artist",
+      "music:activeYears": "2004–present"
+    },
+    {
+      "@id": "music:JuicyJ",
+      "@type": "music:Musician",
+      "rdfs:label": "Juicy J",
+      "music:hasRole": "Rapper, Featured artist",
+      "music:activeYears": "1991–present"
+    },
+
+    {
+      "@id": "music:AshleyWashington",
+      "@type": "music:Musician",
+      "rdfs:label": "Ashley Washington",
+      "music:hasRole": "Backing vocalist",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": { "@id": "music:Vocals" }
+    },
+
+    {
+      "@id": "music:CaseyHooper",
+      "@type": "music:Musician",
+      "rdfs:label": "Casey Hooper",
+      "music:hasRole": "Lead guitarist (touring)",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": { "@id": "music:Guitar" },
+      "music:isMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    },
+    {
+      "@id": "music:DevonEisenbarger",
+      "@type": "music:Musician",
+      "rdfs:label": "Devon Eisenbarger",
+      "music:hasRole": "Guitarist (touring)",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": { "@id": "music:Guitar" },
+      "music:isMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    },
+    {
+      "@id": "music:RicardoGoitia",
+      "@type": "music:Musician",
+      "rdfs:label": "Ricardo Goitia",
+      "music:hasRole": "Bassist (touring)",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": { "@id": "music:Bass" },
+      "music:isMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    },
+    {
+      "@id": "music:ChrisPayne",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Payne",
+      "music:hasRole": "Keyboardist (touring)",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": { "@id": "music:Keyboards" },
+      "music:isMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    },
+    {
+      "@id": "music:AnthonyJones",
+      "@type": "music:Musician",
+      "rdfs:label": "Anthony Jones",
+      "music:hasRole": "Drummer (touring)",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": { "@id": "music:Drums" },
+      "music:isMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    },
+    {
+      "@id": "music:NicoleRow",
+      "@type": "music:Musician",
+      "rdfs:label": "Nicole Row",
+      "music:hasRole": "Bassist (touring, past)",
+      "music:activeYears": "2010–2017",
+      "music:playsInstrument": { "@id": "music:Bass" },
+      "music:wasMemberOf": { "@id": "music:KatyPerryLiveBand" }
+    }
+  ]
+}
+

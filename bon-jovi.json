@@ -1,0 +1,230 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:BonJovi",
+      "@type": "music:Band",
+      "rdfs:label": "Bon Jovi",
+      "music:activeYears": "1983–present",
+      "music:formedYear": 1983,
+      "music:hadMember": [
+        {"@id": "music:JonBonJovi"},
+        {"@id": "music:DavidBryan"},
+        {"@id": "music:TicoTorres"},
+        {"@id": "music:HughMcDonald"},
+        {"@id": "music:PhilX"},
+        {"@id": "music:EverettBradley"},
+        {"@id": "music:JohnShanks"},
+        {"@id": "music:DaveSabo"},
+        {"@id": "music:RichieSambora"},
+        {"@id": "music:AlecJohnSuch"}
+      ],
+      "music:hasMember": [
+        {"@id": "music:JonBonJovi"},
+        {"@id": "music:DavidBryan"},
+        {"@id": "music:TicoTorres"},
+        {"@id": "music:HughMcDonald"},
+        {"@id": "music:PhilX"}
+      ]
+    },
+    {
+      "@id": "music:JonBonJovi",
+      "@type": "music:Musician",
+      "rdfs:label": "Jon Bon Jovi",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar, harmonica",
+      "music:activeYears": "1983–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Harmonica"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:DavidBryan",
+      "@type": "music:Musician",
+      "rdfs:label": "David Bryan",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, piano, backing vocals",
+      "music:activeYears": "1983–present",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:TicoTorres",
+      "@type": "music:Musician",
+      "rdfs:label": "Tico Torres",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing vocals",
+      "music:activeYears": "1983–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:HughMcDonald",
+      "@type": "music:Musician",
+      "rdfs:label": "Hugh McDonald",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1994–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:PhilX",
+      "@type": "music:Musician",
+      "rdfs:label": "Phil X",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "2013–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:EverettBradley",
+      "@type": "music:Musician",
+      "rdfs:label": "Everett Bradley",
+      "music:hasGender": "male",
+      "music:hasRole": "percussion, backing vocals",
+      "music:activeYears": "2003–present",
+      "music:playsInstrument": [
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:JohnShanks",
+      "@type": "music:Musician",
+      "rdfs:label": "John Shanks",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, backing vocals",
+      "music:activeYears": "2004–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:DaveSabo",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Sabo",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1983",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:RichieSambora",
+      "@type": "music:Musician",
+      "rdfs:label": "Richie Sambora",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1983–2013",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:AlecJohnSuch",
+      "@type": "music:Musician",
+      "rdfs:label": "Alec John Such",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1983–1994",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BonJovi"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Harmonica",
+      "@type": "music:Instrument",
+      "rdfs:label": "Harmonica"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:ScreamingTrees",
+      "@type": "music:Band",
+      "rdfs:label": "Screaming Trees",
+      "music:activeYears": "1984–2000",
+      "music:formedYear": 1984,
+      "music:hadMember": [
+        {"@id": "music:MarkLanegan"},
+        {"@id": "music:GaryLeeConner"},
+        {"@id": "music:VanConner"},
+        {"@id": "music:MarkPickerel"},
+        {"@id": "music:BarrettMartin"},
+        {"@id": "music:JoshHomme"},
+        {"@id": "music:DanPeters"}
+      ]
+    },
+    {
+      "@id": "music:MarkLanegan",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark Lanegan",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1984–2022",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"},
+        {"@id": "music:QueensOfTheStoneAge"}
+      ]
+    },
+    {
+      "@id": "music:GaryLeeConner",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Lee Conner",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1984–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"}
+      ]
+    },
+    {
+      "@id": "music:VanConner",
+      "@type": "music:Musician",
+      "rdfs:label": "Van Conner",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1984–2023",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"}
+      ]
+    },
+    {
+      "@id": "music:MarkPickerel",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark Pickerel",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1984–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"},
+        {"@id": "music:Truly"}
+      ]
+    },
+    {
+      "@id": "music:BarrettMartin",
+      "@type": "music:Musician",
+      "rdfs:label": "Barrett Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1991–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"},
+        {"@id": "music:MadSeason"}
+      ]
+    },
+    {
+      "@id": "music:JoshHomme",
+      "@type": "music:Musician",
+      "rdfs:label": "Josh Homme",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar",
+      "music:activeYears": "1996–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"},
+        {"@id": "music:QueensOfTheStoneAge"}
+      ]
+    },
+    {
+      "@id": "music:DanPeters",
+      "@type": "music:Musician",
+      "rdfs:label": "Dan Peters",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1991–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:ScreamingTrees"},
+        {"@id": "music:Mudhoney"}
+      ]
+    },
+    {
+      "@id": "music:QueensOfTheStoneAge",
+      "@type": "music:Band",
+      "rdfs:label": "Queens of the Stone Age",
+      "music:hadMember": [
+        {"@id": "music:MarkLanegan"},
+        {"@id": "music:JoshHomme"}
+      ]
+    },
+    {
+      "@id": "music:Truly",
+      "@type": "music:Band",
+      "rdfs:label": "Truly",
+      "music:hadMember": [
+        {"@id": "music:MarkPickerel"}
+      ]
+    },
+    {
+      "@id": "music:MadSeason",
+      "@type": "music:Band",
+      "rdfs:label": "Mad Season",
+      "music:hadMember": [
+        {"@id": "music:BarrettMartin"},
+        {"@id": "music:MarkLanegan"}
+      ]
+    },
+    {
+      "@id": "music:Mudhoney",
+      "@type": "music:Band",
+      "rdfs:label": "Mudhoney",
+      "music:hadMember": [
+        {"@id": "music:DanPeters"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    }
+  ]
+}

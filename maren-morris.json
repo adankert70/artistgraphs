@@ -1,0 +1,353 @@
+
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:MarenMorris",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Maren Morris",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheHighwomen"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:RyanHurd"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KelseyBallerini"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:ThomasRhett"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KeithUrban"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:NiallHoran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:RyanHurd",
+      "@type": "music:Musician",
+      "rdfs:label": "Ryan Hurd",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "2013–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "married",
+          "music:relationshipTarget": {"@id": "music:MarenMorris"}
+        }
+      ]
+    },
+    {
+      "@id": "music:KelseyBallerini",
+      "@type": "music:Musician",
+      "rdfs:label": "Kelsea Ballerini",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "2014–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Ukulele"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:MarenMorris"}
+        }
+      ]
+    },
+    {
+      "@id": "music:ThomasRhett",
+      "@type": "music:Musician",
+      "rdfs:label": "Thomas Rhett",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:KeithUrban",
+      "@type": "music:Musician",
+      "rdfs:label": "Keith Urban",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1991–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Banjo"}
+      ]
+    },
+    {
+      "@id": "music:NiallHoran",
+      "@type": "music:Musician",
+      "rdfs:label": "Niall Horan",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:TheHighwomen",
+      "@type": "music:Band",
+      "rdfs:label": "The Highwomen",
+      "music:activeYears": "2019–present",
+      "music:formedYear": 2019,
+      "music:hadMember": [
+        {"@id": "music:MarenMorris"},
+        {"@id": "music:BrandyCarlile"},
+        {"@id": "music:AmandaShires"},
+        {"@id": "music:NatalieHemby"}
+      ]
+    },
+    {
+      "@id": "music:BrandyCarlile",
+      "@type": "music:Musician",
+      "rdfs:label": "Brandi Carlile",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2004–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheHighwomen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:AmandaShires",
+      "@type": "music:Musician",
+      "rdfs:label": "Amanda Shires",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, fiddle, songwriter",
+      "music:activeYears": "2005–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheHighwomen"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:JasonIsbellAndThe400Unit"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Fiddle"},
+        {"@id": "music:Violin"}
+      ]
+    },
+    {
+      "@id": "music:NatalieHemby",
+      "@type": "music:Musician",
+      "rdfs:label": "Natalie Hemby",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, guitar",
+      "music:activeYears": "2000–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheHighwomen"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:OneDirection",
+      "@type": "music:Band",
+      "rdfs:label": "One Direction",
+      "music:activeYears": "2010–2016",
+      "music:formedYear": 2010,
+      "music:hadMember": [
+        {"@id": "music:NiallHoran"},
+        {"@id": "music:HarryStyles"},
+        {"@id": "music:LiamPayne"},
+        {"@id": "music:LouisTomlinson"},
+        {"@id": "music:ZaynMalik"}
+      ]
+    },
+    {
+      "@id": "music:JasonIsbellAndThe400Unit",
+      "@type": "music:Band",
+      "rdfs:label": "Jason Isbell and the 400 Unit",
+      "music:activeYears": "2009–present",
+      "music:hasMember": [
+        {"@id": "music:AmandaShires"},
+        {"@id": "music:JasonIsbell"}
+      ]
+    },
+    {
+      "@id": "music:HarryStyles",
+      "@type": "music:Musician",
+      "rdfs:label": "Harry Styles",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:LiamPayne",
+      "@type": "music:Musician",
+      "rdfs:label": "Liam Payne",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:LouisTomlinson",
+      "@type": "music:Musician",
+      "rdfs:label": "Louis Tomlinson",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:ZaynMalik",
+      "@type": "music:Musician",
+      "rdfs:label": "Zayn Malik",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:JasonIsbell",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Isbell",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {"@id": "music:JasonIsbellAndThe400Unit"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DriveByTruckers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:DriveByTruckers",
+      "@type": "music:Band",
+      "rdfs:label": "Drive-By Truckers",
+      "music:activeYears": "1996–present",
+      "music:hadMember": [
+        {"@id": "music:JasonIsbell"}
+      ]
+    },
+    {
+      "@id": "music:BusbeeProducer",
+      "@type": "music:Producer",
+      "rdfs:label": "Busbee",
+      "music:hasGender": "male",
+      "music:activeYears": "2005–2019",
+      "music:produced": [
+        {"@id": "music:MarenMorris"}
+      ]
+    },
+    {
+      "@id": "music:GreggWattenberg",
+      "@type": "music:Producer",
+      "rdfs:label": "Gregg Wattenberg",
+      "music:hasGender": "male",
+      "music:activeYears": "1998–present",
+      "music:produced": [
+        {"@id": "music:MarenMorris"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Ukulele",
+      "@type": "music:Instrument",
+      "rdfs:label": "Ukulele"
+    },
+    {
+      "@id": "music:Banjo",
+      "@type": "music:Instrument",
+      "rdfs:label": "Banjo"
+    },
+    {
+      "@id": "music:Fiddle",
+      "@type": "music:Instrument",
+      "rdfs:label": "Fiddle"
+    },
+    {
+      "@id": "music:Violin",
+      "@type": "music:Instrument",
+      "rdfs:label": "Violin"
+    }
+  ]
+}

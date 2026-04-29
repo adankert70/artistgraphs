@@ -1,0 +1,275 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "music": "http://example.org/music/"
+  },
+  "@graph": [
+    {
+      "@id": "_:g0",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:Lindaperry" }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:ScottStorch" }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": { "@id": "music:DJPremier" }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:GuySigsworth" }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer/songwriter",
+      "music:relationshipTarget": { "@id": "music:MarkRonson" }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:Pitbull" }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:ArianaGrande" }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:Maroon5" }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "music:Relationship",
+      "music:relationshipType": "collaborator",
+      "music:relationshipTarget": { "@id": "music:AliciaKeys" }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "music:Relationship",
+      "music:relationshipType": "collaborator",
+      "music:relationshipTarget": { "@id": "music:RickyMartin" }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": { "@id": "music:LilKim" }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "music:Relationship",
+      "music:relationshipType": "backing vocals",
+      "music:relationshipTarget": { "@id": "music:LatishaHester" }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:MichaelLloyd" }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:DanWarner" }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:AlexAl" }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:NateMorton" }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "music:Relationship",
+      "music:relationshipType": "touring musician",
+      "music:relationshipTarget": { "@id": "music:RayMonteiro" }
+    },
+
+    {
+      "@id": "music:ChristinaAguilera",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Christina Aguilera",
+      "music:activeYears": "1993–present",
+      "music:hasGender": "female",
+      "music:hasRole": "Singer-songwriter, performer, producer",
+      "music:playsInstrument": [
+        { "@id": "music:Vocals" },
+        { "@id": "music:Piano" }
+      ],
+      "music:hasRelationship": [
+        { "@id": "_:g0" },
+        { "@id": "_:g1" },
+        { "@id": "_:g2" },
+        { "@id": "_:g3" },
+        { "@id": "_:g4" },
+        { "@id": "_:g5" },
+        { "@id": "_:g6" },
+        { "@id": "_:g7" },
+        { "@id": "_:g8" },
+        { "@id": "_:g9" },
+        { "@id": "_:g10" },
+        { "@id": "_:g11" },
+        { "@id": "_:g12" },
+        { "@id": "_:g13" },
+        { "@id": "_:g14" },
+        { "@id": "_:g15" },
+        { "@id": "_:g16" }
+      ]
+    },
+
+    {
+      "@id": "music:Lindaperry",
+      "@type": "music:Producer",
+      "rdfs:label": "Linda Perry",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "1989–present",
+      "music:produced": [{ "@id": "music:ChristinaAguilera" }]
+    },
+    {
+      "@id": "music:ScottStorch",
+      "@type": "music:Producer",
+      "rdfs:label": "Scott Storch",
+      "music:hasRole": "Producer, Songwriter, Keyboardist",
+      "music:activeYears": "1991–present",
+      "music:produced": [{ "@id": "music:ChristinaAguilera" }]
+    },
+    {
+      "@id": "music:DJPremier",
+      "@type": "music:Producer",
+      "rdfs:label": "DJ Premier",
+      "music:hasRole": "Producer, DJ",
+      "music:activeYears": "1987–present",
+      "music:produced": [{ "@id": "music:ChristinaAguilera" }]
+    },
+    {
+      "@id": "music:GuySigsworth",
+      "@type": "music:Producer",
+      "rdfs:label": "Guy Sigsworth",
+      "music:hasRole": "Producer, Songwriter",
+      "music:activeYears": "1990–present",
+      "music:produced": [{ "@id": "music:ChristinaAguilera" }]
+    },
+    {
+      "@id": "music:MarkRonson",
+      "@type": "music:Producer",
+      "rdfs:label": "Mark Ronson",
+      "music:hasRole": "Producer, Songwriter, Musician",
+      "music:activeYears": "1993–present",
+      "music:produced": [{ "@id": "music:ChristinaAguilera" }]
+    },
+    {
+      "@id": "music:Pitbull",
+      "@type": "music:Musician",
+      "rdfs:label": "Pitbull",
+      "music:hasRole": "Rapper, Featured artist",
+      "music:activeYears": "2001–present"
+    },
+    {
+      "@id": "music:ArianaGrande",
+      "@type": "music:Musician",
+      "rdfs:label": "Ariana Grande",
+      "music:hasRole": "Singer-songwriter, Featured artist",
+      "music:activeYears": "2008–present"
+    },
+    {
+      "@id": "music:Maroon5",
+      "@type": "music:Band",
+      "rdfs:label": "Maroon 5",
+      "music:formedYear": "2001"
+    },
+    {
+      "@id": "music:AliciaKeys",
+      "@type": "music:Musician",
+      "rdfs:label": "Alicia Keys",
+      "music:hasRole": "Singer-songwriter, Pianist",
+      "music:activeYears": "1996–present"
+    },
+    {
+      "@id": "music:RickyMartin",
+      "@type": "music:Musician",
+      "rdfs:label": "Ricky Martin",
+      "music:hasRole": "Singer, Performer",
+      "music:activeYears": "1984–present"
+    },
+    {
+      "@id": "music:LilKim",
+      "@type": "music:Musician",
+      "rdfs:label": "Lil' Kim",
+      "music:hasRole": "Rapper, Featured artist",
+      "music:activeYears": "1994–present"
+    },
+    {
+      "@id": "music:LatishaHester",
+      "@type": "music:Musician",
+      "rdfs:label": "Latisha Hester",
+      "music:hasRole": "Backing vocalist",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": { "@id": "music:Vocals" }
+    },
+    {
+      "@id": "music:MichaelLloyd",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael Lloyd",
+      "music:hasRole": "Guitarist (touring)",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": { "@id": "music:Guitar" }
+    },
+    {
+      "@id": "music:DanWarner",
+      "@type": "music:Musician",
+      "rdfs:label": "Dan Warner",
+      "music:hasRole": "Guitarist (touring/session)",
+      "music:activeYears": "1990–2019",
+      "music:playsInstrument": { "@id": "music:Guitar" }
+    },
+    {
+      "@id": "music:AlexAl",
+      "@type": "music:Musician",
+      "rdfs:label": "Alex Al",
+      "music:hasRole": "Bassist (touring)",
+      "music:activeYears": "1990–present",
+      "music:playsInstrument": { "@id": "music:Bass" }
+    },
+    {
+      "@id": "music:NateMorton",
+      "@type": "music:Musician",
+      "rdfs:label": "Nate Morton",
+      "music:hasRole": "Drummer (touring)",
+      "music:activeYears": "1995–present",
+      "music:playsInstrument": { "@id": "music:Drums" }
+    },
+    {
+      "@id": "music:RayMonteiro",
+      "@type": "music:Musician",
+      "rdfs:label": "Ray Monteiro",
+      "music:hasRole": "Keyboardist (touring)",
+      "music:activeYears": "2000–present",
+      "music:playsInstrument": { "@id": "music:Keyboards" }
+    }
+  ]
+}
+

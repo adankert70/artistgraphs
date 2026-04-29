@@ -1,0 +1,262 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Coldplay",
+      "@type": "music:Band",
+      "rdfs:label": "Coldplay",
+      "music:activeYears": "1996–present",
+      "music:formedYear": 1996,
+      "music:hasMember": [
+        {
+          "@id": "music:ChrisMartin"
+        },
+        {
+          "@id": "music:JonnyBuckland"
+        },
+        {
+          "@id": "music:GuyBerryman"
+        },
+        {
+          "@id": "music:WillChampion"
+        },
+        {
+          "@id": "music:PhilHarvey"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:TimRiceOxley"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisMartin",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, piano, rhythm guitar, keyboards, synthesisers",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Piano"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:JonnyBuckland",
+      "@type": "music:Musician",
+      "rdfs:label": "Jonny Buckland",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, keyboards, synthesisers, backing vocals",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GuyBerryman",
+      "@type": "music:Musician",
+      "rdfs:label": "Guy Berryman",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, synthesisers, backing vocals, percussion",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:WillChampion",
+      "@type": "music:Musician",
+      "rdfs:label": "Will Champion",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion, backing and occasional lead vocals, piano, guitar, bass",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Piano"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:PhilHarvey",
+      "@type": "music:Musician",
+      "rdfs:label": "Phil Harvey",
+      "music:hasGender": "male",
+      "music:hasRole": "management, creative director",
+      "music:activeYears": "1996–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:TimRiceOxley",
+      "@type": "music:Musician",
+      "rdfs:label": "Tim Rice-Oxley",
+      "music:hasGender": "male",
+      "music:hasRole": "piano, keyboards",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Coldplay"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Keane"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:Starfish",
+      "@type": "music:Band",
+      "rdfs:label": "Starfish",
+      "music:formedYear": 1996,
+      "music:activeYears": "1996–1997",
+      "music:hasMember": [
+        {
+          "@id": "music:ChrisMartin"
+        },
+        {
+          "@id": "music:JonnyBuckland"
+        },
+        {
+          "@id": "music:GuyBerryman"
+        },
+        {
+          "@id": "music:WillChampion"
+        },
+        {
+          "@id": "music:TimRiceOxley"
+        }
+      ]
+    },
+    {
+      "@id": "music:Keane",
+      "@type": "music:Band",
+      "rdfs:label": "Keane",
+      "music:formedYear": 1995,
+      "music:activeYears": "1995–present",
+      "music:hasMember": [
+        {
+          "@id": "music:TimRiceOxley"
+        }
+      ]
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

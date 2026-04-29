@@ -1,0 +1,354 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TheWarning",
+      "@type": "music:Band",
+      "rdfs:label": "The Warning",
+      "music:activeYears": "2013–present",
+      "music:formedYear": 2013,
+      "music:hasMember": [
+        {"@id": "music:DanielaVillarreal"},
+        {"@id": "music:PaulinaVillarreal"},
+        {"@id": "music:AlejandraVillarreal"}
+      ]
+    },
+    {
+      "@id": "music:DanielaVillarreal",
+      "@type": "music:Musician",
+      "rdfs:label": "Daniela Villarreal",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, rhythm guitar, songwriter",
+      "music:activeYears": "2013–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheWarning"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:PaulinaVillarreal",
+      "@type": "music:Musician",
+      "rdfs:label": "Paulina Villarreal",
+      "music:hasGender": "female",
+      "music:hasRole": "drums, vocals, songwriter",
+      "music:activeYears": "2013–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheWarning"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:AlejandraVillarreal",
+      "@type": "music:Musician",
+      "rdfs:label": "Alejandra Villarreal",
+      "music:hasGender": "female",
+      "music:hasRole": "bass guitar, vocals, songwriter",
+      "music:activeYears": "2013–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheWarning"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:Metallica",
+      "@type": "music:Band",
+      "rdfs:label": "Metallica",
+      "music:activeYears": "1981–present",
+      "music:formedYear": 1981,
+      "music:hadMember": [
+        {"@id": "music:JamesHetfield"},
+        {"@id": "music:LarsUlrich"},
+        {"@id": "music:KirkHammett"},
+        {"@id": "music:RobertTrujillo"}
+      ]
+    },
+    {
+      "@id": "music:JamesHetfield",
+      "@type": "music:Musician",
+      "rdfs:label": "James Hetfield",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, rhythm guitar, songwriter",
+      "music:activeYears": "1981–present",
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:LarsUlrich",
+      "@type": "music:Musician",
+      "rdfs:label": "Lars Ulrich",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, songwriter",
+      "music:activeYears": "1981–present",
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:KirkHammett",
+      "@type": "music:Musician",
+      "rdfs:label": "Kirk Hammett",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1983–present",
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Exodus"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:RobertTrujillo",
+      "@type": "music:Musician",
+      "rdfs:label": "Robert Trujillo",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1989–present",
+      "music:isMemberOf": [
+        {"@id": "music:Metallica"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Suicidal tendencies"},
+        {"@id": "music:Ozzy Osbourne"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:Muse",
+      "@type": "music:Band",
+      "rdfs:label": "Muse",
+      "music:activeYears": "1994–present",
+      "music:formedYear": 1994,
+      "music:hasMember": [
+        {"@id": "music:MattBellamy"},
+        {"@id": "music:ChrisWolstenholme"},
+        {"@id": "music:DominicHoward"}
+      ]
+    },
+    {
+      "@id": "music:MattBellamy",
+      "@type": "music:Musician",
+      "rdfs:label": "Matt Bellamy",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, piano, songwriter",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {"@id": "music:Muse"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:ChrisWolstenholme",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Wolstenholme",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, vocals",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {"@id": "music:Muse"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:DominicHoward",
+      "@type": "music:Musician",
+      "rdfs:label": "Dominic Howard",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {"@id": "music:Muse"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:Halestorm",
+      "@type": "music:Band",
+      "rdfs:label": "Halestorm",
+      "music:activeYears": "1997–present",
+      "music:formedYear": 1997,
+      "music:hasMember": [
+        {"@id": "music:LzzyHale"},
+        {"@id": "music:AreiHale"},
+        {"@id": "music:JoshSmith"},
+        {"@id": "music:JoeHottinger"}
+      ]
+    },
+    {
+      "@id": "music:LzzyHale",
+      "@type": "music:Musician",
+      "rdfs:label": "Lzzy Hale",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, rhythm guitar, songwriter",
+      "music:activeYears": "1997–present",
+      "music:isMemberOf": [
+        {"@id": "music:Halestorm"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:AreiHale",
+      "@type": "music:Musician",
+      "rdfs:label": "Arejay Hale",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1997–present",
+      "music:isMemberOf": [
+        {"@id": "music:Halestorm"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:JoshSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Josh Smith",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "2003–present",
+      "music:isMemberOf": [
+        {"@id": "music:Halestorm"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:BassGuitar"}
+      ]
+    },
+    {
+      "@id": "music:JoeHottinger",
+      "@type": "music:Musician",
+      "rdfs:label": "Joe Hottinger",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "2003–present",
+      "music:isMemberOf": [
+        {"@id": "music:Halestorm"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Exodus",
+      "@type": "music:Band",
+      "rdfs:label": "Exodus",
+      "music:activeYears": "1979–present",
+      "music:formedYear": 1979,
+      "music:hadMember": [
+        {"@id": "music:KirkHammett"}
+      ]
+    },
+    {
+      "@id": "music:SuicidalTendencies",
+      "@type": "music:Band",
+      "rdfs:label": "Suicidal Tendencies",
+      "music:activeYears": "1980–present",
+      "music:formedYear": 1980,
+      "music:hadMember": [
+        {"@id": "music:RobertTrujillo"}
+      ]
+    },
+    {
+      "@id": "music:OzzyOsbourne",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Ozzy Osbourne",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1967–present",
+      "music:wasMemberOf": [
+        {"@id": "music:BlackSabbath"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:BlackSabbath",
+      "@type": "music:Band",
+      "rdfs:label": "Black Sabbath",
+      "music:activeYears": "1968–2017",
+      "music:formedYear": 1968,
+      "music:hadMember": [
+        {"@id": "music:OzzyOsbourne"}
+      ]
+    },
+    {
+      "@id": "music:DavidBendeth",
+      "@type": "music:Producer",
+      "rdfs:label": "David Bendeth",
+      "music:hasGender": "male",
+      "music:activeYears": "1990s–present",
+      "music:produced": [
+        {"@id": "music:TheWarning"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    }
+  ]
+}

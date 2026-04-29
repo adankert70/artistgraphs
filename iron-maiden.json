@@ -1,0 +1,348 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:IronMaiden",
+      "@type": "music:Band",
+      "rdfs:label": "Iron Maiden",
+      "music:activeYears": "1975–present",
+      "music:formedYear": 1975,
+      "music:hasMember": [
+        {"@id": "music:BruceDickinson"},
+        {"@id": "music:SteveHarris"},
+        {"@id": "music:DaveMurray"},
+        {"@id": "music:AdrianSmith"},
+        {"@id": "music:JanickGers"},
+        {"@id": "music:NickoMcBrain"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:CliveBurr"},
+        {"@id": "music:PaulDiAnno"},
+        {"@id": "music:DennisStratton"},
+        {"@id": "music:BlazeBayley"},
+        {"@id": "music:DougSampson"}
+      ],
+      "music:producedBy": [
+        {"@id": "music:MartinBirch"},
+        {"@id": "music:KevinShirley"}
+      ]
+    },
+    {
+      "@id": "music:BruceDickinson",
+      "@type": "music:Musician",
+      "rdfs:label": "Bruce Dickinson",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1979–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Samson"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:AdrianSmith"}
+        }
+      ]
+    },
+    {
+      "@id": "music:SteveHarris",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Harris",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals, primary songwriter",
+      "music:activeYears": "1972–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "mentored",
+          "music:relationshipTarget": {"@id": "music:JanickGers"}
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveMurray",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Murray",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1974–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:AdrianSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Adrian Smith",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1974–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Urchin"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BruceDickinson"}
+        }
+      ]
+    },
+    {
+      "@id": "music:JanickGers",
+      "@type": "music:Musician",
+      "rdfs:label": "Janick Gers",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1975–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Gogmagog"},
+        {"@id": "music:Gillan"},
+        {"@id": "music:WhiteSpirit"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:NickoMcBrain",
+      "@type": "music:Musician",
+      "rdfs:label": "Nicko McBrain",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1966–present",
+      "music:isMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Trust"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:CliveBurr",
+      "@type": "music:Musician",
+      "rdfs:label": "Clive Burr",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1973–2005",
+      "music:wasMemberOf": [
+        {"@id": "music:IronMaiden"},
+        {"@id": "music:Trust"},
+        {"@id": "music:Gogmagog"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:PaulDiAnno",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Di'Anno",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1977–present",
+      "music:wasMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:DennisStratton",
+      "@type": "music:Musician",
+      "rdfs:label": "Dennis Stratton",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1970–present",
+      "music:wasMemberOf": [
+        {"@id": "music:IronMaiden"},
+        {"@id": "music:PrayingMantis"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:BlazeBayley",
+      "@type": "music:Musician",
+      "rdfs:label": "Blaze Bayley",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1984–present",
+      "music:wasMemberOf": [
+        {"@id": "music:IronMaiden"},
+        {"@id": "music:Wolfsbane"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:DougSampson",
+      "@type": "music:Musician",
+      "rdfs:label": "Doug Sampson",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1970–present",
+      "music:wasMemberOf": [
+        {"@id": "music:IronMaiden"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:MartinBirch",
+      "@type": "music:Producer",
+      "rdfs:label": "Martin Birch",
+      "music:hasGender": "male",
+      "music:activeYears": "1968–1992",
+      "music:produced": [
+        {"@id": "music:IronMaiden"}
+      ]
+    },
+    {
+      "@id": "music:KevinShirley",
+      "@type": "music:Producer",
+      "rdfs:label": "Kevin Shirley",
+      "music:hasGender": "male",
+      "music:activeYears": "1980–present",
+      "music:produced": [
+        {"@id": "music:IronMaiden"}
+      ]
+    },
+    {
+      "@id": "music:Samson",
+      "@type": "music:Band",
+      "rdfs:label": "Samson",
+      "music:activeYears": "1977–2002",
+      "music:hadMember": [
+        {"@id": "music:BruceDickinson"}
+      ]
+    },
+    {
+      "@id": "music:Urchin",
+      "@type": "music:Band",
+      "rdfs:label": "Urchin",
+      "music:activeYears": "1974–1980",
+      "music:hadMember": [
+        {"@id": "music:AdrianSmith"}
+      ]
+    },
+    {
+      "@id": "music:Gogmagog",
+      "@type": "music:Band",
+      "rdfs:label": "Gogmagog",
+      "music:activeYears": "1985",
+      "music:hadMember": [
+        {"@id": "music:CliveBurr"},
+        {"@id": "music:JanickGers"}
+      ]
+    },
+    {
+      "@id": "music:Gillan",
+      "@type": "music:Band",
+      "rdfs:label": "Gillan",
+      "music:activeYears": "1978–1982",
+      "music:hadMember": [
+        {"@id": "music:JanickGers"}
+      ]
+    },
+    {
+      "@id": "music:Trust",
+      "@type": "music:Band",
+      "rdfs:label": "Trust",
+      "music:activeYears": "1977–present",
+      "music:hadMember": [
+        {"@id": "music:CliveBurr"},
+        {"@id": "music:NickoMcBrain"}
+      ]
+    },
+    {
+      "@id": "music:PrayingMantis",
+      "@type": "music:Band",
+      "rdfs:label": "Praying Mantis",
+      "music:activeYears": "1973–present",
+      "music:hadMember": [
+        {"@id": "music:DennisStratton"}
+      ]
+    },
+    {
+      "@id": "music:Wolfsbane",
+      "@type": "music:Band",
+      "rdfs:label": "Wolfsbane",
+      "music:activeYears": "1984–present",
+      "music:hadMember": [
+        {"@id": "music:BlazeBayley"}
+      ]
+    },
+    {
+      "@id": "music:WhiteSpirit",
+      "@type": "music:Band",
+      "rdfs:label": "White Spirit",
+      "music:activeYears": "1975–1981",
+      "music:hadMember": [
+        {"@id": "music:JanickGers"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    }
+  ]
+}

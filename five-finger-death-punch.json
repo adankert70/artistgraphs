@@ -1,0 +1,419 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:FiveFingerDeathPunch",
+      "@type": "music:Band",
+      "rdfs:label": "Five Finger Death Punch",
+      "music:activeYears": "2005–present",
+      "music:formedYear": 2005,
+      "music:hasMember": [
+        {
+          "@id": "music:IvanMoody"
+        },
+        {
+          "@id": "music:ZoltanBathory"
+        },
+        {
+          "@id": "music:ChrisKael"
+        },
+        {
+          "@id": "music:CharlieEngen"
+        },
+        {
+          "@id": "music:AndyJames"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:CalebAndrewBingham"
+        },
+        {
+          "@id": "music:DarrellRoberts"
+        },
+        {
+          "@id": "music:MattSnell"
+        },
+        {
+          "@id": "music:JeremySpencer"
+        },
+        {
+          "@id": "music:JasonHook"
+        }
+      ]
+    },
+    {
+      "@id": "music:IvanMoody",
+      "@type": "music:Musician",
+      "rdfs:label": "Ivan Moody",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "2006–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Motograter"
+        },
+        {
+          "@id": "music:GhostMachine"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ZoltanBathory",
+      "@type": "music:Musician",
+      "rdfs:label": "Zoltan Bathory",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar",
+      "music:activeYears": "2005–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:UPO"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisKael",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Kael",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "2011–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Device"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CharlieEngen",
+      "@type": "music:Musician",
+      "rdfs:label": "Charlie Engen",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2007–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        },
+        {
+          "@id": "music:ScaleTheSummit"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:AndyJames",
+      "@type": "music:Musician",
+      "rdfs:label": "Andy James",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "2005–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:CalebAndrewBingham",
+      "@type": "music:Musician",
+      "rdfs:label": "Caleb Andrew Bingham",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "2005–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Athanasia"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:DarrellRoberts",
+      "@type": "music:Musician",
+      "rdfs:label": "Darrell Roberts",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        },
+        {
+          "@id": "music:WASP"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:MattSnell",
+      "@type": "music:Musician",
+      "rdfs:label": "Matt Snell",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:KillDevilHill"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:JeremySpencer",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeremy Spencer",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2000s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:Psychosexual"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:JasonHook",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Hook",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FiveFingerDeathPunch"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:FlatBlack"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:Motograter",
+      "@type": "music:Band",
+      "rdfs:label": "Motograter",
+      "music:formedYear": 1997,
+      "music:activeYears": "1997–2006",
+      "music:hadMember": [
+        {
+          "@id": "music:IvanMoody"
+        }
+      ]
+    },
+    {
+      "@id": "music:GhostMachine",
+      "@type": "music:Band",
+      "rdfs:label": "Ghost Machine",
+      "music:formedYear": 2005,
+      "music:activeYears": "2005–2005",
+      "music:hadMember": [
+        {
+          "@id": "music:IvanMoody"
+        }
+      ]
+    },
+    {
+      "@id": "music:UPO",
+      "@type": "music:Band",
+      "rdfs:label": "U.P.O.",
+      "music:formedYear": 1997,
+      "music:activeYears": "1997–2004",
+      "music:hadMember": [
+        {
+          "@id": "music:ZoltanBathory"
+        }
+      ]
+    },
+    {
+      "@id": "music:Device",
+      "@type": "music:Band",
+      "rdfs:label": "Device",
+      "music:formedYear": 2012,
+      "music:activeYears": "2012–2013",
+      "music:hadMember": [
+        {
+          "@id": "music:ChrisKael"
+        }
+      ]
+    },
+    {
+      "@id": "music:ScaleTheSummit",
+      "@type": "music:Band",
+      "rdfs:label": "Scale the Summit",
+      "music:formedYear": 2005,
+      "music:activeYears": "2005–2022",
+      "music:hasMember": [
+        {
+          "@id": "music:CharlieEngen"
+        }
+      ]
+    },
+    {
+      "@id": "music:Athanasia",
+      "@type": "music:Band",
+      "rdfs:label": "Athanasia",
+      "music:formedYear": 2019,
+      "music:activeYears": "2019–present",
+      "music:hasMember": [
+        {
+          "@id": "music:CalebAndrewBingham"
+        }
+      ]
+    },
+    {
+      "@id": "music:WASP",
+      "@type": "music:Band",
+      "rdfs:label": "W.A.S.P.",
+      "music:formedYear": 1982,
+      "music:activeYears": "1982–present",
+      "music:hadMember": [
+        {
+          "@id": "music:DarrellRoberts"
+        }
+      ]
+    },
+    {
+      "@id": "music:KillDevilHill",
+      "@type": "music:Band",
+      "rdfs:label": "Kill Devil Hill",
+      "music:formedYear": 2011,
+      "music:activeYears": "2011–present",
+      "music:hasMember": [
+        {
+          "@id": "music:MattSnell"
+        }
+      ]
+    },
+    {
+      "@id": "music:Psychosexual",
+      "@type": "music:Band",
+      "rdfs:label": "Psychosexual",
+      "music:formedYear": 2017,
+      "music:activeYears": "2017–present",
+      "music:hasMember": [
+        {
+          "@id": "music:JeremySpencer"
+        }
+      ]
+    },
+    {
+      "@id": "music:FlatBlack",
+      "@type": "music:Band",
+      "rdfs:label": "Flat Black",
+      "music:formedYear": 2023,
+      "music:activeYears": "2023–present",
+      "music:hasMember": [
+        {
+          "@id": "music:JasonHook"
+        }
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    }
+  ]
+}

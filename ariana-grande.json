@@ -1,0 +1,547 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:ArianaGrande",
+      "@type": "music:Musician",
+      "rdfs:label": "Ariana Grande",
+      "music:hasGender": "female",
+      "music:hasRole": "singer-songwriter",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ],
+      "music:hasRelationship": [
+        {
+          "@id": "_:g0"
+        },
+        {
+          "@id": "_:g1"
+        },
+        {
+          "@id": "_:g2"
+        },
+        {
+          "@id": "_:g3"
+        },
+        {
+          "@id": "_:g4"
+        },
+        {
+          "@id": "_:g5"
+        },
+        {
+          "@id": "_:g6"
+        },
+        {
+          "@id": "_:g7"
+        },
+        {
+          "@id": "_:g8"
+        },
+        {
+          "@id": "_:g9"
+        },
+        {
+          "@id": "_:g10"
+        },
+        {
+          "@id": "_:g11"
+        },
+        {
+          "@id": "_:g12"
+        },
+        {
+          "@id": "_:g13"
+        },
+        {
+          "@id": "_:g14"
+        },
+        {
+          "@id": "_:g15"
+        },
+        {
+          "@id": "_:g16"
+        },
+        {
+          "@id": "_:g17"
+        },
+        {
+          "@id": "_:g18"
+        },
+        {
+          "@id": "_:g19"
+        }
+      ]
+    },
+    {
+      "@id": "_:g0",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:NickiMinaj"
+      }
+    },
+    {
+      "@id": "_:g1",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:TheWeeknd"
+      }
+    },
+    {
+      "@id": "_:g2",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:JustinBieber"
+      }
+    },
+    {
+      "@id": "_:g3",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:LadyGaga"
+      }
+    },
+    {
+      "@id": "_:g4",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:DojaCat"
+      }
+    },
+    {
+      "@id": "_:g5",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:MacMiller"
+      }
+    },
+    {
+      "@id": "_:g6",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:BigSean"
+      }
+    },
+    {
+      "@id": "_:g7",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:IggyAzalea"
+      }
+    },
+    {
+      "@id": "_:g8",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:Zedd"
+      }
+    },
+    {
+      "@id": "_:g9",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:NathanSykes"
+      }
+    },
+    {
+      "@id": "_:g10",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:JessieJ"
+      }
+    },
+    {
+      "@id": "_:g11",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:MileyCyrus"
+      }
+    },
+    {
+      "@id": "_:g12",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:LanaDelRey"
+      }
+    },
+    {
+      "@id": "_:g13",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:MeganTheeStallion"
+      }
+    },
+    {
+      "@id": "_:g14",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:BarbraStreisand"
+      }
+    },
+    {
+      "@id": "_:g15",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:CharliXCX"
+      }
+    },
+    {
+      "@id": "_:g16",
+      "@type": "music:Relationship",
+      "music:relationshipType": "featured artist",
+      "music:relationshipTarget": {
+        "@id": "music:2Chainz"
+      }
+    },
+    {
+      "@id": "_:g17",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:MaxMartin"
+      }
+    },
+    {
+      "@id": "_:g18",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:IlyaSalmanzadeh"
+      }
+    },
+    {
+      "@id": "_:g19",
+      "@type": "music:Relationship",
+      "music:relationshipType": "producer",
+      "music:relationshipTarget": {
+        "@id": "music:OscarGorres"
+      }
+    },
+    {
+      "@id": "music:NickiMinaj",
+      "@type": "music:Musician",
+      "rdfs:label": "Nicki Minaj",
+      "music:hasGender": "female",
+      "music:hasRole": "rapper, singer",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheWeeknd",
+      "@type": "music:Musician",
+      "rdfs:label": "The Weeknd",
+      "music:hasGender": "male",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2009–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JustinBieber",
+      "@type": "music:Musician",
+      "rdfs:label": "Justin Bieber",
+      "music:hasGender": "male",
+      "music:hasRole": "singer",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:LadyGaga",
+      "@type": "music:Musician",
+      "rdfs:label": "Lady Gaga",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Piano"
+        }
+      ]
+    },
+    {
+      "@id": "music:DojaCat",
+      "@type": "music:Musician",
+      "rdfs:label": "Doja Cat",
+      "music:hasGender": "female",
+      "music:hasRole": "rapper, singer",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MacMiller",
+      "@type": "music:Musician",
+      "rdfs:label": "Mac Miller",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, singer",
+      "music:activeYears": "2007–2018",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BigSean",
+      "@type": "music:Musician",
+      "rdfs:label": "Big Sean",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:IggyAzalea",
+      "@type": "music:Musician",
+      "rdfs:label": "Iggy Azalea",
+      "music:hasGender": "female",
+      "music:hasRole": "rapper, singer",
+      "music:activeYears": "2011–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Zedd",
+      "@type": "music:Musician",
+      "rdfs:label": "Zedd",
+      "music:hasGender": "male",
+      "music:hasRole": "DJ, producer",
+      "music:activeYears": "2009–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:NathanSykes",
+      "@type": "music:Musician",
+      "rdfs:label": "Nathan Sykes",
+      "music:hasGender": "male",
+      "music:hasRole": "singer",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JessieJ",
+      "@type": "music:Musician",
+      "rdfs:label": "Jessie J",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MileyCyrus",
+      "@type": "music:Musician",
+      "rdfs:label": "Miley Cyrus",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, actress",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:LanaDelRey",
+      "@type": "music:Musician",
+      "rdfs:label": "Lana Del Rey",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MeganTheeStallion",
+      "@type": "music:Musician",
+      "rdfs:label": "Megan Thee Stallion",
+      "music:hasGender": "female",
+      "music:hasRole": "rapper, singer",
+      "music:activeYears": "2016–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:BarbraStreisand",
+      "@type": "music:Musician",
+      "rdfs:label": "Barbra Streisand",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, actress",
+      "music:activeYears": "1950s–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CharliXCX",
+      "@type": "music:Musician",
+      "rdfs:label": "Charli XCX",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:2Chainz",
+      "@type": "music:Musician",
+      "rdfs:label": "2 Chainz",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper",
+      "music:activeYears": "1997–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:MaxMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "Max Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "1990s–present"
+    },
+    {
+      "@id": "music:IlyaSalmanzadeh",
+      "@type": "music:Producer",
+      "rdfs:label": "Ilya Salmanzadeh",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "2000s–present"
+    },
+    {
+      "@id": "music:OscarGorres",
+      "@type": "music:Producer",
+      "rdfs:label": "Oscar Görres",
+      "music:hasGender": "male",
+      "music:hasRole": "producer",
+      "music:activeYears": "2010s–present"
+    },
+    {
+      "@id": "music:TommyBrown",
+      "@type": "music:Producer",
+      "rdfs:label": "Tommy Brown",
+      "music:hasGender": "male",
+      "music:hasRole": "producer",
+      "music:activeYears": "2000s–present"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}

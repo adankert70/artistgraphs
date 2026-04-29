@@ -1,0 +1,175 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:DeadKennedys",
+      "@type": "music:Band",
+      "rdfs:label": "Dead Kennedys",
+      "music:activeYears": "1978–1986, 2001–present",
+      "music:formedYear": 1978,
+      "music:hadMember": [
+        {"@id": "music:JelloBiafra"},
+        {"@id": "music:EastBayRay"},
+        {"@id": "music:KlausFlouride"},
+        {"@id": "music:6025"},
+        {"@id": "music:Ted"},
+        {"@id": "music:DHPeligro"},
+        {"@id": "music:RonSkipGreer"},
+        {"@id": "music:BrandonCruz"},
+        {"@id": "music:JeffPenalty"}
+      ]
+    },
+    {
+      "@id": "music:JelloBiafra",
+      "@type": "music:Musician",
+      "rdfs:label": "Jello Biafra",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1978–1986",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:EastBayRay",
+      "@type": "music:Musician",
+      "rdfs:label": "East Bay Ray",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1978–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:KlausFlouride",
+      "@type": "music:Musician",
+      "rdfs:label": "Klaus Flouride",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1978–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:6025",
+      "@type": "music:Musician",
+      "rdfs:label": "6025",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar",
+      "music:activeYears": "1978–1979",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:Ted",
+      "@type": "music:Musician",
+      "rdfs:label": "Ted",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1978–1981",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:DHPeligro",
+      "@type": "music:Musician",
+      "rdfs:label": "D. H. Peligro",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1981–1986, 2001–2022",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:RonSkipGreer",
+      "@type": "music:Musician",
+      "rdfs:label": "Ron \"Skip\" Greer",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "2001–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:BrandonCruz",
+      "@type": "music:Musician",
+      "rdfs:label": "Brandon Cruz",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "2001–2003",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:JeffPenalty",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Penalty",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1996–2003",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DeadKennedys"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    }
+  ]
+}

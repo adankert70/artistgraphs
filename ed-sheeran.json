@@ -1,0 +1,373 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:EdSheeran",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Ed Sheeran",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter, producer",
+      "music:activeYears": "2004–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Ukulele"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:TaylorSwift"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JustinBieber"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EminemRapper"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BeyoncePerfect"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:AndreasBocelli"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EltonJohn"}
+        },
+        {
+          "music:relationshipType": "wrote-for",
+          "music:relationshipTarget": {"@id": "music:OneDirection"}
+        },
+        {
+          "music:relationshipType": "wrote-for",
+          "music:relationshipTarget": {"@id": "music:JustinTimberlake"}
+        }
+      ]
+    },
+    {
+      "@id": "music:TaylorSwift",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Taylor Swift",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2004–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Banjo"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:JustinBieber",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Justin Bieber",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Drums"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:EminemRapper",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Eminem",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, songwriter, producer",
+      "music:activeYears": "1988–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:BeyoncePerfect",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Beyoncé",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, dancer",
+      "music:activeYears": "1997–present",
+      "music:wasMemberOf": [
+        {"@id": "music:DestinysChild"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:AndreasBocelli",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Andrea Bocelli",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, tenor, songwriter",
+      "music:activeYears": "1992–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:EltonJohn",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Elton John",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, piano, songwriter",
+      "music:activeYears": "1962–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        }
+      ]
+    },
+    {
+      "@id": "music:OneDirection",
+      "@type": "music:Band",
+      "rdfs:label": "One Direction",
+      "music:activeYears": "2010–2016",
+      "music:formedYear": 2010,
+      "music:hadMember": [
+        {"@id": "music:NiallHoran"},
+        {"@id": "music:HarryStyles"},
+        {"@id": "music:LiamPayne"},
+        {"@id": "music:LouisTomlinson"},
+        {"@id": "music:ZaynMalik"}
+      ]
+    },
+    {
+      "@id": "music:JustinTimberlake",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Justin Timberlake",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter, producer, actor",
+      "music:activeYears": "1992–present",
+      "music:wasMemberOf": [
+        {"@id": "music:NSYNC"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:DestinysChild",
+      "@type": "music:Band",
+      "rdfs:label": "Destiny's Child",
+      "music:activeYears": "1997–2006",
+      "music:formedYear": 1990,
+      "music:hadMember": [
+        {"@id": "music:BeyoncePerfect"},
+        {"@id": "music:KellyRowland"},
+        {"@id": "music:MichelleWilliams"}
+      ]
+    },
+    {
+      "@id": "music:NSYNC",
+      "@type": "music:Band",
+      "rdfs:label": "*NSYNC",
+      "music:activeYears": "1995–2002",
+      "music:formedYear": 1995,
+      "music:hadMember": [
+        {"@id": "music:JustinTimberlake"}
+      ]
+    },
+    {
+      "@id": "music:NiallHoran",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Niall Horan",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:HarryStyles",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Harry Styles",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:LiamPayne",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Liam Payne",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:LouisTomlinson",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Louis Tomlinson",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:ZaynMalik",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Zayn Malik",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2010–present",
+      "music:wasMemberOf": [
+        {"@id": "music:OneDirection"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:KellyRowland",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Kelly Rowland",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1997–present",
+      "music:wasMemberOf": [
+        {"@id": "music:DestinysChild"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:MichelleWilliams",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Michelle Williams",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1999–present",
+      "music:wasMemberOf": [
+        {"@id": "music:DestinysChild"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:JakeGosling",
+      "@type": "music:Producer",
+      "rdfs:label": "Jake Gosling",
+      "music:hasGender": "male",
+      "music:activeYears": "2000–present",
+      "music:produced": [
+        {"@id": "music:EdSheeran"}
+      ]
+    },
+    {
+      "@id": "music:BennyBlanco",
+      "@type": "music:Producer",
+      "rdfs:label": "Benny Blanco",
+      "music:hasGender": "male",
+      "music:activeYears": "2006–present",
+      "music:produced": [
+        {"@id": "music:EdSheeran"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Ukulele",
+      "@type": "music:Instrument",
+      "rdfs:label": "Ukulele"
+    },
+    {
+      "@id": "music:Banjo",
+      "@type": "music:Instrument",
+      "rdfs:label": "Banjo"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    }
+  ]
+}

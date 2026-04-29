@@ -1,0 +1,597 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Danzig",
+      "@type": "music:Band",
+      "rdfs:label": "Danzig",
+      "music:activeYears": "1987–present",
+      "music:formedYear": 1987,
+      "music:hasMember": [
+        {"@id": "music:GlennDanzig"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:JohnChrist"},
+        {"@id": "music:EerieBass"},
+        {"@id": "music:ChuckBiscuits"},
+        {"@id": "music:JoshLazie"},
+        {"@id": "music:TommyVictor"},
+        {"@id": "music:JohnnyCelley"},
+        {"@id": "music:SteveZia"},
+        {"@id": "music:LondonMay"},
+        {"@id": "music:JoeyLacaze"},
+        {"@id": "music:ToddYouth"},
+        {"@id": "music:HowieEyear"},
+        {"@id": "music:BennieChamas"}
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:DanzigI"},
+        {"@id": "music:DanzigIILucifuge"},
+        {"@id": "music:DanzigIIIHowTheDemonsEnter"},
+        {"@id": "music:Danzig4P"},
+        {"@id": "music:DanzigVBlackLadendAmbrosia"},
+        {"@id": "music:DanzigVI6661SatansChild"},
+        {"@id": "music:DanzigVIIBlackLadenCrown"},
+        {"@id": "music:DemonsweatLive"},
+        {"@id": "music:CircleOfSnakes"},
+        {"@id": "music:SkeletonsSkeletons"}
+      ]
+    },
+    {
+      "@id": "music:GlennDanzig",
+      "@type": "music:Musician",
+      "rdfs:label": "Glenn Danzig",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, keyboards, guitar",
+      "music:activeYears": "1977–present",
+      "music:isMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Misfits"},
+        {"@id": "music:Samhain"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JohnnyCash"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "influenced",
+          "music:relationshipTarget": {"@id": "music:Metallica"}
+        }
+      ]
+    },
+    {
+      "@id": "music:JohnChrist",
+      "@type": "music:Musician",
+      "rdfs:label": "John Christ",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1987–1995",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:EerieBass",
+      "@type": "music:Musician",
+      "rdfs:label": "Eerie Von",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1987–1995",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:Samhain"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ]
+    },
+    {
+      "@id": "music:ChuckBiscuits",
+      "@type": "music:Musician",
+      "rdfs:label": "Chuck Biscuits",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1987–1994",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:BlackFlag"},
+        {"@id": "music:CircleJerks"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:JoshLazie",
+      "@type": "music:Musician",
+      "rdfs:label": "Josh Lazie",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "1995–1999",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ]
+    },
+    {
+      "@id": "music:TommyVictor",
+      "@type": "music:Musician",
+      "rdfs:label": "Tommy Victor",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1996–2002",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Prong"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:JohnnyCelley",
+      "@type": "music:Musician",
+      "rdfs:label": "Johnny Kelly",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1996–2002",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:TypeONegative"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:SteveZia",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Zing",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, drums",
+      "music:activeYears": "1999–2003",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:Samhain"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:LondonMay",
+      "@type": "music:Musician",
+      "rdfs:label": "London May",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2003–2004",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:Samhain"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:JoeyLacaze",
+      "@type": "music:Musician",
+      "rdfs:label": "Joey Castillo",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2004–2006",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:QueensOfTheStoneAge"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:ToddYouth",
+      "@type": "music:Musician",
+      "rdfs:label": "Todd Youth",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "2005–2015",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:MurphysLaw"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:HowieEyear",
+      "@type": "music:Musician",
+      "rdfs:label": "Howie Pyro",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar",
+      "music:activeYears": "2003–2015",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"},
+        {"@id": "music:DoYouWannaFilthyAnimal"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ]
+    },
+    {
+      "@id": "music:BennieChamas",
+      "@type": "music:Musician",
+      "rdfs:label": "Bennie E",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "2006–2015",
+      "music:wasMemberOf": [
+        {"@id": "music:Danzig"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+    {
+      "@id": "music:Misfits",
+      "@type": "music:Band",
+      "rdfs:label": "Misfits",
+      "music:activeYears": "1977–1983, 1995–present",
+      "music:formedYear": 1977,
+      "music:hadMember": [
+        {"@id": "music:GlennDanzig"}
+      ]
+    },
+    {
+      "@id": "music:Samhain",
+      "@type": "music:Band",
+      "rdfs:label": "Samhain",
+      "music:activeYears": "1983–1987",
+      "music:formedYear": 1983,
+      "music:hadMember": [
+        {"@id": "music:GlennDanzig"},
+        {"@id": "music:EerieBass"},
+        {"@id": "music:SteveZia"},
+        {"@id": "music:LondonMay"}
+      ]
+    },
+    {
+      "@id": "music:BlackFlag",
+      "@type": "music:Band",
+      "rdfs:label": "Black Flag",
+      "music:activeYears": "1976–1986, 2003–present",
+      "music:formedYear": 1976,
+      "music:hadMember": [
+        {"@id": "music:ChuckBiscuits"}
+      ]
+    },
+    {
+      "@id": "music:CircleJerks",
+      "@type": "music:Band",
+      "rdfs:label": "Circle Jerks",
+      "music:activeYears": "1979–1995, 2001–present",
+      "music:formedYear": 1979,
+      "music:hadMember": [
+        {"@id": "music:ChuckBiscuits"}
+      ]
+    },
+    {
+      "@id": "music:Prong",
+      "@type": "music:Band",
+      "rdfs:label": "Prong",
+      "music:activeYears": "1986–present",
+      "music:formedYear": 1986,
+      "music:hasMember": [
+        {"@id": "music:TommyVictor"}
+      ]
+    },
+    {
+      "@id": "music:TypeONegative",
+      "@type": "music:Band",
+      "rdfs:label": "Type O Negative",
+      "music:activeYears": "1989–2010",
+      "music:formedYear": 1989,
+      "music:hadMember": [
+        {"@id": "music:JohnnyCelley"}
+      ]
+    },
+    {
+      "@id": "music:QueensOfTheStoneAge",
+      "@type": "music:Band",
+      "rdfs:label": "Queens of the Stone Age",
+      "music:activeYears": "1996–present",
+      "music:formedYear": 1996,
+      "music:hadMember": [
+        {"@id": "music:JoeyLacaze"}
+      ]
+    },
+    {
+      "@id": "music:MurphysLaw",
+      "@type": "music:Band",
+      "rdfs:label": "Murphy's Law",
+      "music:activeYears": "1982–present",
+      "music:formedYear": 1982,
+      "music:hadMember": [
+        {"@id": "music:ToddYouth"}
+      ]
+    },
+    {
+      "@id": "music:DoYouWannaFilthyAnimal",
+      "@type": "music:Band",
+      "rdfs:label": "D Generation",
+      "music:activeYears": "1991–1999, 2008–present",
+      "music:formedYear": 1991,
+      "music:hadMember": [
+        {"@id": "music:HowieEyear"}
+      ]
+    },
+    {
+      "@id": "music:JohnnyCash",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Johnny Cash",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, guitar",
+      "music:activeYears": "1954–2003",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:Metallica",
+      "@type": "music:Band",
+      "rdfs:label": "Metallica",
+      "music:activeYears": "1981–present",
+      "music:formedYear": 1981
+    },
+    {
+      "@id": "music:RickRubin",
+      "@type": "music:Producer",
+      "rdfs:label": "Rick Rubin",
+      "music:hasGender": "male",
+      "music:hasRole": "producer",
+      "music:activeYears": "1982–present",
+      "music:produced": [
+        {"@id": "music:Danzig"}
+      ]
+    },
+    {
+      "@id": "music:DanzigI",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig",
+      "music:releaseYear": 1988
+    },
+    {
+      "@id": "music:DanzigIILucifuge",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig II: Lucifuge",
+      "music:releaseYear": 1990
+    },
+    {
+      "@id": "music:DanzigIIIHowTheDemonsEnter",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig III: How the Gods Kill",
+      "music:releaseYear": 1992
+    },
+    {
+      "@id": "music:Danzig4P",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig 4P",
+      "music:releaseYear": 1994
+    },
+    {
+      "@id": "music:DanzigVBlackLadendAmbrosia",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig 5: Blackacidevil",
+      "music:releaseYear": 1996
+    },
+    {
+      "@id": "music:DanzigVI6661SatansChild",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig 6:66 Satan's Child",
+      "music:releaseYear": 1999
+    },
+    {
+      "@id": "music:DanzigVIIBlackLadenCrown",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig 777: I Luciferi",
+      "music:releaseYear": 2002
+    },
+    {
+      "@id": "music:DemonsweatLive",
+      "@type": "music:Album",
+      "rdfs:label": "Danzig Sings Elvis",
+      "music:releaseYear": 2020
+    },
+    {
+      "@id": "music:CircleOfSnakes",
+      "@type": "music:Album",
+      "rdfs:label": "Circle of Snakes",
+      "music:releaseYear": 2004
+    },
+    {
+      "@id": "music:SkeletonsSkeletons",
+      "@type": "music:Album",
+      "rdfs:label": "Skeletons",
+      "music:releaseYear": 2015
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer"
+    },
+    {
+      "@id": "music:Album",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Album"
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:recordedAlbum",
+      "@type": "rdf:Property",
+      "rdfs:label": "recorded album",
+      "rdfs:range": {"@id": "music:Album"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:releaseYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "release year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
+    }
+  ]
+}

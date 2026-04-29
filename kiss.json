@@ -1,0 +1,304 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Kiss",
+      "@type": "music:Band",
+      "rdfs:label": "Kiss",
+      "music:activeYears": "1973–2023",
+      "music:formedYear": 1973,
+      "music:hasMember": [
+        {
+          "@id": "music:PaulStanley"
+        },
+        {
+          "@id": "music:GeneSimmons"
+        },
+        {
+          "@id": "music:TommyThayer"
+        },
+        {
+          "@id": "music:EricSinger"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:AceFrehley"
+        },
+        {
+          "@id": "music:PeterCriss"
+        },
+        {
+          "@id": "music:EricCarr"
+        },
+        {
+          "@id": "music:VinnieVincent"
+        },
+        {
+          "@id": "music:MarkStJohn"
+        },
+        {
+          "@id": "music:BruceKulick"
+        }
+      ]
+    },
+    {
+      "@id": "music:PaulStanley",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Stanley",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, lead vocals",
+      "music:activeYears": "1973–2023",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GeneSimmons",
+      "@type": "music:Musician",
+      "rdfs:label": "Gene Simmons",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, lead vocals",
+      "music:activeYears": "1973–2023",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TommyThayer",
+      "@type": "music:Musician",
+      "rdfs:label": "Tommy Thayer",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "2002–2023",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:EricSinger",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Singer",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing vocals",
+      "music:activeYears": "1991–2023",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:AceFrehley",
+      "@type": "music:Musician",
+      "rdfs:label": "Ace Frehley",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, vocals",
+      "music:activeYears": "1973–1982, 1996–2002",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:PeterCriss",
+      "@type": "music:Musician",
+      "rdfs:label": "Peter Criss",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, vocals",
+      "music:activeYears": "1973–1980, 1996–2004",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:EricCarr",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Carr",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, vocals",
+      "music:activeYears": "1980–1991",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:VinnieVincent",
+      "@type": "music:Musician",
+      "rdfs:label": "Vinnie Vincent",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1982–1984",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:MarkStJohn",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark St. John",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar",
+      "music:activeYears": "1984",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:BruceKulick",
+      "@type": "music:Musician",
+      "rdfs:label": "Bruce Kulick",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, vocals",
+      "music:activeYears": "1984–1996",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Kiss"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:FrehleysComet",
+      "@type": "music:Band",
+      "rdfs:label": "Frehley's Comet",
+      "music:formedYear": 1984,
+      "music:activeYears": "1984–1995",
+      "music:hasMember": [
+        {
+          "@id": "music:AceFrehley"
+        }
+      ]
+    },
+    {
+      "@id": "music:VinnieVincentInvasion",
+      "@type": "music:Band",
+      "rdfs:label": "Vinnie Vincent Invasion",
+      "music:formedYear": 1984,
+      "music:activeYears": "1984–1988",
+      "music:hasMember": [
+        {
+          "@id": "music:VinnieVincent"
+        }
+      ]
+    },
+    {
+      "@id": "music:WhiteTiger",
+      "@type": "music:Band",
+      "rdfs:label": "White Tiger",
+      "music:formedYear": 1985,
+      "music:activeYears": "1985–1993",
+      "music:hasMember": [
+        {
+          "@id": "music:MarkStJohn"
+        }
+      ]
+    },
+    {
+      "@id": "music:GrandFunkRailroad",
+      "@type": "music:Band",
+      "rdfs:label": "Grand Funk Railroad",
+      "music:formedYear": 1969,
+      "music:activeYears": "1969–1976, 1981–1983, 1996–present",
+      "music:hasMember": [
+        {
+          "@id": "music:BruceKulick"
+        }
+      ]
+    }
+  ]
+}

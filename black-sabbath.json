@@ -1,0 +1,412 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:BlackSabbath",
+      "@type": "music:Band",
+      "rdfs:label": "Black Sabbath",
+      "music:activeYears": "1968–2017, 2025",
+      "music:formedYear": 1968,
+      "music:hasMember": [
+        {
+          "@id": "music:TonyIommi"
+        },
+        {
+          "@id": "music:GeezerButler"
+        },
+        {
+          "@id": "music:BillWard"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:OzzyOsbourne"
+        },
+        {
+          "@id": "music:RonnieJamesDio"
+        },
+        {
+          "@id": "music:VinnyAppice"
+        },
+        {
+          "@id": "music:IanGillan"
+        },
+        {
+          "@id": "music:GlennHughes"
+        },
+        {
+          "@id": "music:TonyMartin"
+        },
+        {
+          "@id": "music:CozyPowell"
+        },
+        {
+          "@id": "music:BobbyRondinelli"
+        },
+        {
+          "@id": "music:TommyClufetos"
+        },
+        {
+          "@id": "music:GeoffNicholls"
+        },
+        {
+          "@id": "music:AdamWakeman"
+        }
+      ]
+    },
+    {
+      "@id": "music:OzzyOsbourne",
+      "@type": "music:Musician",
+      "rdfs:label": "Ozzy Osbourne",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1968–2025",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TonyIommi",
+      "@type": "music:Musician",
+      "rdfs:label": "Tony Iommi",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1968–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:GeezerButler",
+      "@type": "music:Musician",
+      "rdfs:label": "Geezer Butler",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1968–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:BillWard",
+      "@type": "music:Musician",
+      "rdfs:label": "Bill Ward",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1968–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:RonnieJamesDio",
+      "@type": "music:Musician",
+      "rdfs:label": "Ronnie James Dio",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1960s–2010",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        },
+        {
+          "@id": "music:Rainbow"
+        },
+        {
+          "@id": "music:Dio"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:VinnyAppice",
+      "@type": "music:Musician",
+      "rdfs:label": "Vinny Appice",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:IanGillan",
+      "@type": "music:Musician",
+      "rdfs:label": "Ian Gillan",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1965–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        },
+        {
+          "@id": "music:DeepPurple"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GlennHughes",
+      "@type": "music:Musician",
+      "rdfs:label": "Glenn Hughes",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, bass",
+      "music:activeYears": "1960s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        },
+        {
+          "@id": "music:DeepPurple"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:TonyMartin",
+      "@type": "music:Musician",
+      "rdfs:label": "Tony Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:CozyPowell",
+      "@type": "music:Musician",
+      "rdfs:label": "Cozy Powell",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1960s–1998",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:BobbyRondinelli",
+      "@type": "music:Musician",
+      "rdfs:label": "Bobby Rondinelli",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        },
+        {
+          "@id": "music:Rainbow"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:TommyClufetos",
+      "@type": "music:Musician",
+      "rdfs:label": "Tommy Clufetos",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:GeoffNicholls",
+      "@type": "music:Musician",
+      "rdfs:label": "Geoff Nicholls",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards",
+      "music:activeYears": "1970s–2004",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:AdamWakeman",
+      "@type": "music:Musician",
+      "rdfs:label": "Adam Wakeman",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards",
+      "music:activeYears": "2000s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:BlackSabbath"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:Rainbow",
+      "@type": "music:Band",
+      "rdfs:label": "Rainbow",
+      "music:formedYear": 1975,
+      "music:activeYears": "1975–1984, 2015–present",
+      "music:hadMember": [
+        {
+          "@id": "music:RonnieJamesDio"
+        },
+        {
+          "@id": "music:BobbyRondinelli"
+        }
+      ]
+    },
+    {
+      "@id": "music:DeepPurple",
+      "@type": "music:Band",
+      "rdfs:label": "Deep Purple",
+      "music:formedYear": 1968,
+      "music:activeYears": "1968–1976, 1984–present",
+      "music:hadMember": [
+        {
+          "@id": "music:IanGillan"
+        },
+        {
+          "@id": "music:GlennHughes"
+        }
+      ]
+    },
+    {
+      "@id": "music:Dio",
+      "@type": "music:Band",
+      "rdfs:label": "Dio",
+      "music:formedYear": 1982,
+      "music:activeYears": "1982–2012"
+    },
+        {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+
+  ]
+}

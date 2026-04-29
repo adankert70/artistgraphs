@@ -1,0 +1,267 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TheKinks",
+      "@type": "music:Band",
+      "rdfs:label": "The Kinks",
+      "music:activeYears": "1963–1996",
+      "music:formedYear": 1963,
+      "music:hadMember": [
+        {"@id": "music:RayDavies"},
+        {"@id": "music:DaveDavies"},
+        {"@id": "music:MickAvory"},
+        {"@id": "music:PeteQuaife"},
+        {"@id": "music:JohnDalton"},
+        {"@id": "music:JohnGosling"},
+        {"@id": "music:AndyPyle"},
+        {"@id": "music:JimRodford"},
+        {"@id": "music:GordonEdwards"},
+        {"@id": "music:IanGibbons"},
+        {"@id": "music:BobHenrit"},
+        {"@id": "music:MarkHaley"}
+      ]
+    },
+    {
+      "@id": "music:RayDavies",
+      "@type": "music:Musician",
+      "rdfs:label": "Ray Davies",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, backing vocals, songwriter",
+      "music:activeYears": "1963–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Harmonica"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:DaveDavies",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Davies",
+      "music:hasGender": "male",
+      "music:hasRole": "backing vocals, lead vocals",
+      "music:activeYears": "1963–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Banjo"},
+        {"@id": "music:Keyboards"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:MickAvory",
+      "@type": "music:Musician",
+      "rdfs:label": "Mick Avory",
+      "music:hasGender": "male",
+      "music:hasRole": "drummer",
+      "music:activeYears": "1963–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:PeteQuaife",
+      "@type": "music:Musician",
+      "rdfs:label": "Pete Quaife",
+      "music:hasGender": "male",
+      "music:hasRole": "bassist, backing vocals",
+      "music:activeYears": "1963–1969",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:JohnDalton",
+      "@type": "music:Musician",
+      "rdfs:label": "John Dalton",
+      "music:hasGender": "male",
+      "music:hasRole": "bassist, backing vocals",
+      "music:activeYears": "1966–1976",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:JohnGosling",
+      "@type": "music:Musician",
+      "rdfs:label": "John Gosling",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboardist, backing vocals",
+      "music:activeYears": "1970–1978",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:AndyPyle",
+      "@type": "music:Musician",
+      "rdfs:label": "Andy Pyle",
+      "music:hasGender": "male",
+      "music:hasRole": "bassist",
+      "music:activeYears": "1976–1978",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:JimRodford",
+      "@type": "music:Musician",
+      "rdfs:label": "Jim Rodford",
+      "music:hasGender": "male",
+      "music:hasRole": "bassist, backing vocals",
+      "music:activeYears": "1978–1997",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"},
+        {"@id": "music:Argent"}
+      ]
+    },
+    {
+      "@id": "music:GordonEdwards",
+      "@type": "music:Musician",
+      "rdfs:label": "Gordon Edwards",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboardist, backing vocals",
+      "music:activeYears": "1978–1979",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:IanGibbons",
+      "@type": "music:Musician",
+      "rdfs:label": "Ian Gibbons",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboardist, backing vocals",
+      "music:activeYears": "1979–1997",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:BobHenrit",
+      "@type": "music:Musician",
+      "rdfs:label": "Bob Henrit",
+      "music:hasGender": "male",
+      "music:hasRole": "drummer",
+      "music:activeYears": "1984–1996",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:MarkHaley",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark Haley",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboardist, backing vocals",
+      "music:activeYears": "1989–1993",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:TheKinks"}
+      ]
+    },
+    {
+      "@id": "music:Argent",
+      "@type": "music:Band",
+      "rdfs:label": "Argent",
+      "music:activeYears": "1969–1976",
+      "music:hadMember": [
+        {"@id": "music:JimRodford"}
+      ]
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Harmonica",
+      "@type": "music:Instrument",
+      "rdfs:label": "Harmonica"
+    },
+    {
+      "@id": "music:Banjo",
+      "@type": "music:Instrument",
+      "rdfs:label": "Banjo"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    }
+  ]
+}

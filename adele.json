@@ -1,0 +1,89 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Adele",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Adele",
+      "music:hasGender": "female",
+      "music:hasRole": "lead vocals, piano, guitar",
+      "music:activeYears": "2008–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Piano"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {
+            "@id": "music:DanielMerriweather"
+          }
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {
+            "@id": "music:TheRaconteurs"
+          }
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {
+            "@id": "music:DariusRucker"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "music:DanielMerriweather",
+      "@type": "music:Musician",
+      "rdfs:label": "Daniel Merriweather",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals",
+      "music:activeYears": "2000s–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheRaconteurs",
+      "@type": "music:Band",
+      "rdfs:label": "The Raconteurs",
+      "music:formedYear": 2006,
+      "music:activeYears": "2006–present"
+    },
+    {
+      "@id": "music:DariusRucker",
+      "@type": "music:Musician",
+      "rdfs:label": "Darius Rucker",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1980s–present",
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    }
+  ]
+}

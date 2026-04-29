@@ -1,0 +1,464 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TheAnimals",
+      "@type": "music:Band",
+      "rdfs:label": "The Animals",
+      "music:activeYears": "1962–1969, 1975–1976, 1983, 1992–present",
+      "music:formedYear": 1962,
+      "music:hasMember": [
+        {
+          "@id": "music:EricBurdon"
+        },
+        {
+          "@id": "music:JohnzoWest"
+        },
+        {
+          "@id": "music:DaveyAllen"
+        },
+        {
+          "@id": "music:DustinKoester"
+        },
+        {
+          "@id": "music:JustinAndres"
+        },
+        {
+          "@id": "music:RubenSalinas"
+        },
+        {
+          "@id": "music:EvanMackey"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:HiltonValentine"
+        },
+        {
+          "@id": "music:ChasChandler"
+        },
+        {
+          "@id": "music:AlanPrice"
+        },
+        {
+          "@id": "music:JohnSteel"
+        },
+        {
+          "@id": "music:DaveRowberry"
+        },
+        {
+          "@id": "music:BarryJenkins"
+        },
+        {
+          "@id": "music:JohnWeider"
+        },
+        {
+          "@id": "music:VicBriggs"
+        },
+        {
+          "@id": "music:DannyMcCulloch"
+        },
+        {
+          "@id": "music:ZootMoney"
+        },
+        {
+          "@id": "music:AndySummers"
+        }
+      ]
+    },
+    {
+      "@id": "music:EricBurdon",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Burdon",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1962–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {
+            "@id": "music:War"
+          }
+        }
+      ]
+    },
+    {
+      "@id": "music:JohnzoWest",
+      "@type": "music:Musician",
+      "rdfs:label": "Johnzo West",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveyAllen",
+      "@type": "music:Musician",
+      "rdfs:label": "Davey Allen",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DustinKoester",
+      "@type": "music:Musician",
+      "rdfs:label": "Dustin Koester",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JustinAndres",
+      "@type": "music:Musician",
+      "rdfs:label": "Justin Andres",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:RubenSalinas",
+      "@type": "music:Musician",
+      "rdfs:label": "Ruben Salinas",
+      "music:hasGender": "male",
+      "music:hasRole": "saxophone, flute",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Saxophone"
+        }
+      ]
+    },
+    {
+      "@id": "music:EvanMackey",
+      "@type": "music:Musician",
+      "rdfs:label": "Evan Mackey",
+      "music:hasGender": "male",
+      "music:hasRole": "trombone",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:HiltonValentine",
+      "@type": "music:Musician",
+      "rdfs:label": "Hilton Valentine",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1962–1966",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChasChandler",
+      "@type": "music:Musician",
+      "rdfs:label": "Chas Chandler",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1962–1966",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:AlanPrice",
+      "@type": "music:Musician",
+      "rdfs:label": "Alan Price",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, backing vocals",
+      "music:activeYears": "1962–1965",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JohnSteel",
+      "@type": "music:Musician",
+      "rdfs:label": "John Steel",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1962–1966, 1992–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveRowberry",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Rowberry",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards",
+      "music:activeYears": "1965–1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        }
+      ]
+    },
+    {
+      "@id": "music:BarryJenkins",
+      "@type": "music:Musician",
+      "rdfs:label": "Barry Jenkins",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1966–1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:JohnWeider",
+      "@type": "music:Musician",
+      "rdfs:label": "John Weider",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, violin, bass",
+      "music:activeYears": "1966–1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Violin"
+        },
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:VicBriggs",
+      "@type": "music:Musician",
+      "rdfs:label": "Vic Briggs",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, piano",
+      "music:activeYears": "1966–1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Piano"
+        }
+      ]
+    },
+    {
+      "@id": "music:DannyMcCulloch",
+      "@type": "music:Musician",
+      "rdfs:label": "Danny McCulloch",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1966–1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:ZootMoney",
+      "@type": "music:Musician",
+      "rdfs:label": "Zoot Money",
+      "music:hasGender": "male",
+      "music:hasRole": "organ, piano, bass, occasional lead vocals",
+      "music:activeYears": "1968",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:AndySummers",
+      "@type": "music:Musician",
+      "rdfs:label": "Andy Summers",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar",
+      "music:activeYears": "1968–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheAnimals"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:ThePolice"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:War",
+      "@type": "music:Band",
+      "rdfs:label": "War",
+      "music:formedYear": 1969,
+      "music:activeYears": "1969–present"
+    },
+    {
+      "@id": "music:ThePolice",
+      "@type": "music:Band",
+      "rdfs:label": "The Police",
+      "music:formedYear": 1977,
+      "music:activeYears": "1977–1986, 2007–2008"
+    }
+  ]
+}

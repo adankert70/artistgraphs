@@ -1,0 +1,117 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:BritneySpears",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Britney Spears",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter, dancer",
+      "music:activeYears": "1992–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Madonna"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Rihanna"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:WillIAm"}
+        },
+        {
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EltonJohn"}
+        }
+      ]
+    },
+    {
+      "@id": "music:Madonna",
+      "@type": "music:Musician",
+      "rdfs:label": "Madonna",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "1979–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Rihanna",
+      "@type": "music:Musician",
+      "rdfs:label": "Rihanna",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, songwriter",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:WillIAm",
+      "@type": "music:Musician",
+      "rdfs:label": "will.i.am",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, songwriter, producer",
+      "music:activeYears": "1998–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:BlackEyedPeas"}
+      ]
+    },
+    {
+      "@id": "music:EltonJohn",
+      "@type": "music:Musician",
+      "rdfs:label": "Elton John",
+      "music:hasGender": "male",
+      "music:hasRole": "vocals, piano, songwriter",
+      "music:activeYears": "1962–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ]
+    },
+    {
+      "@id": "music:BlackEyedPeas",
+      "@type": "music:Band",
+      "rdfs:label": "Black Eyed Peas",
+      "music:activeYears": "1995–present",
+      "music:hadMember": [
+        {"@id": "music:WillIAm"}
+      ]
+    },
+    {
+      "@id": "music:MaxMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "Max Martin",
+      "music:hasGender": "male",
+      "music:activeYears": "1990s–present",
+      "music:produced": [
+        {"@id": "music:BritneySpears"}
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    }
+  ]
+}

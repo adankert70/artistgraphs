@@ -1,0 +1,681 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Journey",
+      "@type": "music:Band",
+      "rdfs:label": "Journey",
+      "music:activeYears": "1973–1987, 1995–present",
+      "music:formedYear": 1973,
+      "music:hasMember": [
+        {
+          "@id": "music:NealSchon"
+        },
+        {
+          "@id": "music:JonathanCain"
+        },
+        {
+          "@id": "music:DeenCastronovo"
+        },
+        {
+          "@id": "music:ArnelPineda"
+        },
+        {
+          "@id": "music:JasonDerlatka"
+        },
+        {
+          "@id": "music:ToddJensen"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:GreggRolie"
+        },
+        {
+          "@id": "music:RossValory"
+        },
+        {
+          "@id": "music:GeorgeTickner"
+        },
+        {
+          "@id": "music:PrairiePrince"
+        },
+        {
+          "@id": "music:AynsleyDunbar"
+        },
+        {
+          "@id": "music:RobertFleischman"
+        },
+        {
+          "@id": "music:StevePerry"
+        },
+        {
+          "@id": "music:SteveSmith"
+        },
+        {
+          "@id": "music:RandyJackson"
+        },
+        {
+          "@id": "music:SteveAugeri"
+        },
+        {
+          "@id": "music:JeffScottSoto"
+        }
+      ]
+    },
+    {
+      "@id": "music:NealSchon",
+      "@type": "music:Musician",
+      "rdfs:label": "Neal Schon",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1970s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Santana"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JonathanCain",
+      "@type": "music:Musician",
+      "rdfs:label": "Jonathan Cain",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, piano, backing vocals, rhythm guitar, harmonica",
+      "music:activeYears": "1970s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:TheBabys"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:DeenCastronovo",
+      "@type": "music:Musician",
+      "rdfs:label": "Deen Castronovo",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing and lead vocals",
+      "music:activeYears": "1990s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:BadEnglish"
+        },
+        {
+          "@id": "music:Hardline"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ArnelPineda",
+      "@type": "music:Musician",
+      "rdfs:label": "Arnel Pineda",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JasonDerlatka",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Derlatka",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, backing and lead vocals",
+      "music:activeYears": "2000s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ToddJensen",
+      "@type": "music:Musician",
+      "rdfs:label": "Todd Jensen",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1980s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Hardline"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:GreggRolie",
+      "@type": "music:Musician",
+      "rdfs:label": "Gregg Rolie",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, lead vocals",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Santana"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:AbraxasPool"
+        },
+        {
+          "@id": "music:TheStorm"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:RossValory",
+      "@type": "music:Musician",
+      "rdfs:label": "Ross Valory",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:FrumiousBandersnatch"
+        },
+        {
+          "@id": "music:SteveMillerBand"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheStorm"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:GeorgeTickner",
+      "@type": "music:Musician",
+      "rdfs:label": "George Tickner",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar",
+      "music:activeYears": "1970s–1980s",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:FrumiousBandersnatch"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        }
+      ]
+    },
+    {
+      "@id": "music:PrairiePrince",
+      "@type": "music:Musician",
+      "rdfs:label": "Prairie Prince",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:TheTubes"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:AynsleyDunbar",
+      "@type": "music:Musician",
+      "rdfs:label": "Aynsley Dunbar",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1960s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:FrankZappasMothersOfInvention"
+        },
+        {
+          "@id": "music:DavidBowie"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:RobertFleischman",
+      "@type": "music:Musician",
+      "rdfs:label": "Robert Fleischman",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:StevePerry",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Perry",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:SteveSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Smith",
+      "music:hasGender": "male",
+      "music:hasRole": "drums",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Montrose"
+        }
+      ],
+      "music:isMemberOf": [
+        {
+          "@id": "music:VitalInformation"
+        },
+        {
+          "@id": "music:StepsAhead"
+        },
+        {
+          "@id": "music:TheStorm"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:RandyJackson",
+      "@type": "music:Musician",
+      "rdfs:label": "Randy Jackson",
+      "music:hasGender": "male",
+      "music:hasRole": "bass",
+      "music:activeYears": "1970s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        }
+      ]
+    },
+    {
+      "@id": "music:SteveAugeri",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Augeri",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Tyketto"
+        },
+        {
+          "@id": "music:TallStories"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:JeffScottSoto",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Scott Soto",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals",
+      "music:activeYears": "1980s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Journey"
+        },
+        {
+          "@id": "music:Talisman"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Santana",
+      "@type": "music:Band",
+      "rdfs:label": "Santana",
+      "music:formedYear": 1966,
+      "music:activeYears": "1966–present",
+      "music:hadMember": [
+        {
+          "@id": "music:NealSchon"
+        },
+        {
+          "@id": "music:GreggRolie"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheBabys",
+      "@type": "music:Band",
+      "rdfs:label": "The Babys",
+      "music:formedYear": 1974,
+      "music:activeYears": "1974–1981",
+      "music:hadMember": [
+        {
+          "@id": "music:JonathanCain"
+        }
+      ]
+    },
+    {
+      "@id": "music:BadEnglish",
+      "@type": "music:Band",
+      "rdfs:label": "Bad English",
+      "music:formedYear": 1988,
+      "music:activeYears": "1988–1991",
+      "music:hadMember": [
+        {
+          "@id": "music:DeenCastronovo"
+        }
+      ]
+    },
+    {
+      "@id": "music:Hardline",
+      "@type": "music:Band",
+      "rdfs:label": "Hardline",
+      "music:formedYear": 1991,
+      "music:activeYears": "1991–present",
+      "music:hasMember": [
+        {
+          "@id": "music:DeenCastronovo"
+        },
+        {
+          "@id": "music:ToddJensen"
+        }
+      ]
+    },
+    {
+      "@id": "music:AbraxasPool",
+      "@type": "music:Band",
+      "rdfs:label": "Abraxas Pool",
+      "music:formedYear": 1999,
+      "music:activeYears": "1999–2007",
+      "music:hasMember": [
+        {
+          "@id": "music:GreggRolie"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheStorm",
+      "@type": "music:Band",
+      "rdfs:label": "The Storm",
+      "music:formedYear": 1991,
+      "music:activeYears": "1991–1993",
+      "music:hasMember": [
+        {
+          "@id": "music:GreggRolie"
+        },
+        {
+          "@id": "music:RossValory"
+        },
+        {
+          "@id": "music:SteveSmith"
+        }
+      ]
+    },
+    {
+      "@id": "music:FrumiousBandersnatch",
+      "@type": "music:Band",
+      "rdfs:label": "Frumious Bandersnatch",
+      "music:formedYear": 1968,
+      "music:activeYears": "1968–1970",
+      "music:hadMember": [
+        {
+          "@id": "music:RossValory"
+        },
+        {
+          "@id": "music:GeorgeTickner"
+        }
+      ]
+    },
+    {
+      "@id": "music:SteveMillerBand",
+      "@type": "music:Band",
+      "rdfs:label": "Steve Miller Band",
+      "music:formedYear": 1967,
+      "music:activeYears": "1967–present",
+      "music:hadMember": [
+        {
+          "@id": "music:RossValory"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheTubes",
+      "@type": "music:Band",
+      "rdfs:label": "The Tubes",
+      "music:formedYear": 1972,
+      "music:activeYears": "1972–present",
+      "music:hasMember": [
+        {
+          "@id": "music:PrairiePrince"
+        }
+      ]
+    },
+    {
+      "@id": "music:FrankZappasMothersOfInvention",
+      "@type": "music:Band",
+      "rdfs:label": "Frank Zappa's Mothers of Invention",
+      "music:formedYear": 1966,
+      "music:activeYears": "1966–1969",
+      "music:hadMember": [
+        {
+          "@id": "music:AynsleyDunbar"
+        }
+      ]
+    },
+    {
+      "@id": "music:Montrose",
+      "@type": "music:Band",
+      "rdfs:label": "Montrose",
+      "music:formedYear": 1973,
+      "music:activeYears": "1973–1977",
+      "music:hadMember": [
+        {
+          "@id": "music:SteveSmith"
+        }
+      ]
+    },
+    {
+      "@id": "music:VitalInformation",
+      "@type": "music:Band",
+      "rdfs:label": "Vital Information",
+      "music:formedYear": 1983,
+      "music:activeYears": "1983–present",
+      "music:hasMember": [
+        {
+          "@id": "music:SteveSmith"
+        }
+      ]
+    },
+    {
+      "@id": "music:StepsAhead",
+      "@type": "music:Band",
+      "rdfs:label": "Steps Ahead",
+      "music:formedYear": 1979,
+      "music:activeYears": "1979–present",
+      "music:hasMember": [
+        {
+          "@id": "music:SteveSmith"
+        }
+      ]
+    },
+    {
+      "@id": "music:Tyketto",
+      "@type": "music:Band",
+      "rdfs:label": "Tyketto",
+      "music:formedYear": 1987,
+      "music:activeYears": "1987–present",
+      "music:hadMember": [
+        {
+          "@id": "music:SteveAugeri"
+        }
+      ]
+    },
+    {
+      "@id": "music:TallStories",
+      "@type": "music:Band",
+      "rdfs:label": "Tall Stories",
+      "music:formedYear": 1988,
+      "music:activeYears": "1988–present",
+      "music:hasMember": [
+        {
+          "@id": "music:SteveAugeri"
+        }
+      ]
+    },
+    {
+      "@id": "music:Talisman",
+      "@type": "music:Band",
+      "rdfs:label": "Talisman",
+      "music:formedYear": 1989,
+      "music:activeYears": "1989–present",
+      "music:hasMember": [
+        {
+          "@id": "music:JeffScottSoto"
+        }
+      ]
+    }
+  ]
+}

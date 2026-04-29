@@ -1,0 +1,375 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:FooFighters",
+      "@type": "music:Band",
+      "rdfs:label": "Foo Fighters",
+      "music:activeYears": "1994–present",
+      "music:formedYear": 1994,
+      "music:hasMember": [
+        {
+          "@id": "music:DaveGrohl"
+        },
+        {
+          "@id": "music:NateMendel"
+        },
+        {
+          "@id": "music:PatSmear"
+        },
+        {
+          "@id": "music:ChrisShiflett"
+        },
+        {
+          "@id": "music:RamiJaffee"
+        }
+      ],
+      "music:hadMember": [
+        {
+          "@id": "music:WilliamGoldsmith"
+        },
+        {
+          "@id": "music:FranzStahl"
+        },
+        {
+          "@id": "music:TaylorHawkins"
+        }
+      ]
+    },
+    {
+      "@id": "music:DaveGrohl",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Grohl",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar, drums",
+      "music:activeYears": "1987–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:Nirvana"
+        },
+        {
+          "@id": "music:Scream"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Vocals"
+        },
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Drums"
+        }
+      ]
+    },
+    {
+      "@id": "music:NateMendel",
+      "@type": "music:Musician",
+      "rdfs:label": "Nate Mendel",
+      "music:hasGender": "male",
+      "music:hasRole": "bass guitar, backing vocals",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:SunnyDayRealEstate"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Bass"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:PatSmear",
+      "@type": "music:Musician",
+      "rdfs:label": "Pat Smear",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm guitar, backing vocals",
+      "music:activeYears": "1977–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheGerms"
+        },
+        {
+          "@id": "music:Nirvana"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:ChrisShiflett",
+      "@type": "music:Musician",
+      "rdfs:label": "Chris Shiflett",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:MeFirstAndTheGimmeGimmes"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:RamiJaffee",
+      "@type": "music:Musician",
+      "rdfs:label": "Rami Jaffee",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, piano, accordion, harmonica, backing vocals",
+      "music:activeYears": "1994–present",
+      "music:isMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        }
+      ],
+      "music:wasMemberOf": [
+        {
+          "@id": "music:TheWallflowers"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Keyboards"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:WilliamGoldsmith",
+      "@type": "music:Musician",
+      "rdfs:label": "William Goldsmith",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        },
+        {
+          "@id": "music:SunnyDayRealEstate"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:FranzStahl",
+      "@type": "music:Musician",
+      "rdfs:label": "Franz Stahl",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, backing vocals",
+      "music:activeYears": "1990s–present",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        },
+        {
+          "@id": "music:Scream"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Guitar"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:TaylorHawkins",
+      "@type": "music:Musician",
+      "rdfs:label": "Taylor Hawkins",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, backing vocals",
+      "music:activeYears": "1990s–2022",
+      "music:wasMemberOf": [
+        {
+          "@id": "music:FooFighters"
+        },
+        {
+          "@id": "music:AlanisMorissette"
+        }
+      ],
+      "music:playsInstrument": [
+        {
+          "@id": "music:Drums"
+        },
+        {
+          "@id": "music:Vocals"
+        }
+      ]
+    },
+    {
+      "@id": "music:Nirvana",
+      "@type": "music:Band",
+      "rdfs:label": "Nirvana",
+      "music:formedYear": 1987,
+      "music:activeYears": "1987–1994",
+      "music:hadMember": [
+        {
+          "@id": "music:DaveGrohl"
+        },
+        {
+          "@id": "music:PatSmear"
+        }
+      ]
+    },
+    {
+      "@id": "music:Scream",
+      "@type": "music:Band",
+      "rdfs:label": "Scream",
+      "music:formedYear": 1981,
+      "music:activeYears": "1981–1990",
+      "music:hadMember": [
+        {
+          "@id": "music:DaveGrohl"
+        },
+        {
+          "@id": "music:FranzStahl"
+        }
+      ]
+    },
+    {
+      "@id": "music:SunnyDayRealEstate",
+      "@type": "music:Band",
+      "rdfs:label": "Sunny Day Real Estate",
+      "music:formedYear": 1993,
+      "music:activeYears": "1993–2001, 2009–present",
+      "music:hadMember": [
+        {
+          "@id": "music:NateMendel"
+        },
+        {
+          "@id": "music:WilliamGoldsmith"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheGerms",
+      "@type": "music:Band",
+      "rdfs:label": "The Germs",
+      "music:formedYear": 1976,
+      "music:activeYears": "1976–1980, 2005–present",
+      "music:hadMember": [
+        {
+          "@id": "music:PatSmear"
+        }
+      ]
+    },
+    {
+      "@id": "music:MeFirstAndTheGimmeGimmes",
+      "@type": "music:Band",
+      "rdfs:label": "Me First and the Gimme Gimmes",
+      "music:formedYear": 1995,
+      "music:activeYears": "1995–present",
+      "music:hasMember": [
+        {
+          "@id": "music:ChrisShiflett"
+        }
+      ]
+    },
+    {
+      "@id": "music:TheWallflowers",
+      "@type": "music:Band",
+      "rdfs:label": "The Wallflowers",
+      "music:formedYear": 1989,
+      "music:activeYears": "1989–present",
+      "music:hadMember": [
+        {
+          "@id": "music:RamiJaffee"
+        }
+      ]
+    },
+    {
+      "@id": "music:AlanisMorissette",
+      "@type": "music:Band",
+      "rdfs:label": "Alanis Morissette",
+      "music:formedYear": 1991,
+      "music:activeYears": "1991–present",
+      "music:hadMember": [
+        {
+          "@id": "music:TaylorHawkins"
+        }
+      ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    }
+  ]
+}

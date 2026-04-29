@@ -1,0 +1,346 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+
+    {
+      "@id": "music:TheRollingStones",
+      "@type": "music:Band",
+      "rdfs:label": "The Rolling Stones",
+      "music:activeYears": "1962–present",
+      "music:formedYear": 1962,
+      "music:hasMember": [
+        {"@id": "music:MickJagger"},
+        {"@id": "music:KeithRichards"},
+        {"@id": "music:RonnieWood"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:BrianJones"},
+        {"@id": "music:BillWyman"},
+        {"@id": "music:CharlieWatts"},
+        {"@id": "music:MickTaylor"},
+        {"@id": "music:IanStewart"}
+      ],
+      "music:producedBy": [
+        {"@id": "music:AndrewLoogOldham"},
+        {"@id": "music:JimmyMiller"},
+        {"@id": "music:DonWas"},
+        {"@id": "music:AndrewWatt"}
+      ]
+    },
+
+    {
+      "@id": "music:MickJagger",
+      "@type": "music:Musician",
+      "rdfs:label": "Mick Jagger",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, harmonica, rhythm guitar, percussion, keyboards",
+      "music:activeYears": "1962–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KeithRichards"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:RonnieWood"}
+        }
+      ]
+    },
+
+    {
+      "@id": "music:KeithRichards",
+      "@type": "music:Musician",
+      "rdfs:label": "Keith Richards",
+      "music:hasGender": "male",
+      "music:hasRole": "rhythm and lead guitar, backing and occasional lead vocals, songwriter",
+      "music:activeYears": "1962–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:MickJagger"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "mentored",
+          "music:relationshipTarget": {"@id": "music:RonnieWood"}
+        }
+      ]
+    },
+
+    {
+      "@id": "music:RonnieWood",
+      "@type": "music:Musician",
+      "rdfs:label": "Ronnie Wood",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitar, slide guitar, backing vocals",
+      "music:activeYears": "1964–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Faces"},
+        {"@id": "music:JeffBeckGroup"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:MickJagger"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KeithRichards"}
+        }
+      ]
+    },
+
+    {
+      "@id": "music:BrianJones",
+      "@type": "music:Musician",
+      "rdfs:label": "Brian Jones",
+      "music:hasGender": "male",
+      "music:hasRole": "multi-instrumentalist, founder",
+      "music:activeYears": "1962–1969",
+      "music:wasMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ]
+    },
+
+    {
+      "@id": "music:BillWyman",
+      "@type": "music:Musician",
+      "rdfs:label": "Bill Wyman",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "1962–1993",
+      "music:wasMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Piano"}
+      ]
+    },
+
+    {
+      "@id": "music:CharlieWatts",
+      "@type": "music:Musician",
+      "rdfs:label": "Charlie Watts",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion",
+      "music:activeYears": "1963–2021",
+      "music:wasMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ]
+    },
+
+    {
+      "@id": "music:MickTaylor",
+      "@type": "music:Musician",
+      "rdfs:label": "Mick Taylor",
+      "music:hasGender": "male",
+      "music:hasRole": "lead and rhythm guitar",
+      "music:activeYears": "1964–present",
+      "music:wasMemberOf": [
+        {"@id": "music:TheRollingStones"},
+        {"@id": "music:JohnMayallsBluesbreakers"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+
+    {
+      "@id": "music:IanStewart",
+      "@type": "music:Musician",
+      "rdfs:label": "Ian Stewart",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, piano, road manager (early)",
+      "music:activeYears": "1962–1985",
+      "music:wasMemberOf": [
+        {"@id": "music:TheRollingStones"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Piano"}
+      ]
+    },
+
+    {
+      "@id": "music:DarrylJones",
+      "@type": "music:Musician",
+      "rdfs:label": "Darryl Jones",
+      "music:hasGender": "male",
+      "music:hasRole": "bass (longtime touring/session bassist)",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:TheRollingStones"}
+        }
+      ]
+    },
+
+    {
+      "@id": "music:SteveJordan",
+      "@type": "music:Musician",
+      "rdfs:label": "Steve Jordan",
+      "music:hasGender": "male",
+      "music:hasRole": "drums (touring drummer since 2021)",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:TheRollingStones"}
+        }
+      ]
+    },
+
+    {
+      "@id": "music:AndrewLoogOldham",
+      "@type": "music:Producer",
+      "rdfs:label": "Andrew Loog Oldham",
+      "music:hasGender": "male",
+      "music:activeYears": "1963–present",
+      "music:produced": [
+        {"@id": "music:TheRollingStones"}
+      ]
+    },
+
+    {
+      "@id": "music:JimmyMiller",
+      "@type": "music:Producer",
+      "rdfs:label": "Jimmy Miller",
+      "music:hasGender": "male",
+      "music:activeYears": "1968–1994",
+      "music:produced": [
+        {"@id": "music:TheRollingStones"}
+      ]
+    },
+
+    {
+      "@id": "music:DonWas",
+      "@type": "music:Producer",
+      "rdfs:label": "Don Was",
+      "music:hasGender": "male",
+      "music:activeYears": "1980–present",
+      "music:produced": [
+        {"@id": "music:TheRollingStones"}
+      ]
+    },
+
+    {
+      "@id": "music:AndrewWatt",
+      "@type": "music:Producer",
+      "rdfs:label": "Andrew Watt",
+      "music:hasGender": "male",
+      "music:activeYears": "2010–present",
+      "music:produced": [
+        {"@id": "music:TheRollingStones"}
+      ]
+    },
+
+    {
+      "@id": "music:Faces",
+      "@type": "music:Band",
+      "rdfs:label": "Faces",
+      "music:activeYears": "1969–2011",
+      "music:hadMember": [
+        {"@id": "music:RonnieWood"}
+      ]
+    },
+
+    {
+      "@id": "music:JeffBeckGroup",
+      "@type": "music:Band",
+      "rdfs:label": "The Jeff Beck Group",
+      "music:activeYears": "1967–1972",
+      "music:hadMember": [
+        {"@id": "music:RonnieWood"}
+      ]
+    },
+
+    {
+      "@id": "music:JohnMayallsBluesbreakers",
+      "@type": "music:Band",
+      "rdfs:label": "John Mayall's Bluesbreakers",
+      "music:activeYears": "1963–present",
+      "music:hadMember": [
+        {"@id": "music:MickTaylor"}
+      ]
+    }
+  ]
+}
+

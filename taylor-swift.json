@@ -1,0 +1,532 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TaylorSwift",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Taylor Swift",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, guitar, piano, songwriter",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JackAntonoff"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:AaronDessner"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EdSheeran"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:PostMalone"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BonIver"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:KendrickLamar"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:IceSpice"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Phoebe"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:FloydFromall"}
+        }
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:TaylorSwift"},
+        {"@id": "music:Fearless"},
+        {"@id": "music:SpeakNow"},
+        {"@id": "music:Red"},
+        {"@id": "music:1989"},
+        {"@id": "music:Reputation"},
+        {"@id": "music:Lover"},
+        {"@id": "music:Folklore"},
+        {"@id": "music:Evermore"},
+        {"@id": "music:Midnights"},
+        {"@id": "music:TheTorturedPoetsDepartment"}
+      ]
+    },
+    {
+      "@id": "music:JackAntonoff",
+      "@type": "music:Musician",
+      "rdfs:label": "Jack Antonoff",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter, multi-instrumentalist",
+      "music:activeYears": "2002–present",
+      "music:isMemberOf": [
+        {"@id": "music:Bleachers"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Fun"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:AaronDessner",
+      "@type": "music:Musician",
+      "rdfs:label": "Aaron Dessner",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, producer, songwriter",
+      "music:activeYears": "1999–present",
+      "music:isMemberOf": [
+        {"@id": "music:TheNational"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"}
+      ]
+    },
+    {
+      "@id": "music:EdSheeran",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Ed Sheeran",
+      "music:hasGender": "male",
+      "music:hasRole": "singer-songwriter, guitarist",
+      "music:activeYears": "2004–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:PostMalone",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Post Malone",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, singer, songwriter",
+      "music:activeYears": "2013–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:BonIver",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Bon Iver",
+      "music:hasGender": "male",
+      "music:hasRole": "indie folk musician, producer",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"}
+      ]
+    },
+    {
+      "@id": "music:KendrickLamar",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Kendrick Lamar",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, songwriter, producer",
+      "music:activeYears": "2003–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:IceSpice",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Ice Spice",
+      "music:hasGender": "female",
+      "music:hasRole": "rapper, songwriter",
+      "music:activeYears": "2021–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Phoebe",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Phoebe Bridgers",
+      "music:hasGender": "female",
+      "music:hasRole": "singer-songwriter, guitarist",
+      "music:activeYears": "2014–present",
+      "music:isMemberOf": [
+        {"@id": "music:Boygenius"}
+      ],
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
+    },
+    {
+      "@id": "music:FloydFromall",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Florence + The Machine",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, songwriter",
+      "music:activeYears": "2007–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ]
+    },
+    {
+      "@id": "music:Bleachers",
+      "@type": "music:Band",
+      "rdfs:label": "Bleachers",
+      "music:activeYears": "2014–present",
+      "music:formedYear": 2014,
+      "music:hasMember": [
+        {"@id": "music:JackAntonoff"}
+      ]
+    },
+    {
+      "@id": "music:Fun",
+      "@type": "music:Band",
+      "rdfs:label": "Fun.",
+      "music:activeYears": "2008–2015",
+      "music:formedYear": 2008,
+      "music:hadMember": [
+        {"@id": "music:JackAntonoff"}
+      ]
+    },
+    {
+      "@id": "music:TheNational",
+      "@type": "music:Band",
+      "rdfs:label": "The National",
+      "music:activeYears": "1999–present",
+      "music:formedYear": 1999,
+      "music:hasMember": [
+        {"@id": "music:AaronDessner"}
+      ]
+    },
+    {
+      "@id": "music:Boygenius",
+      "@type": "music:Band",
+      "rdfs:label": "boygenius",
+      "music:activeYears": "2018–present",
+      "music:formedYear": 2018,
+      "music:hasMember": [
+        {"@id": "music:Phoebe"}
+      ]
+    },
+    {
+      "@id": "music:JoelLittle",
+      "@type": "music:Producer",
+      "rdfs:label": "Joel Little",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "2005–present",
+      "music:produced": [
+        {"@id": "music:TaylorSwift"}
+      ]
+    },
+    {
+      "@id": "music:MaxMartin",
+      "@type": "music:Producer",
+      "rdfs:label": "Max Martin",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter",
+      "music:activeYears": "1985–present",
+      "music:produced": [
+        {"@id": "music:TaylorSwift"}
+      ]
+    },
+    {
+      "@id": "music:ScottBorchetta",
+      "@type": "music:Producer",
+      "rdfs:label": "Scott Borchetta",
+      "music:hasGender": "male",
+      "music:hasRole": "record executive, producer",
+      "music:activeYears": "1986–present",
+      "music:produced": [
+        {"@id": "music:TaylorSwift"}
+      ]
+    },
+    {
+      "@id": "music:TaylorSwift",
+      "@type": "music:Album",
+      "rdfs:label": "Taylor Swift",
+      "music:releaseYear": 2006
+    },
+    {
+      "@id": "music:Fearless",
+      "@type": "music:Album",
+      "rdfs:label": "Fearless",
+      "music:releaseYear": 2008
+    },
+    {
+      "@id": "music:SpeakNow",
+      "@type": "music:Album",
+      "rdfs:label": "Speak Now",
+      "music:releaseYear": 2010
+    },
+    {
+      "@id": "music:Red",
+      "@type": "music:Album",
+      "rdfs:label": "Red",
+      "music:releaseYear": 2012
+    },
+    {
+      "@id": "music:1989",
+      "@type": "music:Album",
+      "rdfs:label": "1989",
+      "music:releaseYear": 2014
+    },
+    {
+      "@id": "music:Reputation",
+      "@type": "music:Album",
+      "rdfs:label": "reputation",
+      "music:releaseYear": 2017
+    },
+    {
+      "@id": "music:Lover",
+      "@type": "music:Album",
+      "rdfs:label": "Lover",
+      "music:releaseYear": 2019
+    },
+    {
+      "@id": "music:Folklore",
+      "@type": "music:Album",
+      "rdfs:label": "folklore",
+      "music:releaseYear": 2020
+    },
+    {
+      "@id": "music:Evermore",
+      "@type": "music:Album",
+      "rdfs:label": "evermore",
+      "music:releaseYear": 2020
+    },
+    {
+      "@id": "music:Midnights",
+      "@type": "music:Album",
+      "rdfs:label": "Midnights",
+      "music:releaseYear": 2022
+    },
+    {
+      "@id": "music:TheTorturedPoetsDepartment",
+      "@type": "music:Album",
+      "rdfs:label": "The Tortured Poets Department",
+      "music:releaseYear": 2024
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer"
+    },
+    {
+      "@id": "music:Album",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Album"
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:recordedAlbum",
+      "@type": "rdf:Property",
+      "rdfs:label": "recorded album",
+      "rdfs:range": {"@id": "music:Album"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:releaseYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "release year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Tambourine",
+      "@type": "music:Instrument",
+      "rdfs:label": "Tambourine"
+    }
+  ]
+}
