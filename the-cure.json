@@ -1,0 +1,197 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:TheCure",
+      "@type": "music:Band",
+      "rdfs:label": "The Cure",
+      "music:activeYears": "1978–present",
+      "music:formedYear": 1978,
+      "music:hasMember": [
+        { "@id": "music:RobertSmith" },
+        { "@id": "music:SimonGallup" },
+        { "@id": "music:RogerODonnell" },
+        { "@id": "music:JasonCooper" },
+        { "@id": "music:ReevesGabrels" }
+      ],
+      "music:hadMember": [
+        { "@id": "music:LolTolhurst" },
+        { "@id": "music:MichaelDempsey" },
+        { "@id": "music:MatthieuHartley" },
+        { "@id": "music:PhilThornalley" },
+        { "@id": "music:AndyAnderson" },
+        { "@id": "music:BorisWilliams" },
+        { "@id": "music:PorlThompson" },
+        { "@id": "music:PerryBamonte" }
+      ]
+    },
+    {
+      "@id": "music:RobertSmith",
+      "@type": "music:Musician",
+      "rdfs:label": "Robert Smith",
+      "music:hasRole": "lead vocals, guitars, keyboards",
+      "music:playsInstrument": [
+        { "@id": "music:Vocals" },
+        { "@id": "music:Guitar" },
+        { "@id": "music:Keyboards" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:SimonGallup",
+      "@type": "music:Musician",
+      "rdfs:label": "Simon Gallup",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [ { "@id": "music:BassGuitar" } ],
+      "music:isMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:RogerODonnell",
+      "@type": "music:Musician",
+      "rdfs:label": "Roger O'Donnell",
+      "music:hasRole": "keyboards",
+      "music:playsInstrument": [ { "@id": "music:Keyboards" } ],
+      "music:isMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:JasonCooper",
+      "@type": "music:Musician",
+      "rdfs:label": "Jason Cooper",
+      "music:hasRole": "drums, percussion",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Percussion" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:ReevesGabrels",
+      "@type": "music:Musician",
+      "rdfs:label": "Reeves Gabrels",
+      "music:hasRole": "guitars",
+      "music:playsInstrument": [ { "@id": "music:Guitar" } ],
+      "music:isMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:LolTolhurst",
+      "@type": "music:Musician",
+      "rdfs:label": "Lol Tolhurst",
+      "music:hasRole": "drums, keyboards",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Keyboards" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:MichaelDempsey",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael Dempsey",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [ { "@id": "music:BassGuitar" } ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:MatthieuHartley",
+      "@type": "music:Musician",
+      "rdfs:label": "Matthieu Hartley",
+      "music:hasRole": "keyboards",
+      "music:playsInstrument": [ { "@id": "music:Keyboards" } ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:PhilThornalley",
+      "@type": "music:Musician",
+      "rdfs:label": "Phil Thornalley",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [ { "@id": "music:BassGuitar" } ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:AndyAnderson",
+      "@type": "music:Musician",
+      "rdfs:label": "Andy Anderson",
+      "music:hasRole": "drums, percussion",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Percussion" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:BorisWilliams",
+      "@type": "music:Musician",
+      "rdfs:label": "Boris Williams",
+      "music:hasRole": "drums, percussion",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Percussion" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:PorlThompson",
+      "@type": "music:Musician",
+      "rdfs:label": "Porl Thompson",
+      "music:hasRole": "guitars, keyboards, saxophone",
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:Keyboards" },
+        { "@id": "music:Saxophone" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:PerryBamonte",
+      "@type": "music:Musician",
+      "rdfs:label": "Perry Bamonte",
+      "music:hasRole": "guitars, keyboards, bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:Keyboards" },
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:TheCure" } ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Saxophone",
+      "@type": "music:Instrument",
+      "rdfs:label": "Saxophone"
+    }
+  ]
+}
