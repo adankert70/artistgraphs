@@ -1,0 +1,559 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:DepecheMode",
+      "@type": "music:Band",
+      "rdfs:label": "Depeche Mode",
+      "music:hasGender": "mixed",
+      "music:hasRole": "electronic, synth-pop, alternative rock",
+      "music:activeYears": "1980–present",
+      "music:formedYear": 1980,
+      "music:hasMember": [
+        {"@id": "music:DaveGahan"},
+        {"@id": "music:MartinGore"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:AndrewFletcher"},
+        {"@id": "music:VinceClarke"},
+        {"@id": "music:AlanWilder"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:GarethJones"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Flood"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BenHillier"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JamesFord"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "associated",
+          "music:relationshipTarget": {"@id": "music:DanielMiller"}
+        }
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:SpeakAndSpell"},
+        {"@id": "music:ABrokenFrame"},
+        {"@id": "music:ConstructionTimeAgain"},
+        {"@id": "music:SomeGreatReward"},
+        {"@id": "music:BlackCelebration"},
+        {"@id": "music:MusicForTheMasses"},
+        {"@id": "music:Violator"},
+        {"@id": "music:SongsOfFaithAndDevotion"},
+        {"@id": "music:Ultra"},
+        {"@id": "music:Exciter"},
+        {"@id": "music:PlayingTheAngel"},
+        {"@id": "music:SoundsOfTheUniverse"},
+        {"@id": "music:DeltaMachine"},
+        {"@id": "music:Spirit"},
+        {"@id": "music:MementoMori"}
+      ]
+    },
+    {
+      "@id": "music:DaveGahan",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Gahan",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, occasional songwriting",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DepecheMode"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Soulsavers"}
+        }
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:PaperMonsters"},
+        {"@id": "music:Hourglass"},
+        {"@id": "music:Imposter"}
+      ]
+    },
+    {
+      "@id": "music:MartinGore",
+      "@type": "music:Musician",
+      "rdfs:label": "Martin Gore",
+      "music:hasGender": "male",
+      "music:hasRole": "guitar, keyboards, backing and occasional lead vocals, primary songwriter",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:DepecheMode"}
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:CounterfeitEP"},
+        {"@id": "music:Counterfeit2"},
+        {"@id": "music:MG"}
+      ]
+    },
+    {
+      "@id": "music:AndrewFletcher",
+      "@type": "music:Musician",
+      "rdfs:label": "Andrew Fletcher",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, backing vocals, business management",
+      "music:activeYears": "1980–2021",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DepecheMode"}
+      ],
+      "music:dateDied": "2022-05-26"
+    },
+    {
+      "@id": "music:VinceClarke",
+      "@type": "music:Musician",
+      "rdfs:label": "Vince Clarke",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, primary songwriter (1980–1981)",
+      "music:activeYears": "1980–present",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DepecheMode"},
+        {"@id": "music:Yazoo"},
+        {"@id": "music:Erasure"}
+      ]
+    },
+    {
+      "@id": "music:AlanWilder",
+      "@type": "music:Musician",
+      "rdfs:label": "Alan Wilder",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, drums, production, arrangement (1982–1995)",
+      "music:activeYears": "1982–present",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Drums"},
+        {"@id": "music:Piano"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:DepecheMode"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Recoil"}
+      ]
+    },
+    {
+      "@id": "music:GarethJones",
+      "@type": "music:Producer",
+      "rdfs:label": "Gareth Jones",
+      "music:hasGender": "male",
+      "music:hasRole": "engineer, producer",
+      "music:activeYears": "1980–present",
+      "music:produced": [
+        {"@id": "music:ConstructionTimeAgain"},
+        {"@id": "music:SomeGreatReward"},
+        {"@id": "music:BlackCelebration"},
+        {"@id": "music:MusicForTheMasses"}
+      ]
+    },
+    {
+      "@id": "music:Flood",
+      "@type": "music:Producer",
+      "rdfs:label": "Flood",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, engineer",
+      "music:activeYears": "1978–present",
+      "music:produced": [
+        {"@id": "music:Violator"},
+        {"@id": "music:SongsOfFaithAndDevotion"}
+      ]
+    },
+    {
+      "@id": "music:BenHillier",
+      "@type": "music:Producer",
+      "rdfs:label": "Ben Hillier",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, engineer",
+      "music:activeYears": "1998–present",
+      "music:produced": [
+        {"@id": "music:PlayingTheAngel"},
+        {"@id": "music:SoundsOfTheUniverse"},
+        {"@id": "music:DeltaMachine"}
+      ]
+    },
+    {
+      "@id": "music:JamesFord",
+      "@type": "music:Producer",
+      "rdfs:label": "James Ford",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, multi-instrumentalist",
+      "music:activeYears": "2002–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:produced": [
+        {"@id": "music:Spirit"},
+        {"@id": "music:MementoMori"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:SimianMobileDisco"}
+      ]
+    },
+    {
+      "@id": "music:DanielMiller",
+      "@type": "music:Producer",
+      "rdfs:label": "Daniel Miller",
+      "music:hasGender": "male",
+      "music:hasRole": "record executive, producer, founder of Mute Records",
+      "music:activeYears": "1978–present",
+      "music:produced": [
+        {"@id": "music:SpeakAndSpell"}
+      ]
+    },
+    {
+      "@id": "music:Soulsavers",
+      "@type": "music:Band",
+      "rdfs:label": "Soulsavers",
+      "music:activeYears": "2000–present",
+      "music:formedYear": 2000
+    },
+    {
+      "@id": "music:Yazoo",
+      "@type": "music:Band",
+      "rdfs:label": "Yazoo",
+      "music:activeYears": "1981–1983",
+      "music:formedYear": 1981
+    },
+    {
+      "@id": "music:Erasure",
+      "@type": "music:Band",
+      "rdfs:label": "Erasure",
+      "music:activeYears": "1985–present",
+      "music:formedYear": 1985
+    },
+    {
+      "@id": "music:Recoil",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Recoil",
+      "music:hasRole": "electronic, experimental",
+      "music:activeYears": "1986–present",
+      "music:formedYear": 1986
+    },
+    {
+      "@id": "music:SimianMobileDisco",
+      "@type": "music:Band",
+      "rdfs:label": "Simian Mobile Disco",
+      "music:activeYears": "2005–present",
+      "music:formedYear": 2005
+    },
+    {
+      "@id": "music:SpeakAndSpell",
+      "@type": "music:Album",
+      "rdfs:label": "Speak & Spell",
+      "music:releaseYear": 1981
+    },
+    {
+      "@id": "music:ABrokenFrame",
+      "@type": "music:Album",
+      "rdfs:label": "A Broken Frame",
+      "music:releaseYear": 1982
+    },
+    {
+      "@id": "music:ConstructionTimeAgain",
+      "@type": "music:Album",
+      "rdfs:label": "Construction Time Again",
+      "music:releaseYear": 1983
+    },
+    {
+      "@id": "music:SomeGreatReward",
+      "@type": "music:Album",
+      "rdfs:label": "Some Great Reward",
+      "music:releaseYear": 1984
+    },
+    {
+      "@id": "music:BlackCelebration",
+      "@type": "music:Album",
+      "rdfs:label": "Black Celebration",
+      "music:releaseYear": 1986
+    },
+    {
+      "@id": "music:MusicForTheMasses",
+      "@type": "music:Album",
+      "rdfs:label": "Music for the Masses",
+      "music:releaseYear": 1987
+    },
+    {
+      "@id": "music:Violator",
+      "@type": "music:Album",
+      "rdfs:label": "Violator",
+      "music:releaseYear": 1990
+    },
+    {
+      "@id": "music:SongsOfFaithAndDevotion",
+      "@type": "music:Album",
+      "rdfs:label": "Songs of Faith and Devotion",
+      "music:releaseYear": 1993
+    },
+    {
+      "@id": "music:Ultra",
+      "@type": "music:Album",
+      "rdfs:label": "Ultra",
+      "music:releaseYear": 1997
+    },
+    {
+      "@id": "music:Exciter",
+      "@type": "music:Album",
+      "rdfs:label": "Exciter",
+      "music:releaseYear": 2001
+    },
+    {
+      "@id": "music:PlayingTheAngel",
+      "@type": "music:Album",
+      "rdfs:label": "Playing the Angel",
+      "music:releaseYear": 2005
+    },
+    {
+      "@id": "music:SoundsOfTheUniverse",
+      "@type": "music:Album",
+      "rdfs:label": "Sounds of the Universe",
+      "music:releaseYear": 2009
+    },
+    {
+      "@id": "music:DeltaMachine",
+      "@type": "music:Album",
+      "rdfs:label": "Delta Machine",
+      "music:releaseYear": 2013
+    },
+    {
+      "@id": "music:Spirit",
+      "@type": "music:Album",
+      "rdfs:label": "Spirit",
+      "music:releaseYear": 2017
+    },
+    {
+      "@id": "music:MementoMori",
+      "@type": "music:Album",
+      "rdfs:label": "Memento Mori",
+      "music:releaseYear": 2023
+    },
+    {
+      "@id": "music:PaperMonsters",
+      "@type": "music:Album",
+      "rdfs:label": "Paper Monsters",
+      "music:releaseYear": 2003
+    },
+    {
+      "@id": "music:Hourglass",
+      "@type": "music:Album",
+      "rdfs:label": "Hourglass",
+      "music:releaseYear": 2007
+    },
+    {
+      "@id": "music:Imposter",
+      "@type": "music:Album",
+      "rdfs:label": "Imposter",
+      "music:releaseYear": 2021
+    },
+    {
+      "@id": "music:CounterfeitEP",
+      "@type": "music:Album",
+      "rdfs:label": "Counterfeit EP",
+      "music:releaseYear": 1989
+    },
+    {
+      "@id": "music:Counterfeit2",
+      "@type": "music:Album",
+      "rdfs:label": "Counterfeit²",
+      "music:releaseYear": 2003
+    },
+    {
+      "@id": "music:MG",
+      "@type": "music:Album",
+      "rdfs:label": "MG",
+      "music:releaseYear": 2015
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Album",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Album"
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:recordedAlbum",
+      "@type": "rdf:Property",
+      "rdfs:label": "recorded album",
+      "rdfs:range": {"@id": "music:Album"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:releaseYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "release year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
+    },
+    {
+      "@id": "music:dateDied",
+      "@type": "rdf:Property",
+      "rdfs:label": "date died"
+    }
+  ]
+}
