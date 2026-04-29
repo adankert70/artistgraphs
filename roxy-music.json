@@ -1,0 +1,212 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:RoxyMusic",
+      "@type": "music:Band",
+      "rdfs:label": "Roxy Music",
+      "music:activeYears": "1970–1976, 1978–1983, 2001–2011, 2019, 2022",
+      "music:formedYear": 1970,
+      "music:hasMember": [
+        { "@id": "music:BryanFerry" },
+        { "@id": "music:AndyMackay" },
+        { "@id": "music:PhilManzanera" },
+        { "@id": "music:PaulThompson" }
+      ],
+      "music:hadMember": [
+        { "@id": "music:BrianEno" },
+        { "@id": "music:EddieJobson" },
+        { "@id": "music:GrahamSimpson" },
+        { "@id": "music:JohnGustafson" },
+        { "@id": "music:JohnWetton" },
+        { "@id": "music:GaryTibbs" },
+        { "@id": "music:AlanSpenner" }
+      ]
+    },
+    {
+      "@id": "music:BryanFerry",
+      "@type": "music:Musician",
+      "rdfs:label": "Bryan Ferry",
+      "music:hasRole": "lead vocals, keyboards, piano, harmonica",
+      "music:playsInstrument": [
+        { "@id": "music:Vocals" },
+        { "@id": "music:Keyboards" },
+        { "@id": "music:Piano" },
+        { "@id": "music:Harmonica" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:AndyMackay",
+      "@type": "music:Musician",
+      "rdfs:label": "Andy Mackay",
+      "music:hasRole": "saxophone, oboe, keyboards, backing vocals",
+      "music:playsInstrument": [
+        { "@id": "music:Saxophone" },
+        { "@id": "music:Oboe" },
+        { "@id": "music:Keyboards" },
+        { "@id": "music:Vocals" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:PhilManzanera",
+      "@type": "music:Musician",
+      "rdfs:label": "Phil Manzanera",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:Vocals" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:PaulThompson",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Thompson",
+      "music:hasRole": "drums, percussion",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Percussion" }
+      ],
+      "music:isMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:BrianEno",
+      "@type": "music:Musician",
+      "rdfs:label": "Brian Eno",
+      "music:hasRole": "synthesizer, treatments, tape effects",
+      "music:playsInstrument": [
+        { "@id": "music:Synthesizer" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:EddieJobson",
+      "@type": "music:Musician",
+      "rdfs:label": "Eddie Jobson",
+      "music:hasRole": "synthesizer, keyboards, electric violin",
+      "music:playsInstrument": [
+        { "@id": "music:Synthesizer" },
+        { "@id": "music:Keyboards" },
+        { "@id": "music:Violin" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:GrahamSimpson",
+      "@type": "music:Musician",
+      "rdfs:label": "Graham Simpson",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:JohnGustafson",
+      "@type": "music:Musician",
+      "rdfs:label": "John Gustafson",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:JohnWetton",
+      "@type": "music:Musician",
+      "rdfs:label": "John Wetton",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:GaryTibbs",
+      "@type": "music:Musician",
+      "rdfs:label": "Gary Tibbs",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:AlanSpenner",
+      "@type": "music:Musician",
+      "rdfs:label": "Alan Spenner",
+      "music:hasRole": "bass guitar",
+      "music:playsInstrument": [
+        { "@id": "music:BassGuitar" }
+      ],
+      "music:wasMemberOf": [ { "@id": "music:RoxyMusic" } ]
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    },
+    {
+      "@id": "music:Harmonica",
+      "@type": "music:Instrument",
+      "rdfs:label": "Harmonica"
+    },
+    {
+      "@id": "music:Saxophone",
+      "@type": "music:Instrument",
+      "rdfs:label": "Saxophone"
+    },
+    {
+      "@id": "music:Oboe",
+      "@type": "music:Instrument",
+      "rdfs:label": "Oboe"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Synthesizer",
+      "@type": "music:Instrument",
+      "rdfs:label": "Synthesizer"
+    },
+    {
+      "@id": "music:Violin",
+      "@type": "music:Instrument",
+      "rdfs:label": "Violin"
+    },
+    {
+      "@id": "music:BassGuitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    }
+  ]
+}
