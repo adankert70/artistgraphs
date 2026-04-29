@@ -2,6 +2,7 @@
   "@context": {
     "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
     "music": "http://example.org/music/",
     "xsd": "http://www.w3.org/2001/XMLSchema#"
   },
@@ -10,375 +11,460 @@
       "@id": "music:AvrilLavigne",
       "@type": "music:SoloArtist",
       "rdfs:label": "Avril Lavigne",
-      "music:formedYear": 2000,
-      "music:activeYears": "2000–Present",
-      "music:hasMember": [
-        { "@id": "music:AvrilLavigne" }
-      ],
-      "music:hasContributor": [
-        { "@id": "music:EvanTaubenfeld" },
-        { "@id": "music:ButchWalker" },
-        { "@id": "music:DrLuke" },
-        { "@id": "music:MaxMartin" },
-        { "@id": "music:Shellback" },
-        { "@id": "music:ChadKroeger" },
-        { "@id": "music:DavidHodges" },
-        { "@id": "music:JohnFeldmann" },
-        { "@id": "music:TravisClark" },
-        { "@id": "music:RodneyJerkins" },
-        { "@id": "music:DeryckWhibley" }
-      ],
-      "music:hasProducer": [
-        { "@id": "music:ButchWalker" },
-        { "@id": "music:DrLuke" },
-        { "@id": "music:MaxMartin" },
-        { "@id": "music:Shellback" },
-        { "@id": "music:ChadKroeger" },
-        { "@id": "music:DavidHodges" },
-        { "@id": "music:JohnFeldmann" },
-        { "@id": "music:RodneyJerkins" },
-        { "@id": "music:DeryckWhibley" }
-      ]
-    },
-    {
-      "@id": "music:AvrilLavignePerson",
-      "@type": "music:Musician",
-      "rdfs:label": "Avril Lavigne",
-      "music:hasRole": "lead vocals, rhythm guitar, piano, songwriter",
+      "music:hasGender": "female",
+      "music:hasRole": "vocals, guitar, piano, songwriter",
+      "music:activeYears": "2000–present",
       "music:playsInstrument": [
-        { "@id": "music:LeadVocals" },
-        { "@id": "music:Guitar" },
-        { "@id": "music:Piano" },
-        { "@id": "music:Drums" }
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Piano"},
+        {"@id": "music:Drums"}
       ],
-      "music:isMemberOf": [
-        { "@id": "music:AvrilLavigne" }
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EvanTaubenfeld"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:ButchWalker"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:DrLuke"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:MaxMartin"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:Shellback"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:ChadKroeger"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:DavidHodges"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JohnFeldmann"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:RodneyJerkins"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:DeryckWhibley"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:TravisClark"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JimMcGorman"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:AlBerry"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:ModSun"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:MachineGunKelly"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "featured",
+          "music:relationshipTarget": {"@id": "music:WillowSmith"}
+        }
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:LetGo"},
+        {"@id": "music:UnderMySkin"},
+        {"@id": "music:TheBestDamnThing"},
+        {"@id": "music:GoodbyeLullaby"},
+        {"@id": "music:AvrilLavigneAlbum"},
+        {"@id": "music:HeadAboveWater"},
+        {"@id": "music:LoveSux"}
       ]
     },
     {
       "@id": "music:EvanTaubenfeld",
       "@type": "music:Musician",
       "rdfs:label": "Evan Taubenfeld",
-      "music:hasRole": "lead guitar, backing vocals, songwriter (2000–2004, touring 2007–2011)",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, backing vocals, songwriter",
+      "music:activeYears": "2000–present",
       "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:BackingVocals" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumLetGo" }
-      ],
-      "music:wasMemberOf": [
-        { "@id": "music:AvrilLavigne" }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
       ]
     },
     {
       "@id": "music:ButchWalker",
-      "@type": "music:Musician",
+      "@type": "music:Producer",
       "rdfs:label": "Butch Walker",
-      "music:hasRole": "producer, songwriter, guitar, backing vocals",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter, guitarist, backing vocals",
+      "music:activeYears": "1994–present",
       "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:BackingVocals" },
-        { "@id": "music:Keyboards" }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Keyboards"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumLetGo" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumLetGo" }
+      "music:produced": [
+        {"@id": "music:LetGo"}
       ],
       "music:wasMemberOf": [
-        { "@id": "music:Marvelous3" }
+        {"@id": "music:Marvelous3"}
       ]
     },
     {
       "@id": "music:DrLuke",
-      "@type": "music:Musician",
-      "rdfs:label": "Dr. Luke (Lukasz Gottwald)",
+      "@type": "music:Producer",
+      "rdfs:label": "Dr. Luke",
+      "music:hasGender": "male",
       "music:hasRole": "producer, songwriter, keyboards, programming",
+      "music:activeYears": "1997–present",
       "music:playsInstrument": [
-        { "@id": "music:Keyboards" },
-        { "@id": "music:Programming" }
+        {"@id": "music:Keyboards"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumTheBestDamnThing" },
-        { "@id": "music:AlbumGoodbyeLullaby" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumTheBestDamnThing" },
-        { "@id": "music:AlbumGoodbyeLullaby" }
+      "music:produced": [
+        {"@id": "music:TheBestDamnThing"},
+        {"@id": "music:GoodbyeLullaby"}
       ]
     },
     {
       "@id": "music:MaxMartin",
-      "@type": "music:Musician",
+      "@type": "music:Producer",
       "rdfs:label": "Max Martin",
+      "music:hasGender": "male",
       "music:hasRole": "producer, songwriter, keyboards, backing vocals",
+      "music:activeYears": "1985–present",
       "music:playsInstrument": [
-        { "@id": "music:Keyboards" },
-        { "@id": "music:BackingVocals" },
-        { "@id": "music:Guitar" }
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumTheBestDamnThing" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumTheBestDamnThing" }
+      "music:produced": [
+        {"@id": "music:TheBestDamnThing"}
       ]
     },
     {
       "@id": "music:Shellback",
-      "@type": "music:Musician",
-      "rdfs:label": "Shellback (Karl Schuster)",
+      "@type": "music:Producer",
+      "rdfs:label": "Shellback",
+      "music:hasGender": "male",
       "music:hasRole": "producer, songwriter, bass, guitar, drums",
+      "music:activeYears": "1999–present",
       "music:playsInstrument": [
-        { "@id": "music:Bass" },
-        { "@id": "music:Guitar" },
-        { "@id": "music:Drums" }
+        {"@id": "music:Bass"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Drums"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumTheBestDamnThing" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumTheBestDamnThing" }
+      "music:produced": [
+        {"@id": "music:TheBestDamnThing"}
       ]
     },
     {
       "@id": "music:ChadKroeger",
       "@type": "music:Musician",
       "rdfs:label": "Chad Kroeger",
-      "music:hasRole": "producer, songwriter, guitar, vocals (former spouse)",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, vocalist, songwriter, producer",
+      "music:activeYears": "1995–present",
       "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:LeadVocals" }
-      ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumAvrilLavigne2013" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumAvrilLavigne2013" }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
       ],
       "music:isMemberOf": [
-        { "@id": "music:Nickelback" }
+        {"@id": "music:Nickelback"}
+      ],
+      "music:produced": [
+        {"@id": "music:AvrilLavigneAlbum"}
       ]
     },
     {
       "@id": "music:DavidHodges",
-      "@type": "music:Musician",
+      "@type": "music:Producer",
       "rdfs:label": "David Hodges",
+      "music:hasGender": "male",
       "music:hasRole": "producer, songwriter, keyboards, piano",
+      "music:activeYears": "2000–present",
       "music:playsInstrument": [
-        { "@id": "music:Keyboards" },
-        { "@id": "music:Piano" }
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Piano"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumGoodbyeLullaby" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumGoodbyeLullaby" }
+      "music:produced": [
+        {"@id": "music:GoodbyeLullaby"}
       ],
       "music:wasMemberOf": [
-        { "@id": "music:Evanescence" }
+        {"@id": "music:Evanescence"}
       ]
     },
     {
       "@id": "music:JohnFeldmann",
-      "@type": "music:Musician",
+      "@type": "music:Producer",
       "rdfs:label": "John Feldmann",
-      "music:hasRole": "producer, songwriter, guitar",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, songwriter, guitarist",
+      "music:activeYears": "1994–present",
       "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:BackingVocals" }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumHeadAboveWater" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumHeadAboveWater" }
+      "music:produced": [
+        {"@id": "music:HeadAboveWater"}
       ],
       "music:isMemberOf": [
-        { "@id": "music:Goldfinger" }
-      ]
-    },
-    {
-      "@id": "music:TravisClark",
-      "@type": "music:Musician",
-      "rdfs:label": "Travis Clark",
-      "music:hasRole": "guitar, backing vocals, songwriter (touring musician, 2010–2011)",
-      "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:BackingVocals" },
-        { "@id": "music:Piano" }
-      ],
-      "music:wasMemberOf": [
-        { "@id": "music:AvrilLavigne" },
-        { "@id": "music:WeTheKings" }
+        {"@id": "music:Goldfinger"}
       ]
     },
     {
       "@id": "music:RodneyJerkins",
-      "@type": "music:Musician",
-      "rdfs:label": "Rodney Jerkins (Darkchild)",
+      "@type": "music:Producer",
+      "rdfs:label": "Rodney Jerkins",
+      "music:hasGender": "male",
       "music:hasRole": "producer, songwriter, keyboards, programming",
+      "music:activeYears": "1995–present",
       "music:playsInstrument": [
-        { "@id": "music:Keyboards" },
-        { "@id": "music:Programming" }
+        {"@id": "music:Keyboards"}
       ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumUnderMySkin" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumUnderMySkin" }
+      "music:produced": [
+        {"@id": "music:UnderMySkin"}
       ]
     },
     {
       "@id": "music:DeryckWhibley",
       "@type": "music:Musician",
       "rdfs:label": "Deryck Whibley",
-      "music:hasRole": "producer, songwriter, guitar (former spouse)",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, vocalist, songwriter, producer",
+      "music:activeYears": "1996–present",
       "music:playsInstrument": [
-        { "@id": "music:Guitar" },
-        { "@id": "music:Keyboards" }
-      ],
-      "music:producedAlbum": [
-        { "@id": "music:AlbumUnderMySkin" }
-      ],
-      "music:hasSongwritingCreditFor": [
-        { "@id": "music:AlbumUnderMySkin" }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Keyboards"}
       ],
       "music:isMemberOf": [
-        { "@id": "music:Sum41" }
+        {"@id": "music:Sum41"}
+      ],
+      "music:produced": [
+        {"@id": "music:UnderMySkin"}
+      ]
+    },
+    {
+      "@id": "music:TravisClark",
+      "@type": "music:Musician",
+      "rdfs:label": "Travis Clark",
+      "music:hasGender": "male",
+      "music:hasRole": "guitarist, backing vocals, songwriter, pianist",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"},
+        {"@id": "music:Piano"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:WeTheKings"}
       ]
     },
     {
       "@id": "music:JimMcGorman",
       "@type": "music:Musician",
       "rdfs:label": "Jim McGorman",
-      "music:hasRole": "keyboards, guitar, backing vocals (touring musician, 2007–Present)",
+      "music:hasGender": "male",
+      "music:hasRole": "keyboards, guitar, backing vocals",
+      "music:activeYears": "2007–present",
       "music:playsInstrument": [
-        { "@id": "music:Keyboards" },
-        { "@id": "music:Guitar" },
-        { "@id": "music:BackingVocals" }
-      ],
-      "music:isMemberOf": [
-        { "@id": "music:AvrilLavigne" }
+        {"@id": "music:Keyboards"},
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
       ]
     },
     {
       "@id": "music:AlBerry",
       "@type": "music:Musician",
       "rdfs:label": "Al Berry",
-      "music:hasRole": "bass, backing vocals (touring musician, 2003–Present)",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals",
+      "music:activeYears": "2003–present",
       "music:playsInstrument": [
-        { "@id": "music:Bass" },
-        { "@id": "music:BackingVocals" }
-      ],
-      "music:isMemberOf": [
-        { "@id": "music:AvrilLavigne" }
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
       ]
     },
     {
-      "@id": "music:AlbumLetGo",
-      "@type": "music:Album",
-      "rdfs:label": "Let Go (2002)",
-      "music:releaseYear": 2002
+      "@id": "music:ModSun",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Mod Sun",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, singer, drummer, songwriter",
+      "music:activeYears": "2005–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Drums"}
+      ]
     },
     {
-      "@id": "music:AlbumUnderMySkin",
-      "@type": "music:Album",
-      "rdfs:label": "Under My Skin (2004)",
-      "music:releaseYear": 2004
+      "@id": "music:MachineGunKelly",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Machine Gun Kelly",
+      "music:hasGender": "male",
+      "music:hasRole": "rapper, singer, guitarist, songwriter",
+      "music:activeYears": "2006–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
     },
     {
-      "@id": "music:AlbumTheBestDamnThing",
-      "@type": "music:Album",
-      "rdfs:label": "The Best Damn Thing (2007)",
-      "music:releaseYear": 2007
-    },
-    {
-      "@id": "music:AlbumGoodbyeLullaby",
-      "@type": "music:Album",
-      "rdfs:label": "Goodbye Lullaby (2011)",
-      "music:releaseYear": 2011
-    },
-    {
-      "@id": "music:AlbumAvrilLavigne2013",
-      "@type": "music:Album",
-      "rdfs:label": "Avril Lavigne (2013)",
-      "music:releaseYear": 2013
-    },
-    {
-      "@id": "music:AlbumHeadAboveWater",
-      "@type": "music:Album",
-      "rdfs:label": "Head Above Water (2019)",
-      "music:releaseYear": 2019
+      "@id": "music:WillowSmith",
+      "@type": "music:SoloArtist",
+      "rdfs:label": "Willow Smith",
+      "music:hasGender": "female",
+      "music:hasRole": "singer, guitarist, songwriter",
+      "music:activeYears": "2010–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ]
     },
     {
       "@id": "music:Marvelous3",
       "@type": "music:Band",
       "rdfs:label": "Marvelous 3",
+      "music:activeYears": "1997–2001",
       "music:formedYear": 1997,
-      "music:activeYears": "1997–2001"
+      "music:hadMember": [
+        {"@id": "music:ButchWalker"}
+      ]
     },
     {
       "@id": "music:Nickelback",
       "@type": "music:Band",
       "rdfs:label": "Nickelback",
+      "music:activeYears": "1995–present",
       "music:formedYear": 1995,
-      "music:activeYears": "1995–Present"
+      "music:hasMember": [
+        {"@id": "music:ChadKroeger"}
+      ]
     },
     {
       "@id": "music:Evanescence",
       "@type": "music:Band",
       "rdfs:label": "Evanescence",
+      "music:activeYears": "1994–present",
       "music:formedYear": 1994,
-      "music:activeYears": "1994–Present"
+      "music:hadMember": [
+        {"@id": "music:DavidHodges"}
+      ]
     },
     {
       "@id": "music:Goldfinger",
       "@type": "music:Band",
       "rdfs:label": "Goldfinger",
+      "music:activeYears": "1994–present",
       "music:formedYear": 1994,
-      "music:activeYears": "1994–Present"
-    },
-    {
-      "@id": "music:WeTheKings",
-      "@type": "music:Band",
-      "rdfs:label": "We the Kings",
-      "music:formedYear": 2005,
-      "music:activeYears": "2005–Present"
+      "music:hasMember": [
+        {"@id": "music:JohnFeldmann"}
+      ]
     },
     {
       "@id": "music:Sum41",
       "@type": "music:Band",
       "rdfs:label": "Sum 41",
+      "music:activeYears": "1996–present",
       "music:formedYear": 1996,
-      "music:activeYears": "1996–Present"
+      "music:hasMember": [
+        {"@id": "music:DeryckWhibley"}
+      ]
     },
     {
-      "@id": "music:LeadVocals",
-      "@type": "music:Instrument",
-      "rdfs:label": "Lead Vocals"
+      "@id": "music:WeTheKings",
+      "@type": "music:Band",
+      "rdfs:label": "We the Kings",
+      "music:activeYears": "2005–present",
+      "music:formedYear": 2005,
+      "music:hasMember": [
+        {"@id": "music:TravisClark"}
+      ]
     },
     {
-      "@id": "music:BackingVocals",
+      "@id": "music:LetGo",
+      "@type": "music:Album",
+      "rdfs:label": "Let Go",
+      "music:releaseYear": 2002
+    },
+    {
+      "@id": "music:UnderMySkin",
+      "@type": "music:Album",
+      "rdfs:label": "Under My Skin",
+      "music:releaseYear": 2004
+    },
+    {
+      "@id": "music:TheBestDamnThing",
+      "@type": "music:Album",
+      "rdfs:label": "The Best Damn Thing",
+      "music:releaseYear": 2007
+    },
+    {
+      "@id": "music:GoodbyeLullaby",
+      "@type": "music:Album",
+      "rdfs:label": "Goodbye Lullaby",
+      "music:releaseYear": 2011
+    },
+    {
+      "@id": "music:AvrilLavigneAlbum",
+      "@type": "music:Album",
+      "rdfs:label": "Avril Lavigne",
+      "music:releaseYear": 2013
+    },
+    {
+      "@id": "music:HeadAboveWater",
+      "@type": "music:Album",
+      "rdfs:label": "Head Above Water",
+      "music:releaseYear": 2019
+    },
+    {
+      "@id": "music:LoveSux",
+      "@type": "music:Album",
+      "rdfs:label": "Love Sux",
+      "music:releaseYear": 2022
+    },
+    {
+      "@id": "music:Vocals",
       "@type": "music:Instrument",
-      "rdfs:label": "Backing Vocals"
+      "rdfs:label": "Vocals"
     },
     {
       "@id": "music:Guitar",
       "@type": "music:Instrument",
       "rdfs:label": "Guitar"
-    },
-    {
-      "@id": "music:Bass",
-      "@type": "music:Instrument",
-      "rdfs:label": "Bass Guitar"
-    },
-    {
-      "@id": "music:Drums",
-      "@type": "music:Instrument",
-      "rdfs:label": "Drum Kit"
     },
     {
       "@id": "music:Piano",
@@ -391,9 +477,140 @@
       "rdfs:label": "Keyboards"
     },
     {
-      "@id": "music:Programming",
+      "@id": "music:Drums",
       "@type": "music:Instrument",
-      "rdfs:label": "Programming"
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Album",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Album"
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:recordedAlbum",
+      "@type": "rdf:Property",
+      "rdfs:label": "recorded album",
+      "rdfs:range": {"@id": "music:Album"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:releaseYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "release year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
     }
   ]
 }
