@@ -1,0 +1,241 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:StoneTemplePilots",
+      "@type": "music:Band",
+      "rdfs:label": "Stone Temple Pilots",
+      "music:formedYear": 1985,
+      "music:activeYears": "1985–2003, 2008–Present",
+      "music:hasMember": [
+        { "@id": "music:DeanDeLeo" },
+        { "@id": "music:RobertDeLeo" },
+        { "@id": "music:EricKretz" },
+        { "@id": "music:JeffGutt" }
+      ],
+      "music:hadMember": [
+        { "@id": "music:ScottWeiland" },
+        { "@id": "music:ChelseaBoys" },
+        { "@id": "music:RayLuzier" },
+        { "@id": "music:RichardPatrick" }
+      ]
+    },
+    {
+      "@id": "music:DeanDeLeo",
+      "@type": "music:Musician",
+      "rdfs:label": "Dean DeLeo",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:playsInstrument": [
+        { "@id": "music:Guitar" },
+        { "@id": "music:BackingVocals" }
+      ],
+      "music:isMemberOf": [
+        { "@id": "music:StoneTemplePilots" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:ArmyOfAnyone" },
+        { "@id": "music:TalkShow" }
+      ]
+    },
+    {
+      "@id": "music:RobertDeLeo",
+      "@type": "music:Musician",
+      "rdfs:label": "Robert DeLeo",
+      "music:hasRole": "bass, backing vocals, acoustic guitar, primary songwriter",
+      "music:playsInstrument": [
+        { "@id": "music:Bass" },
+        { "@id": "music:BackingVocals" },
+        { "@id": "music:Guitar" }
+      ],
+      "music:isMemberOf": [
+        { "@id": "music:StoneTemplePilots" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:ArmyOfAnyone" },
+        { "@id": "music:TalkShow" }
+      ]
+    },
+    {
+      "@id": "music:EricKretz",
+      "@type": "music:Musician",
+      "rdfs:label": "Eric Kretz",
+      "music:hasRole": "drums, percussion, occasional guitar",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" },
+        { "@id": "music:Percussion" },
+        { "@id": "music:Guitar" }
+      ],
+      "music:isMemberOf": [
+        { "@id": "music:StoneTemplePilots" }
+      ]
+    },
+    {
+      "@id": "music:ScottWeiland",
+      "@type": "music:Musician",
+      "rdfs:label": "Scott Weiland",
+      "music:hasRole": "lead vocals, occasional piano (1985–2003, 2008–2013)",
+      "music:playsInstrument": [
+        { "@id": "music:LeadVocals" },
+        { "@id": "music:Piano" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:StoneTemplePilots" },
+        { "@id": "music:VelvetRevolver" },
+        { "@id": "music:ScottWeilandAndTheWildabouts" }
+      ],
+      "music:dateDied": "2015-12-03"
+    },
+    {
+      "@id": "music:ChelseaBoys",
+      "@type": "music:Musician",
+      "rdfs:label": "Chelsea Boys",
+      "music:hasRole": "lead vocals (2013)",
+      "music:playsInstrument": [
+        { "@id": "music:LeadVocals" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:StoneTemplePilots" }
+      ]
+    },
+    {
+      "@id": "music:RayLuzier",
+      "@type": "music:Musician",
+      "rdfs:label": "Ray Luzier",
+      "music:hasRole": "drums (2013, touring substitute for Eric Kretz)",
+      "music:playsInstrument": [
+        { "@id": "music:Drums" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:StoneTemplePilots" },
+        { "@id": "music:Korn" },
+        { "@id": "music:ArmyOfAnyone" }
+      ]
+    },
+    {
+      "@id": "music:RichardPatrick",
+      "@type": "music:Musician",
+      "rdfs:label": "Richard Patrick",
+      "music:hasRole": "lead vocals (2013, temporary fill-in after Chelsea Boys departure)",
+      "music:playsInstrument": [
+        { "@id": "music:LeadVocals" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:StoneTemplePilots" },
+        { "@id": "music:Filter" },
+        { "@id": "music:NineInchNails" }
+      ]
+    },
+    {
+      "@id": "music:JeffGutt",
+      "@type": "music:Musician",
+      "rdfs:label": "Jeff Gutt",
+      "music:hasRole": "lead vocals, acoustic guitar (2016–Present)",
+      "music:playsInstrument": [
+        { "@id": "music:LeadVocals" },
+        { "@id": "music:Guitar" }
+      ],
+      "music:isMemberOf": [
+        { "@id": "music:StoneTemplePilots" }
+      ],
+      "music:wasMemberOf": [
+        { "@id": "music:DryCell" }
+      ]
+    },
+    {
+      "@id": "music:ArmyOfAnyone",
+      "@type": "music:Band",
+      "rdfs:label": "Army of Anyone",
+      "music:formedYear": 2005,
+      "music:activeYears": "2005–2007"
+    },
+    {
+      "@id": "music:TalkShow",
+      "@type": "music:Band",
+      "rdfs:label": "Talk Show",
+      "music:formedYear": 1995,
+      "music:activeYears": "1995–1997"
+    },
+    {
+      "@id": "music:VelvetRevolver",
+      "@type": "music:Band",
+      "rdfs:label": "Velvet Revolver",
+      "music:formedYear": 2002,
+      "music:activeYears": "2002–2008, 2012"
+    },
+    {
+      "@id": "music:ScottWeilandAndTheWildabouts",
+      "@type": "music:Band",
+      "rdfs:label": "Scott Weiland and the Wildabouts",
+      "music:formedYear": 2013,
+      "music:activeYears": "2013–2015"
+    },
+    {
+      "@id": "music:Korn",
+      "@type": "music:Band",
+      "rdfs:label": "Korn",
+      "music:formedYear": 1993,
+      "music:activeYears": "1993–Present"
+    },
+    {
+      "@id": "music:Filter",
+      "@type": "music:Band",
+      "rdfs:label": "Filter",
+      "music:formedYear": 1993,
+      "music:activeYears": "1993–Present"
+    },
+    {
+      "@id": "music:NineInchNails",
+      "@type": "music:Band",
+      "rdfs:label": "Nine Inch Nails",
+      "music:formedYear": 1988,
+      "music:activeYears": "1988–Present"
+    },
+    {
+      "@id": "music:DryCell",
+      "@type": "music:Band",
+      "rdfs:label": "Dry Cell",
+      "music:formedYear": 1999,
+      "music:activeYears": "1999–2005"
+    },
+    {
+      "@id": "music:LeadVocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Lead Vocals"
+    },
+    {
+      "@id": "music:BackingVocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Backing Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drum Kit"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Piano",
+      "@type": "music:Instrument",
+      "rdfs:label": "Piano"
+    }
+  ]
+}
