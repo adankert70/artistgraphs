@@ -1,0 +1,510 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "music": "http://example.org/music/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "music:PuddleOfMudd",
+      "@type": "music:Band",
+      "rdfs:label": "Puddle of Mudd",
+      "music:hasGender": "mixed",
+      "music:hasRole": "post-grunge, alternative metal, hard rock",
+      "music:activeYears": "1991–1999, 2000–present",
+      "music:formedYear": 1991,
+      "music:hasMember": [
+        {"@id": "music:WesScantlin"},
+        {"@id": "music:MattFuller"},
+        {"@id": "music:MichaelJohnAdams"},
+        {"@id": "music:MarkBoatright"}
+      ],
+      "music:hadMember": [
+        {"@id": "music:JimmyAllen"},
+        {"@id": "music:SeanSamson"},
+        {"@id": "music:KennyBurkitt"},
+        {"@id": "music:GregUpchurch"},
+        {"@id": "music:DougArdito"},
+        {"@id": "music:PaulPhillips"},
+        {"@id": "music:ChristianStone"},
+        {"@id": "music:RyanYerdon"},
+        {"@id": "music:DaveAmezcua"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:FredDurst"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:JordanSchur"}
+        },
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BillStevenson"}
+        }
+      ],
+      "music:recordedAlbum": [
+        {"@id": "music:ComeClean"},
+        {"@id": "music:LifeOnDisplay"},
+        {"@id": "music:Famous"},
+        {"@id": "music:Volume4SongsInTheKeyOfLoveAndHate"},
+        {"@id": "music:WelcomeToGalvania"}
+      ]
+    },
+    {
+      "@id": "music:WesScantlin",
+      "@type": "music:Musician",
+      "rdfs:label": "Wes Scantlin",
+      "music:hasGender": "male",
+      "music:hasRole": "lead vocals, rhythm guitar, primary songwriter",
+      "music:activeYears": "1991–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"},
+        {"@id": "music:Guitar"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ],
+      "music:hasRelationship": [
+        {
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:FredDurst"}
+        }
+      ]
+    },
+    {
+      "@id": "music:MattFuller",
+      "@type": "music:Musician",
+      "rdfs:label": "Matt Fuller",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals (2021–present)",
+      "music:activeYears": "2021–present",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:MichaelJohnAdams",
+      "@type": "music:Musician",
+      "rdfs:label": "Michael John Adams",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion (2021–present)",
+      "music:activeYears": "2021–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:MarkBoatright",
+      "@type": "music:Musician",
+      "rdfs:label": "Mark Boatright",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals (2022–present)",
+      "music:activeYears": "2022–present",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:JimmyAllen",
+      "@type": "music:Musician",
+      "rdfs:label": "Jimmy Allen",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals (2001–2002)",
+      "music:activeYears": "2001–2002",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:SeanSamson",
+      "@type": "music:Musician",
+      "rdfs:label": "Sean Samson",
+      "music:hasGender": "male",
+      "music:hasRole": "drums (1991–1999, 2000–2001)",
+      "music:activeYears": "1991–2001",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:KennyBurkitt",
+      "@type": "music:Musician",
+      "rdfs:label": "Kenny Burkitt",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar (2000–2002)",
+      "music:activeYears": "2000–2002",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:GregUpchurch",
+      "@type": "music:Musician",
+      "rdfs:label": "Greg Upchurch",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion (2001–2005)",
+      "music:activeYears": "2001–2005",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:3DoorsDown"}
+      ]
+    },
+    {
+      "@id": "music:DougArdito",
+      "@type": "music:Musician",
+      "rdfs:label": "Doug Ardito",
+      "music:hasGender": "male",
+      "music:hasRole": "bass, backing vocals (2002–2008, 2010–2011)",
+      "music:activeYears": "2002–2011",
+      "music:playsInstrument": [
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:PaulPhillips",
+      "@type": "music:Musician",
+      "rdfs:label": "Paul Phillips",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals (2002–2008)",
+      "music:activeYears": "2002–2008",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:ChristianStone",
+      "@type": "music:Musician",
+      "rdfs:label": "Christian Stone",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals (2008–2012)",
+      "music:activeYears": "2008–2012",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:RyanYerdon",
+      "@type": "music:Musician",
+      "rdfs:label": "Ryan Yerdon",
+      "music:hasGender": "male",
+      "music:hasRole": "drums, percussion (2008–2011)",
+      "music:activeYears": "2008–2011",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:DaveAmezcua",
+      "@type": "music:Musician",
+      "rdfs:label": "Dave Amezcua",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar (2012–2013)",
+      "music:activeYears": "2012–2013",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:PuddleOfMudd"}
+      ]
+    },
+    {
+      "@id": "music:FredDurst",
+      "@type": "music:Musician",
+      "rdfs:label": "Fred Durst",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, vocals, A&R discovery (signed Puddle of Mudd to Flawless/Geffen)",
+      "music:activeYears": "1994–present",
+      "music:playsInstrument": [
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:LimpBizkit"}
+      ],
+      "music:produced": [
+        {"@id": "music:ComeClean"}
+      ]
+    },
+    {
+      "@id": "music:JordanSchur",
+      "@type": "music:Producer",
+      "rdfs:label": "Jordan Schur",
+      "music:hasGender": "male",
+      "music:hasRole": "record executive, producer, founder of Flawless Records",
+      "music:activeYears": "1990–present",
+      "music:produced": [
+        {"@id": "music:ComeClean"}
+      ]
+    },
+    {
+      "@id": "music:BillStevenson",
+      "@type": "music:Producer",
+      "rdfs:label": "Bill Stevenson",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, engineer, drummer",
+      "music:activeYears": "1981–present",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"}
+      ],
+      "music:produced": [
+        {"@id": "music:LifeOnDisplay"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Descendents"}
+      ]
+    },
+    {
+      "@id": "music:LimpBizkit",
+      "@type": "music:Band",
+      "rdfs:label": "Limp Bizkit",
+      "music:activeYears": "1994–present",
+      "music:formedYear": 1994
+    },
+    {
+      "@id": "music:3DoorsDown",
+      "@type": "music:Band",
+      "rdfs:label": "3 Doors Down",
+      "music:activeYears": "1996–present",
+      "music:formedYear": 1996
+    },
+    {
+      "@id": "music:Descendents",
+      "@type": "music:Band",
+      "rdfs:label": "Descendents",
+      "music:activeYears": "1977–present",
+      "music:formedYear": 1977
+    },
+    {
+      "@id": "music:ComeClean",
+      "@type": "music:Album",
+      "rdfs:label": "Come Clean",
+      "music:releaseYear": 2001
+    },
+    {
+      "@id": "music:LifeOnDisplay",
+      "@type": "music:Album",
+      "rdfs:label": "Life on Display",
+      "music:releaseYear": 2003
+    },
+    {
+      "@id": "music:Famous",
+      "@type": "music:Album",
+      "rdfs:label": "Famous",
+      "music:releaseYear": 2007
+    },
+    {
+      "@id": "music:Volume4SongsInTheKeyOfLoveAndHate",
+      "@type": "music:Album",
+      "rdfs:label": "Volume 4: Songs in the Key of Love & Hate",
+      "music:releaseYear": 2009
+    },
+    {
+      "@id": "music:WelcomeToGalvania",
+      "@type": "music:Album",
+      "rdfs:label": "Welcome to Galvania",
+      "music:releaseYear": 2019
+    },
+    {
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
+    },
+    {
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Album",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Album"
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:recordedAlbum",
+      "@type": "rdf:Property",
+      "rdfs:label": "recorded album",
+      "rdfs:range": {"@id": "music:Album"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:releaseYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "release year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
+    }
+  ]
+}

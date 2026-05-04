@@ -10,41 +10,35 @@
     {
       "@id": "music:Kiss",
       "@type": "music:Band",
-      "rdfs:label": "Kiss",
+      "rdfs:label": "KISS",
+      "music:hasGender": "male",
+      "music:hasRole": "hard rock, heavy metal, shock rock, glam rock",
       "music:activeYears": "1973–2023",
       "music:formedYear": 1973,
       "music:hasMember": [
-        {
-          "@id": "music:PaulStanley"
-        },
-        {
-          "@id": "music:GeneSimmons"
-        },
-        {
-          "@id": "music:TommyThayer"
-        },
-        {
-          "@id": "music:EricSinger"
-        }
+        {"@id": "music:PaulStanley"},
+        {"@id": "music:GeneSimmons"},
+        {"@id": "music:TommyThayer"},
+        {"@id": "music:EricSinger"}
       ],
       "music:hadMember": [
+        {"@id": "music:PeterCriss"},
+        {"@id": "music:AceFrehley"},
+        {"@id": "music:EricCarr"},
+        {"@id": "music:VinnieVincent"},
+        {"@id": "music:MarkStJohn"},
+        {"@id": "music:BruceKulick"}
+      ],
+      "music:hasRelationship": [
         {
-          "@id": "music:AceFrehley"
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:BobEzrin"}
         },
         {
-          "@id": "music:PeterCriss"
-        },
-        {
-          "@id": "music:EricCarr"
-        },
-        {
-          "@id": "music:VinnieVincent"
-        },
-        {
-          "@id": "music:MarkStJohn"
-        },
-        {
-          "@id": "music:BruceKulick"
+          "@type": "music:Relationship",
+          "music:relationshipType": "collaborated",
+          "music:relationshipTarget": {"@id": "music:EddieKramer"}
         }
       ]
     },
@@ -53,20 +47,14 @@
       "@type": "music:Musician",
       "rdfs:label": "Paul Stanley",
       "music:hasGender": "male",
-      "music:hasRole": "rhythm guitar, lead vocals",
-      "music:activeYears": "1973–2023",
-      "music:isMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
+      "music:hasRole": "rhythm guitar, lead vocals, primary songwriter",
+      "music:activeYears": "1973–present",
       "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Kiss"}
       ]
     },
     {
@@ -74,20 +62,14 @@
       "@type": "music:Musician",
       "rdfs:label": "Gene Simmons",
       "music:hasGender": "male",
-      "music:hasRole": "bass guitar, lead vocals",
-      "music:activeYears": "1973–2023",
-      "music:isMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
+      "music:hasRole": "bass, lead vocals, primary songwriter",
+      "music:activeYears": "1973–present",
       "music:playsInstrument": [
-        {
-          "@id": "music:Bass"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Bass"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Kiss"}
       ]
     },
     {
@@ -97,18 +79,12 @@
       "music:hasGender": "male",
       "music:hasRole": "lead guitar, backing vocals",
       "music:activeYears": "2002–2023",
-      "music:isMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
       "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:isMemberOf": [
+        {"@id": "music:Kiss"}
       ]
     },
     {
@@ -116,41 +92,15 @@
       "@type": "music:Musician",
       "rdfs:label": "Eric Singer",
       "music:hasGender": "male",
-      "music:hasRole": "drums, backing vocals",
+      "music:hasRole": "drums, percussion, backing vocals",
       "music:activeYears": "1991–2023",
+      "music:playsInstrument": [
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
       "music:isMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
-      "music:playsInstrument": [
-        {
-          "@id": "music:Drums"
-        },
-        {
-          "@id": "music:Vocals"
-        }
-      ]
-    },
-    {
-      "@id": "music:AceFrehley",
-      "@type": "music:Musician",
-      "rdfs:label": "Ace Frehley",
-      "music:hasGender": "male",
-      "music:hasRole": "lead guitar, vocals",
-      "music:activeYears": "1973–1982, 1996–2002",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
-      "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Kiss"}
       ]
     },
     {
@@ -158,59 +108,63 @@
       "@type": "music:Musician",
       "rdfs:label": "Peter Criss",
       "music:hasGender": "male",
-      "music:hasRole": "drums, vocals",
-      "music:activeYears": "1973–1980, 1996–2004",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
+      "music:hasRole": "drums, percussion, vocals",
+      "music:activeYears": "1973–2004",
       "music:playsInstrument": [
-        {
-          "@id": "music:Drums"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
       ]
+    },
+    {
+      "@id": "music:AceFrehley",
+      "@type": "music:Musician",
+      "rdfs:label": "Ace Frehley",
+      "music:hasGender": "male",
+      "music:hasRole": "lead guitar, backing vocals",
+      "music:activeYears": "1973–2002",
+      "music:playsInstrument": [
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
+      ],
+      "music:dateDied": "2024-11-27"
     },
     {
       "@id": "music:EricCarr",
       "@type": "music:Musician",
       "rdfs:label": "Eric Carr",
       "music:hasGender": "male",
-      "music:hasRole": "drums, vocals",
+      "music:hasRole": "drums, percussion, backing vocals",
       "music:activeYears": "1980–1991",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
       "music:playsInstrument": [
-        {
-          "@id": "music:Drums"
-        },
-        {
-          "@id": "music:Vocals"
-        }
-      ]
+        {"@id": "music:Drums"},
+        {"@id": "music:Percussion"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
+      ],
+      "music:dateDied": "1991-11-24"
     },
     {
       "@id": "music:VinnieVincent",
       "@type": "music:Musician",
       "rdfs:label": "Vinnie Vincent",
       "music:hasGender": "male",
-      "music:hasRole": "lead guitar",
+      "music:hasRole": "lead guitar, backing vocals",
       "music:activeYears": "1982–1984",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
       "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
       ]
     },
     {
@@ -220,85 +174,192 @@
       "music:hasGender": "male",
       "music:hasRole": "lead guitar",
       "music:activeYears": "1984",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
       "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        }
-      ]
+        {"@id": "music:Guitar"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
+      ],
+      "music:dateDied": "2007-04-05"
     },
     {
       "@id": "music:BruceKulick",
       "@type": "music:Musician",
       "rdfs:label": "Bruce Kulick",
       "music:hasGender": "male",
-      "music:hasRole": "lead guitar, vocals",
+      "music:hasRole": "lead guitar, backing vocals",
       "music:activeYears": "1984–1996",
-      "music:wasMemberOf": [
-        {
-          "@id": "music:Kiss"
-        }
-      ],
       "music:playsInstrument": [
-        {
-          "@id": "music:Guitar"
-        },
-        {
-          "@id": "music:Vocals"
-        }
+        {"@id": "music:Guitar"},
+        {"@id": "music:Vocals"}
+      ],
+      "music:wasMemberOf": [
+        {"@id": "music:Kiss"}
       ]
     },
     {
-      "@id": "music:FrehleysComet",
-      "@type": "music:Band",
-      "rdfs:label": "Frehley's Comet",
-      "music:formedYear": 1984,
-      "music:activeYears": "1984–1995",
-      "music:hasMember": [
-        {
-          "@id": "music:AceFrehley"
-        }
+      "@id": "music:BobEzrin",
+      "@type": "music:Producer",
+      "rdfs:label": "Bob Ezrin",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, keyboards",
+      "music:activeYears": "1972–present",
+      "music:playsInstrument": [
+        {"@id": "music:Keyboards"}
       ]
     },
     {
-      "@id": "music:VinnieVincentInvasion",
-      "@type": "music:Band",
-      "rdfs:label": "Vinnie Vincent Invasion",
-      "music:formedYear": 1984,
-      "music:activeYears": "1984–1988",
-      "music:hasMember": [
-        {
-          "@id": "music:VinnieVincent"
-        }
-      ]
+      "@id": "music:EddieKramer",
+      "@type": "music:Producer",
+      "rdfs:label": "Eddie Kramer",
+      "music:hasGender": "male",
+      "music:hasRole": "producer, engineer",
+      "music:activeYears": "1965–present"
     },
     {
-      "@id": "music:WhiteTiger",
-      "@type": "music:Band",
-      "rdfs:label": "White Tiger",
-      "music:formedYear": 1985,
-      "music:activeYears": "1985–1993",
-      "music:hasMember": [
-        {
-          "@id": "music:MarkStJohn"
-        }
-      ]
+      "@id": "music:Vocals",
+      "@type": "music:Instrument",
+      "rdfs:label": "Vocals"
     },
     {
-      "@id": "music:GrandFunkRailroad",
-      "@type": "music:Band",
-      "rdfs:label": "Grand Funk Railroad",
-      "music:formedYear": 1969,
-      "music:activeYears": "1969–1976, 1981–1983, 1996–present",
-      "music:hasMember": [
-        {
-          "@id": "music:BruceKulick"
-        }
-      ]
+      "@id": "music:Guitar",
+      "@type": "music:Instrument",
+      "rdfs:label": "Guitar"
+    },
+    {
+      "@id": "music:Bass",
+      "@type": "music:Instrument",
+      "rdfs:label": "Bass Guitar"
+    },
+    {
+      "@id": "music:Drums",
+      "@type": "music:Instrument",
+      "rdfs:label": "Drums"
+    },
+    {
+      "@id": "music:Percussion",
+      "@type": "music:Instrument",
+      "rdfs:label": "Percussion"
+    },
+    {
+      "@id": "music:Keyboards",
+      "@type": "music:Instrument",
+      "rdfs:label": "Keyboards"
+    },
+    {
+      "@id": "music:Band",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Band"
+    },
+    {
+      "@id": "music:Musician",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Musician"
+    },
+    {
+      "@id": "music:SoloArtist",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Solo Artist",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Producer",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Producer",
+      "rdfs:subClassOf": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:Instrument",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Instrument"
+    },
+    {
+      "@id": "music:Relationship",
+      "@type": "rdfs:Class",
+      "rdfs:label": "Relationship"
+    },
+    {
+      "@id": "music:hasMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "has member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:hadMember",
+      "@type": "rdf:Property",
+      "rdfs:label": "had member",
+      "rdfs:domain": {"@id": "music:Band"},
+      "rdfs:range": {"@id": "music:Musician"}
+    },
+    {
+      "@id": "music:isMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "is member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:wasMemberOf",
+      "@type": "rdf:Property",
+      "rdfs:label": "was member of",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Band"}
+    },
+    {
+      "@id": "music:hasRelationship",
+      "@type": "rdf:Property",
+      "rdfs:label": "has relationship",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Relationship"}
+    },
+    {
+      "@id": "music:playsInstrument",
+      "@type": "rdf:Property",
+      "rdfs:label": "plays instrument",
+      "rdfs:domain": {"@id": "music:Musician"},
+      "rdfs:range": {"@id": "music:Instrument"}
+    },
+    {
+      "@id": "music:produced",
+      "@type": "rdf:Property",
+      "rdfs:label": "produced",
+      "rdfs:domain": {"@id": "music:Producer"}
+    },
+    {
+      "@id": "music:hasGender",
+      "@type": "rdf:Property",
+      "rdfs:label": "has gender"
+    },
+    {
+      "@id": "music:hasRole",
+      "@type": "rdf:Property",
+      "rdfs:label": "has role"
+    },
+    {
+      "@id": "music:activeYears",
+      "@type": "rdf:Property",
+      "rdfs:label": "active years"
+    },
+    {
+      "@id": "music:formedYear",
+      "@type": "rdf:Property",
+      "rdfs:label": "formed year"
+    },
+    {
+      "@id": "music:relationshipType",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship type"
+    },
+    {
+      "@id": "music:relationshipTarget",
+      "@type": "rdf:Property",
+      "rdfs:label": "relationship target"
+    },
+    {
+      "@id": "music:dateDied",
+      "@type": "rdf:Property",
+      "rdfs:label": "date died"
     }
   ]
 }
